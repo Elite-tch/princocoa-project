@@ -7,7 +7,7 @@ export default function AcademySection() {
   return (
     <section className="relative overflow-hidden bg-[#004aad]">
       {/* Content Section */}
-      <div className="relative bg-[#f2f6fb] py-20 pb-12">
+      <div className="relative bg-[#f2f6fb] py-10 md:py-20 pb-12">
         <div className="container mx-auto px-6 md:px-4 text-center">
          
           <motion.h2
@@ -57,7 +57,7 @@ creative challenge with innovation and style.
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.4 }}
-              className="group cursor-pointer w-[600px]  h-[400px]"
+              className="group cursor-pointer w-[600px] h-[300px] md:h-[400px]"
             >
               <Link href="/templates">
                 <div className="relative overflow-hidden rounded-2xl w-full h-full">

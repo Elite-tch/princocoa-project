@@ -100,7 +100,7 @@ export default function ServicesSection() {
             ))}
 <div className="flex justify-center">
     
-            <Button className="bg-[#ff66c4] hover:bg-[#ff66c4]/90 font-semibold px-8 mt-8">
+            <Button className="bg-[#ff66c4] hover:bg-[#ff66c4]/90 font-semibold py-3 px-8 mt-8">
               SEE ALL SERVICES
             </Button>
 </div>
@@ -117,14 +117,14 @@ export default function ServicesSection() {
             <motion.div
               animate={{ y: [0, -20, 0] }}
              // transition={{ duration: 4, repeat: Number.POSITIVE_INFINITY, ease: "easeInOut" }}
-              className="relative w-56 md:h-96 h-80 rounded-3xl overflow-hidden border-4 border-foreground shadow-2xl"
+              className="relative w-60 md:w-56 md:h-96 h-64 rounded-3xl overflow-hidden border-4 border-foreground shadow-2xl"
             >
               <Image src="/img.jpg" alt="Phone mockup 1" fill className="object-cover" />
             </motion.div>
             <motion.div
               animate={{ y: [0, 20, 0] }}
              // transition={{ duration: 4, repeat: Number.POSITIVE_INFINITY, ease: "easeInOut", delay: 0.5 }}
-              className="relative w-56 md:h-96 h-80 rounded-3xl mt-52 overflow-hidden border-4 border-foreground shadow-2xl"
+              className="relative w-60 md:w-56 md:h-96 h-64 rounded-3xl mt-52 overflow-hidden border-4 border-foreground shadow-2xl"
             >
               <Image src="/img.jpg" alt="Phone mockup 2" fill className="object-cover" />
             </motion.div>
