@@ -51,13 +51,13 @@ export default function HeroSection() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.8 }}
             >
-              <Button size="lg" className="bg-[#004aad] md:text-base text-sm rounded-full text-primary-foreground hover:bg-[#004aad]/90 font-semibold px-8">
+              <Button size="lg" className="bg-[#004aad] md:text-base text-xs rounded-full text-primary-foreground hover:bg-[#004aad]/90 font-semibold md:px-8 px-4">
                 WORK WITH US
               </Button>
               <Button
                 size="lg"
                 variant="outline" 
-                className="border-[#004aad] rounded-full text-[#004aad] md:text-base text-sm hover:bg-[#004aad] hover:text-primary-foreground font-semibold px-8 bg-transparent"
+                className="border-[#004aad] rounded-full text-[#004aad] md:text-base text-xs hover:bg-[#004aad] hover:text-primary-foreground font-semibold md:px-8 px-4 bg-transparent"
               >
                 LEARN FROM US
               </Button>
