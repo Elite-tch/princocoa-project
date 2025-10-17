@@ -112,7 +112,7 @@ export default function ServicesSection() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="relative md:h-[500px] h-[500px] md:w-full w-[100%] mx-auto flex items-center justify-center gap-8 pb-16 md:pb-0"
+            className="relative md:h-[500px] h-[430px] md:w-full w-[100%] mx-auto flex items-center justify-center gap-8 pb-16 md:pb-0"
           >
             <motion.div
               animate={{ y: [0, -20, 0] }}
