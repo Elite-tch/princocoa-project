@@ -46,7 +46,7 @@ export default function HeroSection() {
             </motion.p>
 
             <motion.div
-              className="flex gap-4 mx-auto w-[95%] md:w-[80%] justify-between pt-4"
+              className="flex gap-4 mx-auto w-[80%] justify-between pt-4"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.8 }}
