@@ -5,7 +5,7 @@ import Link from "next/link"
 
 export default function AcademySection() {
   return (
-    <section className="relative overflow-hidden bg-[#39FF14]">
+    <section className="relative overflow-hidden bg-pink-600">
       {/* Content Section */}
       <div className="relative bg-[#f2f6fb] py-10 md:py-20 pb-12">
         <div className="container mx-auto px-6 md:px-4 text-center">
