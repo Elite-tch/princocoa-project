@@ -93,7 +93,7 @@ export default function TestimonialsSection() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="text-4xl md:text-4xl  tracking-wider mb-12 text-center font-semibold"
+          className="text-4xl md:text-4xl  tracking-wider text-[#004aad] mb-12 text-center font-semibold"
         >
           Client Love Letters
         </motion.h2>

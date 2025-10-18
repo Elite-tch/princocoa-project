@@ -27,17 +27,17 @@ export default function HeroSection() {
             className="space-y-8"
           >
             <motion.h1
-              className="text-5xl md:text-6xl  text-center  font-light leading-tight text-balance"
+              className="text-5xl md:text-6xl text-[#004aad]  text-center  font-ligt  font-serif leading-tight text-balance"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.4 }}
             >
-              We&apos;re <span className="italic  font-serif text-primary">creatives</span> at heart driven by{" "}
-              <span className="italic font-serif text-[#004aad]">purposeful</span> strategy
+              We&apos;re <span className="italic  font-serif text-[#004aad]/80">creatives</span> at heart driven by{" "}
+              <span className="italic font-serif text-pink-600">purposeful</span> strategy
             </motion.h1>
 
             <motion.p
-              className="text-lg text-muted-foreground text-center mx-auto w-[80%] leading-relaxed"
+              className="text-lg text-[#004aad] text-center mx-auto w-[80%] leading-relaxed"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.6 }}
@@ -46,18 +46,18 @@ export default function HeroSection() {
             </motion.p>
 
             <motion.div
-              className="flex gap-4 mx-auto w-[80%] justify-between pt-4"
+              className="flex gap-4 mx-auto text-p w-[80%] justify-between pt-4"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.8 }}
             >
-              <Button size="lg" className="bg-[#004aad] md:text-base text-xs rounded-full text-primary-foreground hover:bg-[#004aad]/90 font-semibold md:px-8 px-4">
+              <Button size="lg" className="bg-pink-600 md:text-base text-xs rounded-full text-primary-foreground hover:bg-pink-700 font-semibold md:px-8 px-4">
                 WORK WITH US
               </Button>
               <Button
                 size="lg"
                 variant="outline" 
-                className="border-[#004aad] rounded-full text-[#004aad] md:text-base text-xs hover:bg-[#004aad] hover:text-primary-foreground font-semibold md:px-8 px-4 bg-transparent"
+                className="border-pink-600 rounded-full text-pink-600 md:text-base text-xs hover:bg-pink-600 hover:text-primary-foreground font-semibold md:px-8 px-4 bg-transparent"
               >
                 LEARN FROM US
               </Button>

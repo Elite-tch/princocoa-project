@@ -1,5 +1,5 @@
 "use client"
-
+import Link from "next/link"
 import { useState } from "react"
 import { motion, AnimatePresence } from "framer-motion"
 import { Instagram, Linkedin, Music, Menu, X } from "lucide-react"
@@ -7,16 +7,16 @@ import { Button } from "@/components/ui/button"
 
 export default function Navigation() {
   const [isOpen, setIsOpen] = useState(false)
-  const [activeLink, setActiveLink] = useState("#home")
+  const [activeLink, setActiveLink] = useState("/")
 
   const toggleMenu = () => setIsOpen(!isOpen)
 
   const navItems = [
-    { href: "#home", label: "Home" },
-    { href: "#about", label: "About" },
-    { href: "#collaborate", label: "Collaborate" },
-    { href: "#newsletter", label: "Newsletter" },
-    { href: "#academy", label: "Academy" },
+    { href: "/", label: "Home" },
+    { href: "/about", label: "About" },
+    { href: "/collaborate", label: "Collaborate" },
+    { href: "/newsletter", label: "Newsletter" },
+    { href: "/academy", label: "Academy" },
   ]
 
   return (
@@ -37,22 +37,27 @@ export default function Navigation() {
             {/* Desktop Navigation Links */}
             <div className="hidden lg:flex items-center gap-8">
               {navItems.map((item) => (
-                <NavLink
+                <Link
                   key={item.href}
                   href={item.href}
                   isActive={activeLink === item.href}
                   onClick={() => setActiveLink(item.href)}
-                  className="text-[#FF1493]"
+                  className={`text-sm font-medium   transition-colors pb-2 ${
+                        activeLink === item.href
+                          ? "text-pink-600 border-b-2 border-pink-600"
+                          : "text-[#004aad] hover:text-primary"
+                      }`}
+                      whileTap={{ scale: 0.95 }}
                 >
                   {item.label}
-                </NavLink>
+                </Link>
               ))}
             </div>
 
             {/* Desktop Social Icons & CTA */}
             <div className="hidden md:flex items-center gap-4">
               <SocialIcons />
-              <Button className="bg-[#004aad] font-semibold px-4 sm:px-6 text-sm">
+              <Button size='lg' className="bg-pink-600 rounded-full hover:bg-pink-700 font-semibold px-4 sm:px-6 text-xs">
                 CONTACT US
               </Button>
             </div>
@@ -113,10 +118,10 @@ export default function Navigation() {
                         setActiveLink(item.href)
                         toggleMenu()
                       }}
-                      className={`text-lg font-medium  transition-colors pb-2 ${
+                      className={`text-sm font-medium   transition-colors pb-2 ${
                         activeLink === item.href
-                          ? "text-primary border-b-2 border-primary"
-                          : "text-foreground hover:text-primary"
+                          ? "text-pink-600 border-b-2 border-pink-600"
+                          : "text-[#004aad] hover:text-primary"
                       }`}
                       whileTap={{ scale: 0.95 }}
                     >
@@ -131,9 +136,9 @@ export default function Navigation() {
                 </div>
 
                 {/* Mobile CTA Button */}
-                <Button className="w-full bg-primary text-primary-foreground hover:bg-primary/90 font-semibold py-3">
-                  CONTACT US
-                </Button>
+                 <Button size='lg' className="bg-pink-600 rounded-full hover:bg-pink-700 w-fit font-semibold px-4 sm:px-6 text-xs">
+                CONTACT US
+              </Button>
               </div>
             </motion.div>
           </>
@@ -173,7 +178,7 @@ function SocialIcons() {
         whileHover={{ scale: 1.1, rotate: 5 }}
         whileTap={{ scale: 0.95 }}
         href="#"
-        className="text-foreground hover:text-primary transition-colors"
+        className="text-[#004aad] transition-colors"
       >
         <Instagram className="w-5 h-5" />
       </motion.a>
@@ -181,7 +186,7 @@ function SocialIcons() {
         whileHover={{ scale: 1.1, rotate: -5 }}
         whileTap={{ scale: 0.95 }}
         href="#"
-        className="text-foreground hover:text-primary transition-colors"
+        className="text-[#004aad] transition-colors"
       >
         <Linkedin className="w-5 h-5" />
       </motion.a>
@@ -189,7 +194,7 @@ function SocialIcons() {
         whileHover={{ scale: 1.1, rotate: 5 }}
         whileTap={{ scale: 0.95 }}
         href="#"
-        className="text-foreground hover:text-primary transition-colors"
+        className="text-[#004aad] transition-colors"
       >
         <Music className="w-5 h-5" />
       </motion.a>

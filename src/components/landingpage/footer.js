@@ -5,7 +5,7 @@ import { Instagram, Linkedin, Music } from "lucide-react"
 
 export default function Footer() {
   return (
-    <footer className="bg-[#004aad] text-[#f2f6fb] border-t border-border py-12 px-6">
+    <footer className="bg-[#004aad] text-[#f2f6fb]  py-12 px-6">
       <div className="container mx-auto">
         <div className="grid md:grid-cols-3 gap-8">
           {/* Logo & Tagline */}

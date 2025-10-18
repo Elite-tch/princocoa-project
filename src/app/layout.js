@@ -2,6 +2,7 @@ import { Poppins } from "next/font/google"
 import TopScrol from "@/components/landingpage/top-scroll"
 import "./globals.css"
 import Navigation from "@/components/landingpage/navigation"
+import Footer from "@/components/landingpage/footer"
 const poppins = Poppins({
   subsets: ["latin"],
   weight: ["300", "400", "500", "600", "700"],
@@ -20,7 +21,7 @@ export default function RootLayout({ children }) {
         <TopScrol />
         <Navigation />
         {children}
-       
+         <Footer/>
       </body>
     </html>
   )

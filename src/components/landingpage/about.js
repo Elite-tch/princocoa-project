@@ -5,7 +5,7 @@ import Link from "next/link"
 
 export default function AcademySection() {
   return (
-    <section className="relative overflow-hidden bg-[#004aad]">
+    <section className="relative overflow-hidden bg-[#39FF14]">
       {/* Content Section */}
       <div className="relative bg-[#f2f6fb] py-10 md:py-20 pb-12">
         <div className="container mx-auto px-6 md:px-4 text-center">
@@ -15,7 +15,7 @@ export default function AcademySection() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.1 }}
-           className="text-4xl md:text-4xl  tracking-wider mb-4 text-center font-semibold"
+           className="text-4xl md:text-4xl  tracking-wider mb-4 text-center text-[#004aad] font-semibold"
           >
             Welcome to PAI
 Consulting
@@ -26,7 +26,7 @@ Consulting
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="text-md tracking-wider mb-4 text-gray-500 max-w-3xl mx-auto leading-tight font-normal"
+            className="text-md tracking-wider mb-4 text-[#004aad] max-w-3xl mx-auto leading-tight font-normal"
           >
            At P.A.I, we are all about bold ideas, sharp
             strategies, and fearless execution. From brand
@@ -45,7 +45,7 @@ creative challenge with innovation and style.
           >
             <Link
               href="/academy"
-              className="inline-block bg-[#004aad] text-white px-6 py-3 rounded-full font-semibold hover:bg-[#0056b3] transition-colors"
+              className="inline-block bg-pink-600 text-white px-6 py-3 rounded-full font-semibold hover:bg-[#0056b3] transition-colors"
             >
               Contact us
             </Link>

@@ -4,7 +4,7 @@ import ServicesSection from "@/components/landingpage/services-section";
 import AcademySection from "@/components/landingpage/about";
 import TrustSection from "@/components/landingpage/trust";
 import TestimonialsSection from "@/components/landingpage/testimony-section";
-import Footer from "@/components/landingpage/footer";
+
 export default function Home() {
   return (
     <div className="">
@@ -14,7 +14,7 @@ export default function Home() {
       <ServicesSection />
       <TrustSection />
       <TestimonialsSection/>
-      <Footer/>
+    
     </div>
   );
 }

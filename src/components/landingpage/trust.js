@@ -29,7 +29,7 @@ export default function TrustSection() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.1 }}
-            className="text-4xl md:text-4xl  tracking-wider mb-12 text-center font-semibold"
+            className="text-4xl md:text-4xl text-[#004aad] tracking-wider mb-12 text-center font-semibold"
           >
            They Trust Us
           </motion.h2>

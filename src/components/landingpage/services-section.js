@@ -42,14 +42,14 @@ export default function ServicesSection() {
   }
 
   return (
-    <section className="pb-10 px-6 bg-[#004aad]">
+    <section className="pb-10 px-6 bg-[#39FF14]">
       <div className="container mx-auto md:w-[90%] w-[95%]">
         <motion.h2
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="text-4xl md:text-4xl text-white tracking-wider mb-4 text-center font-semibold"
+          className="text-4xl md:text-4xl text-[#004aad] tracking-wider mb-4 text-center font-semibold"
         >
           Services
         </motion.h2>
@@ -65,23 +65,23 @@ export default function ServicesSection() {
           >
             {services.map((service, idx) => (
               <div key={idx} className="space-y-4">
-                <h3 className="text-3xl italic font-semibold pt-8 text-[#ff66c4] border-b border-white pb-4 text-center">{service.category}</h3>
+                <h3 className="text-3xl italic font-semibold pt-8 text-[#004aad] border-b border-[#004aad] pb-4 text-center">{service.category}</h3>
                 <div className="space-y-2">
                   {service.items.map((item, itemIdx) => {
                     const key = `${service.category}-${itemIdx}`
                     const isOpen = openItems[key]
 
                     return (
-                      <motion.div key={itemIdx} className="border-b border-border pb-2" whileHover={{ x: 5 }}>
+                      <motion.div key={itemIdx} className="border-b border-[#004aad] pb-2" whileHover={{ x: 5 }}>
                         <button
                           onClick={() => toggleItem(service.category, itemIdx)}
                           className="w-full flex items-center justify-between py-3 text-left group"
                         >
-                          <span className="text-xl italic text-[#ff66c4] group-hover:text-[#ff66c4] transition-colors">
+                          <span className="text-xl italic text-[#004aad] group-hover:text-[#004aad] transition-colors">
                             {item.name}
                           </span>
                           <motion.div animate={{ rotate: isOpen ? 180 : 0 }} transition={{ duration: 0.3 }}>
-                            <ChevronDown className="w-5 h-5 text-[#fff]" />
+                            <ChevronDown className="w-5 h-5 text-[#004aad]" />
                           </motion.div>
                         </button>
                         <motion.div
@@ -90,7 +90,7 @@ export default function ServicesSection() {
                           transition={{ duration: 0.3 }}
                           className="overflow-hidden"
                         >
-                          <p className="text-white pb-3">{item.description}</p>
+                          <p className="text-[#004aad] pb-3">{item.description}</p>
                         </motion.div>
                       </motion.div>
                     )
@@ -100,7 +100,7 @@ export default function ServicesSection() {
             ))}
 <div className="flex justify-center">
     
-            <Button className="bg-[#ff66c4] hover:bg-[#ff66c4]/90 font-semibold py-3 px-8 mt-8">
+            <Button size='lg' className="bg-pink-600 hover:bg-pink-700 font-semibold py-3 md:py-4 px-8 mt-8">
               SEE ALL SERVICES
             </Button>
 </div>
