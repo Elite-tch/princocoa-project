@@ -27,10 +27,10 @@ export default function NewsletterSection() {
           className="text-center"
         >
           {/* Title */}
-          <h2 className="font-serif text-4xl md:text-5xl lg:text-6xl text-[#004aad] mb-6">House Headlines Newsletter</h2>
+          <h2 className="text-2xl md:text-3xl font-bold uppercase text-[#004aad] mb-2">House Headlines Newsletter</h2>
 
           {/* Description */}
-          <p className="text-[#004aad]/70 text-lg leading-relaxed mb-10 max-w-2xl mx-auto">
+          <p className="text-[#004aad]/70 md:text-lg text-md leading-relaxed mb-10 max-w-2xl mx-auto">
             Get FREE marketing tips, social media hacks, the latest on industry trends, and more delivered straight to
             your inbox!
           </p>
