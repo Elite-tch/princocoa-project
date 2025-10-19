@@ -29,12 +29,12 @@ export default function TrustSection() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.1 }}
-            className="text-xl md:text-3xl font-bold uppercase text-[#004aad] tracking-wider mb-12 text-center"
+            className="text-xl md:text-3xl font-bold uppercase text-[#004aad] tracking-wider mb-6 md:mb-12 text-center"
           >
            They Trust Us
           </motion.h2>
         {/* Logo Grid */}
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 md:gap-4 items-center justify-items-center max-w-[90%] mx-auto">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 md:gap-4 items-center justify-items-center max-w-[90%] mx-auto">
           {clients.map((client, index) => (
             <motion.div
               key={client.name}
@@ -42,7 +42,7 @@ export default function TrustSection() {
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: index * 0.05 }}
-              className="relative md:w-[180px] w-full h-38 flex items-center justify-center grayscale hover:grayscale-0 transition-all duration-300 cursor-pointer"
+              className="relative w-full h-full aspect-square flex items-center justify-center grayscale hover:grayscale-0 transition-all duration-300 cursor-pointer"
             >
               <Image
                 src={client.logo}

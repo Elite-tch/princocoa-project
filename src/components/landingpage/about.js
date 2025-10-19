@@ -16,7 +16,7 @@ export default function AcademySection() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.1 }}
-           className="text-xl md:text-3xl font-bold uppercase  tracking-wider mb-2 text-center text-[#004aad] "
+           className="text-2xl md:text-3xl font-bold uppercase  tracking-wider mb-2 text-center text-[#004aad] "
           >
             Welcome to PAI
 Consulting
@@ -27,7 +27,7 @@ Consulting
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className=" md:text-lg text-sm mb-4 text-[#004aad] max-w-3xl mx-auto "
+            className=" md:text-lg text-md mb-4 text-[#004aad] max-w-3xl mx-auto "
           >
            At P.A.I, we are all about bold ideas, sharp
             strategies, and fearless execution. From brand

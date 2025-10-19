@@ -8,7 +8,7 @@ export default function HeroSection() {
   return (
     <section className="pt-28 pb-8 md:pb-0 md:pr-6 ">
       <div className="container mx-auto">
-        <div className="grid md:grid-cols-2 gap-12 items-center">
+        <div className="grid md:grid-cols-2 gap-6 md:gap-12 items-center">
           {/* Left - Image */}
           <motion.div
             initial={{ opacity: 0, x: -50 }}
@@ -24,10 +24,10 @@ export default function HeroSection() {
             initial={{ opacity: 0, x: 50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
-            className="space-y-8"
+            className="md:space-y-8 space-y-4"
           >
             <motion.h1
-              className="text-5xl md:text-6xl text-[#004aad]  text-center  font-ligt  font-serif leading-tight text-balance"
+              className="text-4xl md:text-6xl text-[#004aad]  text-center  font-ligt  font-serif leading-tight text-balance"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.4 }}

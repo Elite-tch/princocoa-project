@@ -65,7 +65,7 @@ export default function ServicesSection() {
           >
             {services.map((service, idx) => (
               <div key={idx} className="space-y-4">
-                <h3 className="md:text-2xl text-xl italic font-semibold pt-8 text-white border-b border-white pb-4 text-center">{service.category}</h3>
+                <h3 className="md:text-2xl text-xl italic font-semibold pt- md:pt-8 text-white border-b border-white pb-4 text-center">{service.category}</h3>
                 <div className="space-y-2">
                   {service.items.map((item, itemIdx) => {
                     const key = `${service.category}-${itemIdx}`
