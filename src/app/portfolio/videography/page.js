@@ -4,7 +4,7 @@ import VideoHero from "@/components/video/video-hero"
 
 export default function VideoExamplesPage() {
   return (
-    <div className="min-h-screen bg-black">
+    <div className="min-h-screen ">
       <VideoHero />
       <VideoGallery />
       <PortfolioCTA />

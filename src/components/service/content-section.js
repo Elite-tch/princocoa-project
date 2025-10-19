@@ -42,7 +42,7 @@ export default function ConsultingSection() {
   const [openDropdown, setOpenDropdown] = useState(null)
 
   return (
-    <section className="py-20 px-6 bg-[#F5F1E8]">
+    <section className="md:py-20 py-10 px-6 ">
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -50,15 +50,15 @@ export default function ConsultingSection() {
         transition={{ duration: 0.6 }}
         className="max-w-7xl mx-auto"
       >
-        <h2 className="text-4xl md:text-4xl text-[#004aad]  tracking-wider mb-2 text-center font-semibold">
+        <h2 className="text-xl md:text-3xl font-bold uppercase text-[#004aad]  tracking-wider mb-2 text-center ">
         Content Creation
         </h2>
 
-        <p className="text-center text-[#004aad]/70 max-w-2xl mx-auto mb-10">
+        <p className="text-center md:text-lg text-md text-[#004aad]/70 max-w-2xl mx-auto mb-10">
           We create high-quality visuals and videos that tell your brand story in the most authentic way.
         </p>
 
-        <div className="grid md:grid-cols-3 gap-8 items-start w-[90%]  mx-auto">
+        <div className="grid md:grid-cols-3 gap-8 items-start md:-[90%]  mx-auto">
           {contentServices.map((service, index) => (
             <motion.div
               key={index}
@@ -66,7 +66,7 @@ export default function ConsultingSection() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: index * 0.1 }}
-              className="bg-white rounded-2xl overflow-hidden shadow-lg"
+              className="bg-[#FFF8E7] rounded-2xl overflow-hidden shadow-lg"
             >
               <div className="relative h-64">
                 <Image

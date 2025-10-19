@@ -5,7 +5,7 @@ import PortfolioCTA from "@/components/portfolio/portfolio-cta"
 
 export default function PhotographyPage() {
   return (
-    <div className="min-h-screen  bg-[#F5F1E8]">
+    <div className="min-h-screen ">
       
       <PhotoExamplesIntro />
       <ProfessionalGallery />

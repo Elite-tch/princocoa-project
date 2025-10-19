@@ -4,7 +4,7 @@ import PortfolioCTA from "@/components/portfolio/portfolio-cta"
 
 export default function WebDesignPage() {
   return (
-    <div className="min-h-screen bg-black">
+    <div className="min-h-screen">
       <VideoHero />
       <VideoGallery />
       <PortfolioCTA />

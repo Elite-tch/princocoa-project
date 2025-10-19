@@ -16,18 +16,18 @@ const lifestylePhotos = [
 
 export default function LifestyleGallery() {
   return (
-    <section className="py-16 px-6">
-      <div className="max-w-7xl mx-auto w-[95%] ">
+    <section className="pb-16 md:px-6">
+      <div className="max-w-7xl mx-auto w-[90%] md:w-[95%] ">
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="font-serif text-4xl md:text-4xl text-center text-gray-800 mb-12"
+          className="text-xl md:text-3xl font-bold uppercase text-center text-[#004aad] mb-6 md:mb-10"
         >
           Lifestyle Photography Projects
         </motion.h2>
 
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
           {lifestylePhotos.map((photo, index) => (
             <motion.div
               key={index}
@@ -35,7 +35,7 @@ export default function LifestyleGallery() {
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: false }}
               transition={{ duration: 0.4, delay: index * 0.05 }}
-              className=" relative aspect-[9/11]  overflow-hidden rounded-lg group cursor-pointer"
+              className=" relative md:aspect-[9/11] aspect-[9/10]  overflow-hidden rounded-lg group cursor-pointer"
             >
               <Image
                 src={photo || "/placeholder.svg"}

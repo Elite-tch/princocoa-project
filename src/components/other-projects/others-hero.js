@@ -4,13 +4,13 @@ import { motion } from "framer-motion"
 
 export default function OtherProjectsHero() {
   return (
-    <section className="pt-20 px-6">
+    <section className="md:pt-20 pt-[35%] px-6">
       <div className="max-w-7xl pt-[10%] mx-auto text-center">
         <motion.h1
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          className="font-serif text-5xl md:text-4xl text-white "
+          className="text-xl md:text-3xl font-bold uppercase text-[#004aad] "
         >
        Other Notable Projects
         </motion.h1>

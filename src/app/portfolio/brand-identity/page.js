@@ -4,7 +4,7 @@ import PortfolioCTA from "@/components/portfolio/portfolio-cta"
 
 export default function BrandIdentityPage() {
   return (
-    <div className="min-h-screen  bg-[#F5F1E8]">
+    <div className="min-h-screen  ">
       <BrandIdentityHero />
      
         <BrandIdentityGallery />

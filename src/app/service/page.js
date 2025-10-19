@@ -9,7 +9,7 @@ import NewsletterSection from "@/components/about/newsletter-section";
 import ProcessSection from "@/components/service/process-section";
 export default function ServicesPage() {
   return (
-    <main className="min-h-screen bg-[#F5F1E8]">
+    <main className="min-h-screen ">
       
       <ServicesHero />
       <ServicesTagline />

@@ -24,8 +24,8 @@ const videos = [
 
 export default function VideoGallery() {
   return (
-    <section className="py-10 px-6 bg-[#F5F1E8]">
-      <div className="max-w-7xl mx-auto w-[95%] ">
+    <section className="pb-10 md:px-6 ">
+      <div className="max-w-7xl mx-auto w-[90%] md:w-[95%] ">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {videos.map((video, index) => (
             <motion.div
@@ -36,7 +36,7 @@ export default function VideoGallery() {
               transition={{ duration: 0.5, delay: index * 0.05 }}
               className=""
             >
-              <div className="relative aspect-[9/11]  rounded-lg overflow-hidden mb-3">
+              <div className="relative md:aspect-[9/11] aspect-[9/10] rounded-lg overflow-hidden mb-3">
           
         <video
           src={video.thumbnail}
@@ -48,8 +48,8 @@ export default function VideoGallery() {
 
                 
               </div>
-              <h3 className="font-serif text-lg text-gray-800">{video.title}</h3>
-              <p className="text-sm text-gray-600">{video.subtitle}</p>
+              <h3 className="font-serif text-lg text-[#004aad]">{video.title}</h3>
+              <p className="text-sm text-[#004aad]">{video.subtitle}</p>
             </motion.div>
           ))}
         </div>

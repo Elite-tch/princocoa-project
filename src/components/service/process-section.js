@@ -124,10 +124,10 @@ export default function ProcessSection() {
     (((currentIndex - slidesToShow) % galleryImages.length) + galleryImages.length) % galleryImages.length
 
   return (
-    <section ref={ref} className="py-20 bg-gray-50 overflow-hidden">
+    <section ref={ref} className="md:py-20 py-10  overflow-hidden">
       <div className="container mx-auto px-4 lg:px-6">
         
-      <h2 className="text-xl md:text-3xl font-bold uppercase text-center mb-8">Our Process</h2>
+      <h2 className="text-xl md:text-3xl text-[#004aad] font-bold uppercase text-center mb-8">Our Process</h2>
         {/* Carousel Container */}
         <motion.div
           initial={{ opacity: 0, y: 50 }}
@@ -168,8 +168,8 @@ export default function ProcessSection() {
                     />
                      </div>
                      <div>
-                        <h3 className="mt-4 text-xl font-semibold  text-gray-800">{image.title}</h3>
-                        <p className="mt-0 text-gray-600 w-[90%]">{image.description}</p>
+                        <h3 className="mt-4 text-xl font-semibold  text-[#004aad]">{image.title}</h3>
+                        <p className="mt-0 text-[#004aad]/70 w-[90%]">{image.description}</p>
                      </div>
                 </div>
               ))}
@@ -203,7 +203,7 @@ export default function ProcessSection() {
           </button>
         </motion.div>
 
-        {/* Dots Indicator */}
+        {/* Dots Indicator
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
@@ -221,16 +221,16 @@ export default function ProcessSection() {
             />
           ))}
         </motion.div>
-
+ */}
 
         
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
           transition={{ duration: 0.8, delay: 0.8 }}
-          className="hidden lg:flex justify-center mt-16 pt-10 border-t-2 border-gray-200 space-x-2 overflow-x-auto pb-2"
+          className="flex justify-center mt-8 md:mt-16 pt-6 md:pt-10 border-t-2 border-[#004aad] space-x-2 overflow-x-auto md:pb-2"
         >
-           <h2 className="text-xl md:text-3xl font-bold uppercase text-center mb-8 w-[30%] leading-tight">Ready to Level Up
+           <h2 className="text-xl md:text-3xl font-bold text-[#004aad] uppercase text-center mb-8 md:w-[30%] leading-tight">Ready to Level Up
 Your Brand?</h2>
         </motion.div> 
 
@@ -238,7 +238,7 @@ Your Brand?</h2>
               <Link href='/contact'>
                 <Button
                   size="lg"
-                  className="bg-[#1b3f7b] hover:bg-[#16325c] text-white px-8 py-4 text-md font-semibold rounded-md shadow-none transition-all duration-200"
+                  className="bg-pink-600 hover:bg-pink-600 text-white px-8 py-4 text-md font-semibold rounded-md shadow-none transition-all duration-200"
                 >
                   Get In Touch
                   <ArrowRight className="ml-2 w-5 h-5" />

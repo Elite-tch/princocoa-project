@@ -5,7 +5,7 @@ import PortfolioCTA from "@/components/portfolio/portfolio-cta"
 
 export default function PortfolioPage() {
   return (
-    <main className="min-h-screen bg-[#F5F1E8]">
+    <main className="min-h-screen ">
      
       <PortfolioHero />
       <PortfolioWork />

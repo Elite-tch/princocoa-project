@@ -19,7 +19,7 @@ export default function PortfolioCTA() {
 
         <Link
           href="/contact"
-          className="inline-block bg-[#5A6F5F] text-white px-8 py-4 rounded-full text-xs font-semibold hover:bg-[#4A5F4F] transition-colors"
+          className="inline-block bg-[#39FF14] text-black px-8 py-4 rounded-full text-xs font-semibold hover:bg-[#39FF14]/90 transition-colors"
         >
           GET IN TOUCH
         </Link>

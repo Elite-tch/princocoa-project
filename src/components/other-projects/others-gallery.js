@@ -20,9 +20,9 @@ const professionalPhotos = [
 
 export default function OtherGallery() {
   return (
-    <section className="py-16 px-6">
-      <div className="max-w-7xl mx-auto w-[95%] ">
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+    <section className="md:pt-8 pt-4 pb-16 md:px-6">
+      <div className="max-w-7xl mx-auto w-[90%] md:w-[95%] ">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
           {professionalPhotos.map((photo, index) => (
             <motion.div
               key={index}
@@ -30,7 +30,7 @@ export default function OtherGallery() {
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
               transition={{ duration: 0.4, delay: index * 0.05 }}
-              className="aspect-[9/11] relative  overflow-hidden rounded-lg group cursor-pointer"
+              className="md:aspect-[9/11] aspect-[9/10] relative  overflow-hidden rounded-lg group cursor-pointer"
             >
                {index === 0 ? (
         <video

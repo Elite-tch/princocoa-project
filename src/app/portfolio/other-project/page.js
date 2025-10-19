@@ -4,7 +4,7 @@ import OtherGallery from "@/components/other-projects/others-gallery"
 
 export default function OtherProjectsPage() {
   return (
-    <div className="min-h-screen  bg-[#F5F1E8]">
+    <div className="min-h-screen  ">
       <OtherProjectsHero />
       <OtherGallery />
       <PortfolioCTA />
