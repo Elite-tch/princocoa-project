@@ -120,7 +120,7 @@ export default function Navigation() {
                         setActiveLink(item.href)
                         toggleMenu()
                       }}
-                      className={`text-sm font-medium   transition-colors pb-2 ${
+                      className={`text-md font-medium   transition-colors pb-2 ${
                         activeLink === item.href
                           ? "text-pink-600 border-b-2 border-pink-600"
                           : "text-[#004aad] hover:text-primary"
@@ -138,7 +138,7 @@ export default function Navigation() {
                 </div>
 
                 {/* Mobile CTA Button */}
-                 <Button size='lg' className="bg-pink-600 rounded-full hover:bg-pink-700 w-fit font-semibold px-4 sm:px-6 text-xs">
+                 <Button size='lg' className="bg-pink-600 rounded-full hover:bg-pink-700 w-fit font-semibold px-6 sm:px-6 text-xs">
                 CONTACT US
               </Button>
               </div>

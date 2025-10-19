@@ -47,7 +47,7 @@ export default function MeetFounder() {
 
       <div className="container relative mx-auto px-3 md:px-12 max-w-7xl flex flex-col">
 
- <div className="fle flex-col md:flex-row hidden items-center justify-center  mx-auto px-6 py-12">
+ <div className="fle flex-col  md:hidden items-center justify-center  mx-auto  pb-8">
   {/* Left Image - appears on top on mobile */}
   <motion.div
     initial={{ opacity: 0, x: -30 }}
@@ -57,30 +57,18 @@ export default function MeetFounder() {
     className="relative w-full md:w-auto order-1"
   >
     <div className="relative w-full md:w-[400px]  h-[300px] md:h-[450px]">
-      <img 
+      <Image
+        width={400}
+        height={450}
         src="/img2.jpg"
         alt="Founder Image 1"
-        className="rounded-2xl w-[80%] md:w-full h-full pt-[-50%] object-cover shadow-lg ml-auto"
+        className="rounded-2xl w-[100%] md:w-full h-full pt-[-50%] object-cover shadow-lg"
       />
     </div>
   </motion.div>
 
   {/* Right Image - appears below on mobile, overlaps on desktop */}
-  <motion.div
-    initial={{ opacity: 0, x: 30 }}
-    whileInView={{ opacity: 1, x: 0 }}
-    viewport={{ once: true }}
-    transition={{ duration: 0.7, delay: 0.2 }}
-    className="relative w-full md:w-auto order-2 md:-ml-24"
-  >
-    <div className="relative w-full md:w-[400px] h-[300px] md:h-[450px]">
-      <img 
-        src="/img2.jpg"
-        alt="Founder Image 2"
-        className="rounded-2xl w-[80%] md:w-full h-full object-cover shadow-lg"
-      />
-    </div>
-  </motion.div>
+  
 </div>
 
 
@@ -91,7 +79,7 @@ export default function MeetFounder() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="text-4xl md:text-4xl text-[#004aad]  tracking-wider mb-4 text-center font-semibold"
+          className="text-2xl md:text-3xl font-bold uppercase text-[#004aad]  tracking-wider mb-2 text-center "
         >
           Meet The Founder
         </motion.h2>
@@ -105,13 +93,13 @@ export default function MeetFounder() {
             transition={{ duration: 0.7, delay: 0.2 }}
             className="space-y-6 text-[#004aad]/70 leading-relaxed"
           >
-            <p className="text-sm">
+            <p className="md:text-lg text-md">
               Hi friends, I&apos;m Christy! I&apos;ve known that marketing was my passion for as long as I can remember, but my
               journey into becoming a creative started in college with a spontaneous desire to learn graphic design. I
               really leaned into the whole DIY thing and taught myself the ropes using YouTube tutorials and Google
               articles.
             </p>
-            <p className="text-sm">
+            <p className="md:text-lg text-md">
               From there, I took a detour into other creative marketing roles and eventually landed the title of Chief
               Marketing Officer at a prominent e-commerce jewelry brand. Wearing a multitude of hats, I managed every
               aspect of digital marketing from strategically selecting influencer partners to crafting standout
@@ -125,7 +113,7 @@ export default function MeetFounder() {
             transition={{ duration: 0.7 }}
             className="text-[#004aad]/70 leading-relaxed "
           >
-            <p className="text-sm">
+            <p className="md:text-lg text-md">
               Fast forward to now, I&apos;ve ditched corporate life to pursue my dream of founding my own agency! Seventh
               House Marketing is an embodiment of my digital marketing expertise and is driven by a genuine passion for
               helping brands achieve their goals.

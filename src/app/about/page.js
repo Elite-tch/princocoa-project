@@ -9,7 +9,7 @@ import TrustSection from "@/components/landingpage/trust"
 
 export default function AboutPage() {
   return (
-    <div className="min-h-screen bg-[#f2f6fb]">
+    <div className="min-h-screen ">
       
       <AboutHero />
         <MeetFounder />
