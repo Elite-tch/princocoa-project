@@ -49,7 +49,7 @@ export default function ServicesSection() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="text-4xl md:text-4xl text-white tracking-wider mb-4 text-center font-semibold"
+          className="text-xl md:text-3xl font-bold uppercase text-white tracking-wider mb-4 text-center "
         >
           Services
         </motion.h2>
@@ -65,7 +65,7 @@ export default function ServicesSection() {
           >
             {services.map((service, idx) => (
               <div key={idx} className="space-y-4">
-                <h3 className="text-3xl italic font-semibold pt-8 text-white border-b border-white pb-4 text-center">{service.category}</h3>
+                <h3 className="md:text-2xl text-xl italic font-semibold pt-8 text-white border-b border-white pb-4 text-center">{service.category}</h3>
                 <div className="space-y-2">
                   {service.items.map((item, itemIdx) => {
                     const key = `${service.category}-${itemIdx}`
@@ -77,7 +77,7 @@ export default function ServicesSection() {
                           onClick={() => toggleItem(service.category, itemIdx)}
                           className="w-full flex items-center justify-between py-3 text-left "
                         >
-                          <span className="text-xl italic text-white group-hover:text-[#39FF14]/80 transition-colors">
+                          <span className="md:text-xl text-md italic text-white group-hover:text-[#39FF14]/80 transition-colors">
                             {item.name}
                           </span>
                           <motion.div animate={{ rotate: isOpen ? 180 : 0 }} transition={{ duration: 0.3 }}>

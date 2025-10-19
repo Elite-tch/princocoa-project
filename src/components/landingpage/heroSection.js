@@ -6,7 +6,7 @@ import Image from "next/image"
 
 export default function HeroSection() {
   return (
-    <section className="pt-28 pb-8 md:pb-0 md:pr-6 bg-[#004aad]/5 ">
+    <section className="pt-28 pb-8 md:pb-0 md:pr-6 ">
       <div className="container mx-auto">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           {/* Left - Image */}

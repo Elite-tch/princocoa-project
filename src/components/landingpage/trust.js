@@ -21,7 +21,7 @@ export default function TrustSection() {
   ]
 
   return (
-    <section className="py-20 bg-[#f2f6fb]">
+    <section className="md:py-20 py-10 ">
       <div className="container mx-auto px-4">
         {/* Heading */}
        <motion.h2
@@ -29,7 +29,7 @@ export default function TrustSection() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.1 }}
-            className="text-4xl md:text-4xl text-[#004aad] tracking-wider mb-12 text-center font-semibold"
+            className="text-xl md:text-3xl font-bold uppercase text-[#004aad] tracking-wider mb-12 text-center"
           >
            They Trust Us
           </motion.h2>
