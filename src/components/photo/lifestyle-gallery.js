@@ -27,7 +27,7 @@ export default function LifestyleGallery() {
           Lifestyle Photography Projects
         </motion.h2>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-2 md:gap-4">
           {lifestylePhotos.map((photo, index) => (
             <motion.div
               key={index}
@@ -35,7 +35,7 @@ export default function LifestyleGallery() {
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: false }}
               transition={{ duration: 0.4, delay: index * 0.05 }}
-              className=" relative md:aspect-[9/11] aspect-[9/10]  overflow-hidden rounded-lg group cursor-pointer"
+              className=" relative md:aspect-[9/11] aspect-[9/10]  overflow-hidden  group cursor-pointer"
             >
               <Image
                 src={photo || "/placeholder.svg"}

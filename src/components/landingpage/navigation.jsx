@@ -138,9 +138,11 @@ export default function Navigation() {
                 </div>
 
                 {/* Mobile CTA Button */}
+                <Link href="/contact">
                  <Button size='lg' className="bg-pink-600 rounded-full hover:bg-pink-700 w-fit font-semibold px-6 sm:px-6 text-xs">
                 CONTACT US
               </Button>
+              </Link>
               </div>
             </motion.div>
           </>

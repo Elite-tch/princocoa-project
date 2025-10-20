@@ -22,7 +22,7 @@ export default function BrandIdentityGallery() {
   return (
     <section className=" md:pt-8 pt-6 md:pb-8 pb-14 md:px-6">
       <div className="max-w-7xl mx-auto w-[90%] md:w-[95%] ">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-2 md:gap-4">
           {professionalPhotos.map((photo, index) => (
             <motion.div
               key={index}
@@ -30,7 +30,7 @@ export default function BrandIdentityGallery() {
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
               transition={{ duration: 0.4, delay: index * 0.05 }}
-              className="md:aspect-[9/11] aspect-[9/10] relative  overflow-hidden rounded-lg group cursor-pointer"
+              className="md:aspect-[9/11] aspect-[9/10] relative  overflow-hidden  group cursor-pointer"
             >
               <Image
                 src={photo || "/placeholder.svg"}

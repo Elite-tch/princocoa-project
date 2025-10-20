@@ -17,7 +17,7 @@ export default function WebDesign() {
   return (
     <section className="pb-10 pt-4 md:px-6 ">
       <div className="max-w-7xl mx-auto w-[90%] md:w-[95%] ">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-2 md:grid-cols-2  gap-2 md:gap-4">
           {videos.map((video, index) => (
             <motion.div
               key={index}
@@ -27,7 +27,7 @@ export default function WebDesign() {
               transition={{ duration: 0.5, delay: index * 0.05 }}
               className=""
             >
-              <div className="relative md:aspect-[9/11] aspect-[9/10]  rounded-lg overflow-hidden mb-3">
+              <div className="relative md:aspect-[9/11] aspect-[9/10]   overflow-hidden mb-3">
              <Image
           fill
           src={video.thumbnail || "/placeholder.svg"}

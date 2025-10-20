@@ -31,7 +31,7 @@ export default function ProfessionalGallery() {
           Professional Photography Projects
         </motion.h2>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-2 md:gap-4">
           {professionalPhotos.map((photo, index) => (
             <motion.div
               key={index}
@@ -39,7 +39,7 @@ export default function ProfessionalGallery() {
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
               transition={{ duration: 0.4, delay: index * 0.05 }}
-              className="md:aspect-[9/11] aspect-[9/10] relative  overflow-hidden rounded-lg group cursor-pointer"
+              className="md:aspect-[9/11] aspect-[9/10] relative  overflow-hidden group cursor-pointer"
             >
               <Image
                 src={photo || "/placeholder.svg"}
