@@ -45,7 +45,7 @@ export default function Navigation() {
   className={`text-md font-medium transition-colors pb-2 ${
     activeLink === item.href
       ? "text-pink-600 border-b-2 border-pink-600"
-      : "text-[#004aad] hover:text-primary"
+      : "text-gray-700 hover:text-pink-600"
   }`}
 >
   {item.label}
@@ -123,7 +123,7 @@ export default function Navigation() {
                       className={`text-md font-medium   transition-colors pb-2 ${
                         activeLink === item.href
                           ? "text-pink-600 border-b-2 border-pink-600"
-                          : "text-[#004aad] hover:text-primary"
+                          : "text-gray-700 hover:text-primary"
                       }`}
                       whileTap={{ scale: 0.95 }}
                     >
@@ -159,7 +159,7 @@ function NavLink({ href, children, isActive, onClick }) {
       href={href}
       onClick={onClick}
       className={`text-sm font-medium transition-colors pb-1 relative ${
-        isActive ? "text-primary" : "text-foreground hover:text-primary"
+        isActive ? "text-primary" : "text-foreground hover:text-pink-600"
       }`}
     >
       {children}
@@ -182,7 +182,7 @@ function SocialIcons() {
         whileHover={{ scale: 1.1, rotate: 5 }}
         whileTap={{ scale: 0.95 }}
         href="#"
-        className="text-[#004aad] transition-colors"
+        className="text-gray-700 hover:text-pink-600 transition-colors"
       >
         <Instagram className="w-5 h-5" />
       </motion.a>
@@ -190,7 +190,7 @@ function SocialIcons() {
         whileHover={{ scale: 1.1, rotate: -5 }}
         whileTap={{ scale: 0.95 }}
         href="#"
-        className="text-[#004aad] transition-colors"
+        className="text-gray-700 hover:text-pink-600 transition-colors"
       >
         <Linkedin className="w-5 h-5" />
       </motion.a>
@@ -198,7 +198,7 @@ function SocialIcons() {
         whileHover={{ scale: 1.1, rotate: 5 }}
         whileTap={{ scale: 0.95 }}
         href="#"
-        className="text-[#004aad] transition-colors"
+        className="text-gray-700 hover:text-pink-600 transition-colors"
       >
         <Music className="w-5 h-5" />
       </motion.a>

@@ -4,7 +4,7 @@ import NewsletterSection from "@/components/about/newsletter-section"
 
 export default function ContactUsPage() {
   return (
-    <div className="min-h-screen bg-[#F5F1E8]">
+    <div className="min-h-screen ">
       
       <ContactHero />
         <ContactForm />

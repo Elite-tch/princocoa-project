@@ -1,28 +1,33 @@
 "use client"
 
 import { motion } from "framer-motion"
+import Image from "next/image"
 
 export default function ContactHero() {
   return (
-    <section className="pt-20 px-6">
-      <div className="max-w-7xl mt-[10%] mx-auto text-center">
+    <section className="relative  h-[70vh] md:h-screen max-h-[800px] w-full overflow-hidden">
+      {/* Background Image */}
+      <div className="absolute inset-0 mt-[35%] md:mt-[10%]">
+        <Image
+          src="/img.jpg"
+          alt="Creative marketing agency based in Chicago"
+          fill
+          className=" object-cover object-center"
+          priority
+        />
+        <div className="absolute inset-0 bg-black/40" />
+      </div>
+
+      {/* Content */}
+      <div className="relative z-10 h-full pt-[50%]  md:pt-[35%] px-10 md:px-28 ">
         <motion.h1
-          initial={{ opacity: 0, y: 20 }}
+          initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-          className="font-serif text-4xl md:text-4xl text-gray-800"
+          transition={{ duration: 0.8, ease: "easeOut" }}
+          className="font-poppins text-4xl font-sembold md:text-4xl lg:text-6xl text-right text-white md:text-left"
         >
           Contact Us
         </motion.h1>
-        <motion.p
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.1 }}
-          className="text-gray-700 "
-        >
-          Fill out the form below and we will be in touch with you as soon as possible!
-        </motion.p>
-        
       </div>
     </section>
   )

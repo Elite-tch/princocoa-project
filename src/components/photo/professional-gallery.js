@@ -26,7 +26,7 @@ export default function ProfessionalGallery() {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="font-poppins text-xl md:text-3xl font-bold uppercase text-center text-[#004aad] mb-6 md:mb-10"
+          className="font-poppins text-xl md:text-3xl font-bold uppercase text-center text-gray-700 mb-6 md:mb-10"
         >
           Professional Photography Projects
         </motion.h2>

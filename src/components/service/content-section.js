@@ -50,11 +50,11 @@ export default function ConsultingSection() {
         transition={{ duration: 0.6 }}
         className="max-w-7xl mx-auto"
       >
-        <h2 className="text-xl md:text-3xl font-bold uppercase text-[#004aad]  tracking-wider mb-2 text-center ">
+        <h2 className="text-xl md:text-3xl font-bold uppercase text-gray-700  tracking-wider mb-2 text-center ">
         Content Creation
         </h2>
 
-        <p className="text-center md:text-lg text-md text-[#004aad]/70 max-w-2xl mx-auto mb-10">
+        <p className="text-center md:text-lg text-md text-gray-600 max-w-2xl mx-auto mb-10">
           We create high-quality visuals and videos that tell your brand story in the most authentic way.
         </p>
 
@@ -78,7 +78,7 @@ export default function ConsultingSection() {
               </div>
 
               <div className="p-6">
-                <h3 className="font-serif text-2xl mb-4 text-[#004aad]">
+                <h3 className="font-serif text-2xl mb-4 text-gray-700">
                   {service.title}
                 </h3>
 
@@ -89,9 +89,9 @@ export default function ConsultingSection() {
                   }
                   className="w-full flex items-center justify-between py-3 border-t border-gray-200 text-left"
                 >
-                  <span className="text-[#004aad]/70">{service.heading}</span>
+                  <span className="text-gray-600">{service.heading}</span>
                   <ChevronDown
-                    className={`w-5 h-5 text-[#004aad]/70 transition-transform ${
+                    className={`w-5 h-5 text-gray-600 transition-transform ${
                       openDropdown === `entails-${index}` ? "rotate-180" : ""
                     }`}
                   />
@@ -101,7 +101,7 @@ export default function ConsultingSection() {
                   <motion.div
                     initial={{ height: 0, opacity: 0 }}
                     animate={{ height: "auto", opacity: 1 }}
-                    className="py-3 text-[#004aad]/70 text-sm"
+                    className="py-3 text-gray-600 text-sm"
                   >
                     {service.entails}
                   </motion.div>
@@ -114,9 +114,9 @@ export default function ConsultingSection() {
                   }
                   className="w-full flex items-center justify-between py-3 border-t border-gray-200 text-left"
                 >
-                  <span className="text-[#004aad]/70">{service.heading2}</span>
+                  <span className="text-gray-600">{service.heading2}</span>
                   <ChevronDown
-                    className={`w-5 h-5 text-[#004aad]/70 transition-transform ${
+                    className={`w-5 h-5 text-gray-600 transition-transform ${
                       openDropdown === `bestFor-${index}` ? "rotate-180" : ""
                     }`}
                   />
@@ -126,7 +126,7 @@ export default function ConsultingSection() {
                   <motion.div
                     initial={{ height: 0, opacity: 0 }}
                     animate={{ height: "auto", opacity: 1 }}
-                    className="py-3 text-[#004aad]/70 text-sm"
+                    className="py-3 text-gray-600 text-sm"
                   >
                     {service.bestFor}
                   </motion.div>

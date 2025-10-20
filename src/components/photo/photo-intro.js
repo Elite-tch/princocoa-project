@@ -10,7 +10,7 @@ export default function PhotoExamplesIntro() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          className="font-poppins text-4xl md:text-4xl text-[#004aad] mb-12"
+          className="font-poppins text-4xl md:text-4xl text-gray-700 mb-12"
         >
           We offer <span className="italic">different</span> kinds of photography: Professional and Lifestyle
         </motion.h1>
@@ -19,10 +19,10 @@ export default function PhotoExamplesIntro() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.2 }}
-          className="bg-white p-8 rounded-lg shadow-sm"
+          className="bg-pink-600 p-8 rounded-lg shadow-sm"
         >
-          <h2 className="font-bold text-xl mb-4 text-[#004aad]">WHAT&apos;S THE DIFFERENCE?</h2>
-          <p className="text-[#004aad]/70 leading-relaxed">
+          <h2 className="font-bold text-xl mb-4 text-gray-100">WHAT&apos;S THE DIFFERENCE?</h2>
+          <p className="text-gray-200 leading-relaxed">
   Our professional photos deliver a <strong>studio-inspired look</strong>, shot with high-end equipment for sharp and polished visuals. In contrast, our lifestyle photos, often captured on an iPhone, highlight your product in <strong>everyday settings</strong>, creating a genuine and relatable feel. While each style serves a unique purpose, we’ve found that a <em>blend of both</em> gives the most balanced and effective results for our clients.
 </p>
 

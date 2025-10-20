@@ -10,7 +10,7 @@ export default function InteriorDesignHero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          className="text-xl md:text-3xl font-bold uppercase text-[#004aad] "
+          className="text-xl md:text-3xl font-bold uppercase text-gray-700 "
         >
        Interior Architectural Design Projects
         </motion.h1>

@@ -37,7 +37,7 @@ export default function MeetFounder() {
         <motion.img 
           src="/img2.jpg"
           alt="Background"
-          className="absolute right-0 rounded-2xl top-[59%] md:top-[20%] h-[300px] md:h-[300px] w-[22%] object-cover  pointer-events-none select-none"
+          className="absolute right-0 rounded-2xl top-[59%] md:top-[45%] h-[300px] md:h-[300px] w-[22%] object-cover  pointer-events-none select-none"
         />
       </div>
           </motion.div>
@@ -79,7 +79,7 @@ export default function MeetFounder() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="text-2xl md:text-3xl font-bold uppercase text-[#004aad]  tracking-wider mb-2 text-center "
+          className="text-2xl md:text-3xl font-bold uppercase text-gray-700  tracking-wider mb-2 text-center "
         >
           Meet The Founder
         </motion.h2>
@@ -91,7 +91,7 @@ export default function MeetFounder() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.7, delay: 0.2 }}
-            className="space-y-6 text-[#004aad]/70 leading-relaxed"
+            className="space-y-6 text-gray-600 leading-relaxed"
           >
             <p className="md:text-lg text-md">
               Hi friends, I&apos;m Christy! I&apos;ve known that marketing was my passion for as long as I can remember, but my
@@ -111,7 +111,7 @@ export default function MeetFounder() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.7 }}
-            className="text-[#004aad]/70 leading-relaxed "
+            className="text-gray-600 leading-relaxed "
           >
             <p className="md:text-lg text-md">
               Fast forward to now, I&apos;ve ditched corporate life to pursue my dream of founding my own agency! Seventh

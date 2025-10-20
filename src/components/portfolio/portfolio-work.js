@@ -55,7 +55,7 @@ export default function PortfolioWork() {
                 <Image src={category.image || "/placeholder.svg"} alt={category.title} fill className="object-cover" />
               </div>
 
-              <h2 className="font-serif text-xl mb-2 text-[#004aad]">{category.title}</h2>
+              <h2 className="font-serif text-xl mb-2 text-gray-600">{category.title}</h2>
 
               <Link
                 href={category.link}

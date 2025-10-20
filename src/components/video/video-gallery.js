@@ -26,7 +26,7 @@ export default function VideoGallery() {
   return (
     <section className="pb-10 md:px-6 ">
       <div className="max-w-7xl mx-auto w-[90%] md:w-[95%] ">
-        <div className="grid grid-cols-2 md:grid-cols-2 gap-2 md:gap-4">
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-2 md:gap-4">
           {videos.map((video, index) => (
             <motion.div
               key={index}
@@ -48,8 +48,8 @@ export default function VideoGallery() {
 
                 
               </div>
-              <h3 className="font-serif text-lg text-[#004aad]">{video.title}</h3>
-              <p className="text-sm text-[#004aad]">{video.subtitle}</p>
+              <h3 className="font-serif text-lg text-gray-700 ">{video.title}</h3>
+              <p className="text-sm text-gray-600">{video.subtitle}</p>
             </motion.div>
           ))}
         </div>

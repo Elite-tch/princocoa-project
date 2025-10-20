@@ -3,6 +3,7 @@
 import { motion } from "framer-motion"
 import { Button } from "@/components/ui/button"
 import Image from "next/image"
+import Link from "next/link"
 
 export default function HeroSection() {
   return (
@@ -27,22 +28,22 @@ export default function HeroSection() {
             className="md:space-y-8 space-y-4"
           >
             <motion.h1
-              className="text-4xl md:text-6xl text-[#004aad]  text-center  font-ligt  font-serif leading-tight text-balance"
+              className="text-4xl md:text-6xl text-gray-700  text-center  font-ligt  font-serif leading-tight text-balance"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.4 }}
             >
-              We&apos;re <span className="italic  font-serif text-[#004aad]/80">creatives</span> at heart driven by{" "}
-              <span className="italic font-serif text-pink-600">purposeful</span> strategy
+              We&apos;re <span className="italic  font-serif text-black">creating</span> solutions that{" "}
+              <span className="italic font-serif text-pink-600">elevate</span> your brand
             </motion.h1>
 
             <motion.p
-              className="text-lg text-[#004aad] text-center mx-auto w-[80%] leading-relaxed"
+              className="text-lg text-gray-600 text-center mx-auto w-[80%] leading-relaxed"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.6 }}
             >
-              A marketing agency helping brands craft campaigns that turn heads and drive results
+              From brand identity and content creation to interior design and web experiences, we blend creativity with strategy to make your brand stand out.
             </motion.p>
 
             <motion.div
@@ -51,16 +52,20 @@ export default function HeroSection() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.8 }}
             >
+              <Link href='/contact'> 
               <Button size="lg" className="bg-pink-600 md:text-base text-xs rounded-full text-primary-foreground hover:bg-pink-700 font-semibold md:px-8 px-4">
                 WORK WITH US
               </Button>
+              </Link>
+              <Link href='/service'>
               <Button
                 size="lg"
                 variant="outline" 
                 className="border-pink-600 rounded-full text-pink-600 md:text-base text-xs hover:bg-pink-600 hover:text-primary-foreground font-semibold md:px-8 px-4 bg-transparent"
               >
-                LEARN FROM US
+                LEARN MORE
               </Button>
+              </Link>
             </motion.div>
           </motion.div>
         </div>

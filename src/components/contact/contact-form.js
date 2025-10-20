@@ -27,9 +27,17 @@ export default function ContactForm() {
   }
 
   return (
-    <section className="py-16 px-6">
+    <section className="pb-16 pt-8 px-6">
       <div className="max-w-7xl mx-auto w-[90%]">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+        <motion.p
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.1 }}
+          className="text-gray-700 text-center "
+        >
+          Fill out the form below and we will be in touch with you as soon as possible!
+        </motion.p>
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 pt-[6%] md:pt-[3%] items-start">
           {/* Form */}
           <motion.form
             initial={{ opacity: 0, x: -20 }}
@@ -86,7 +94,7 @@ export default function ContactForm() {
               <label className="block text-gray-800 font-semibold mb-3">
                 Service(s) needed <span className="text-red-500">*</span>
               </label>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+              <div className="grid grid-cols-2 md:grid-cols-2 gap-3">
                 {[
                   "Batch Content Creation",
                   "Event Content Creation",
@@ -127,7 +135,7 @@ export default function ContactForm() {
 
             <Button
               type="submit"
-              className="bg-[#5B7C6C] hover:bg-[#4a6557] text-white px-8 py-3 rounded-full font-semibold"
+              className="bg-pink-600 hover:bg-pink-700 text-white px-8 py-3 rounded-full font-semibold"
             >
               SUBMIT
             </Button>

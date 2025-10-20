@@ -17,7 +17,7 @@ export default function NewsletterSection() {
   }
 
   return (
-    <section className="bg-pink-100 py-10 md:py-20">
+    <section className="bg-pink-600 py-10 md:py-20">
       <div className="container mx-auto px-2 md:px-12 max-w-[90%]">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -27,10 +27,10 @@ export default function NewsletterSection() {
           className="text-center"
         >
           {/* Title */}
-          <h2 className="text-2xl md:text-3xl font-bold uppercase text-[#004aad] mb-2">House Headlines Newsletter</h2>
+          <h2 className="text-2xl md:text-3xl font-bold uppercase text-gray-100  mb-2">House Headlines Newsletter</h2>
 
           {/* Description */}
-          <p className="text-[#004aad]/70 md:text-lg text-md leading-relaxed mb-10 max-w-2xl mx-auto">
+          <p className="text-gray-200  md:text-lg text-md leading-relaxed mb-10 max-w-2xl mx-auto">
             Get FREE marketing tips, social media hacks, the latest on industry trends, and more delivered straight to
             your inbox!
           </p>
@@ -51,7 +51,7 @@ export default function NewsletterSection() {
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               required
-              className="flex-1 bg-white border-white/20 text-white placeholder:text-gray-400 h-12 px-6 rounded-full focus:border-[#39FF14] focus:ring-[#39FF14]"
+              className="flex-1 bg-white  text-white placeholder:text-gray-400 h-12 px-6 rounded-full border-[#39FF14] focus:ring-[#39FF14]"
             />
             <Input
               type="name"
@@ -59,7 +59,7 @@ export default function NewsletterSection() {
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               required
-              className="flex-1 bg-white border-white/20 text-white placeholder:text-gray-400 h-12 px-6 rounded-full focus:border-[#39FF14] focus:ring-[#39FF14]"
+              className="flex-1 bg-white  text-white placeholder:text-gray-400 h-12 px-6 rounded-full border-[#39FF14] focus:ring-[#39FF14]"
             />
             <Input
               type="email"
@@ -67,7 +67,7 @@ export default function NewsletterSection() {
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               required
-              className="flex-1 bg-white border-white/20 text-white placeholder:text-gray-400 h-12 px-6 rounded-full focus:border-[#39FF14] focus:ring-[#39FF14]"
+              className="flex-1 bg-white  text-white placeholder:text-gray-400 h-12 px-6 rounded-full border-[#39FF14] focus:ring-[#39FF14]"
             />
 
 
@@ -75,7 +75,7 @@ export default function NewsletterSection() {
             </div>
             <Button
               type="submit"
-              className="bg-pink-600 mt-6 hover:bg-[#FF1493]/90 text-white px-8 h-12 rounded-full font-semibold transition-all duration-300 hover:scale-105 hover:shadow-[0_0_30px_rgba(255,20,147,0.5)]"
+              className="bg-[#39FF14] mt-6 hover:bg-[#39FF14]/90 text-white px-8 h-12 rounded-full font-semibold transition-all duration-300 hover:scale-105 hover:shadow-[0_0_30px_rgba(255,20,147,0.5)]"
             >
               Subscribe
             </Button>

@@ -127,7 +127,7 @@ export default function ProcessSection() {
     <section ref={ref} className="md:py-20 py-10  overflow-hidden">
       <div className="container mx-auto px-4 lg:px-6">
         
-      <h2 className="text-xl md:text-3xl text-[#004aad] font-bold uppercase text-center mb-8">Our Process</h2>
+      <h2 className="text-xl md:text-3xl text-gray-700 font-bold uppercase text-center mb-8">Our Process</h2>
         {/* Carousel Container */}
         <motion.div
           initial={{ opacity: 0, y: 50 }}
@@ -168,8 +168,8 @@ export default function ProcessSection() {
                     />
                      </div>
                      <div>
-                        <h3 className="mt-4 text-xl font-semibold  text-[#004aad]">{image.title}</h3>
-                        <p className="mt-0 text-[#004aad]/70 w-[90%]">{image.description}</p>
+                        <h3 className="mt-4 text-xl font-semibold  text-gray-700">{image.title}</h3>
+                        <p className="mt-0 text-gray-600 w-[90%]">{image.description}</p>
                      </div>
                 </div>
               ))}
@@ -182,7 +182,7 @@ export default function ProcessSection() {
             className="absolute left-4  top-1/2 -translate-y-1/2 bg-white/90 hover:bg-white backdrop-blur-sm p-3 rounded-full shadow-lg transition-all duration-300 hover:scale-110 z-10"
             aria-label="Previous images"
           >
-            <ChevronLeft className="w-6 h-6 text-gray-700" />
+            <ChevronLeft className="w-6 h-6 text-gray-600" />
           </button>
 
           <button
@@ -190,7 +190,7 @@ export default function ProcessSection() {
             className="absolute right-4  top-1/2 -translate-y-1/2 bg-white/90 hover:bg-white backdrop-blur-sm p-3 rounded-full shadow-lg transition-all duration-300 hover:scale-110 z-10"
             aria-label="Next images"
           >
-            <ChevronRight className="w-6 h-6 text-gray-700" />
+            <ChevronRight className="w-6 h-6 text-gray-600" />
           </button>
 
           {/* Play/Pause Button */}
@@ -228,9 +228,9 @@ export default function ProcessSection() {
           initial={{ opacity: 0, y: 30 }}
           animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
           transition={{ duration: 0.8, delay: 0.8 }}
-          className="flex justify-center mt-8 md:mt-16 pt-6 md:pt-10 border-t-2 border-[#004aad] space-x-2 overflow-x-auto md:pb-2"
+          className="flex justify-center mt-8 md:mt-16 pt-6 md:pt-10 border-t-2 border-gray-700 space-x-2 overflow-x-auto md:pb-2"
         >
-           <h2 className="text-xl md:text-3xl font-bold text-[#004aad] uppercase text-center mb-8 md:w-[30%] leading-tight">Ready to Level Up
+           <h2 className="text-xl md:text-3xl font-bold text-gray-600 uppercase text-center mb-8 md:w-[30%] leading-tight">Ready to Level Up
 Your Brand?</h2>
         </motion.div> 
 

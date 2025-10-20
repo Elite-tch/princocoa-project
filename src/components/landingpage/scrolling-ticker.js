@@ -3,8 +3,11 @@
 import { motion } from "framer-motion"
 
 export default function ScrollingTicker() {
-  const text = "WHISPERERS - THE MILLENNIAL & GEN Z "
-  const repeatedText = Array(20).fill(text).join("")
+  const text = ["Social media consultations ", 'Brand identity design',
+    'Interior design', 'Website design',' Content creation', 'Custom artwork'
+    , 'Photo', 'Video   •',
+  ]
+  const repeatedText = Array(8).fill(text.join(" • ")).join(" ")
 
   return (
     <div className="bg-[#39FF14] z-50 py-4 overflow-hidden">
@@ -17,7 +20,7 @@ export default function ScrollingTicker() {
         }}
         className="flex whitespace-nowrap"
       >
-        <span className="text-secondary-foreground font-semibold text-sm tracking-wider">{repeatedText}</span>
+        <span className="text-secondary-foreground  capitalize font-semibold text-sm tracking-wider">{repeatedText}</span>
       </motion.div>
     </div>
   )
