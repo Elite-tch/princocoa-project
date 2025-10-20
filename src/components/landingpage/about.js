@@ -45,8 +45,8 @@ creative challenge with innovation and style.
             className="mt-8"
           >
             <Link
-              href="/academy"
-              className="inline-block bg-pink-600 text-white px-8 py-3 rounded-full font-semibold hover:bg-[#0056b3] transition-colors"
+              href="/contact"
+              className="inline-block bg-pink-600 text-white px-8 py-3 rounded-full font-semibold hover:bg-pink-700 transition-colors"
             >
               Contact us
             </Link>
@@ -59,7 +59,7 @@ creative challenge with innovation and style.
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.4 }}
-              className="group cursor-pointer w-[400px] md:w-[600px] h-[300px] md:h-[400px]"
+              className="group cursor-pointer w-[300px] md:w-[600px] h-[300px] md:h-[400px]"
             >
               <div className="relative overflow-hidden rounded-2xl w-full  h-full">
                 <Image

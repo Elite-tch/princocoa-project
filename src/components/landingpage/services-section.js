@@ -5,6 +5,7 @@ import { useState } from "react"
 import { ChevronDown } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import Image from "next/image"
+import Link from "next/link"
 
 const services = [
   {
@@ -99,9 +100,11 @@ export default function ServicesSection() {
               </div>
             ))}
 <div className="flex justify-center">
+  <Link href='/service'>
             <Button size='lg' className="bg-[#39FF14]/80 hover:bg-[#39FF14]/90 font-semibold py-3 md:py-4 px-8 mt-8">
               SEE ALL SERVICES
             </Button>
+            </Link>
 </div>
           </motion.div>
 

@@ -1,13 +1,14 @@
 "use client"
 import Link from "next/link"
-import { useState } from "react"
+import { usePathname } from "next/navigation"
+import { useState, useEffect } from "react"
 import { motion, AnimatePresence } from "framer-motion"
 import { Instagram, Linkedin, Music, Menu, X } from "lucide-react"
 import { Button } from "@/components/ui/button"
 
 export default function Navigation() {
   const [isOpen, setIsOpen] = useState(false)
-  const [activeLink, setActiveLink] = useState("/")
+  const pathname = usePathname()
 
   const toggleMenu = () => setIsOpen(!isOpen)
 
@@ -16,8 +17,6 @@ export default function Navigation() {
     { href: "/about", label: "About" },
     { href: "/service", label: "Services" },
     { href: "/portfolio", label: "Portfolio" },
-   
-   
   ]
 
   return (
@@ -26,7 +25,7 @@ export default function Navigation() {
         initial={{ y: -100, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.6, ease: "easeOut" }}
-        className="fixed top-12 text-[#FF1493] py-2  left-0 right-0 z-40 bg-[#FFF8E7] border-b border-[#004aad]"
+        className="fixed top-12 text-[#FF1493] py-2 left-0 right-0 z-40 bg-[#FFF8E7] border-b border-[#004aad]"
       >
         <div className="container mx-auto px-4 sm:px-6 py-4">
           <div className="flex items-center justify-between">
@@ -39,18 +38,16 @@ export default function Navigation() {
             <div className="hidden lg:flex items-center gap-8">
               {navItems.map((item) => (
                 <Link
-  key={item.href}
-  href={item.href}
-  onClick={() => setActiveLink(item.href)}
-  className={`text-md font-medium transition-colors pb-2 ${
-    activeLink === item.href
-      ? "text-pink-600 border-b-2 border-pink-600"
-      : "text-gray-700 hover:text-pink-600"
-  }`}
->
-  {item.label}
-</Link>
-
+                  key={item.href}
+                  href={item.href}
+                  className={`text-md font-medium transition-colors pb-2 ${
+                    pathname === item.href
+                      ? "text-pink-600 border-b-2 border-pink-600"
+                      : "text-gray-700 hover:text-pink-600"
+                  }`}
+                >
+                  {item.label}
+                </Link>
               ))}
             </div>
 
@@ -58,10 +55,10 @@ export default function Navigation() {
             <div className="hidden md:flex items-center gap-4">
               <SocialIcons />
               <Link href="/contact">
-              <Button size='lg' className="bg-pink-600 rounded-full hover:bg-pink-700 font-semibold px-4 sm:px-6 text-xs">
-                CONTACT US
-              </Button>
-            </Link>
+                <Button size='lg' className="bg-pink-600 rounded-full hover:bg-pink-700 font-semibold px-4 sm:px-6 text-xs">
+                  CONTACT US
+                </Button>
+              </Link>
             </div>
 
             {/* Mobile Menu Button */}
@@ -113,22 +110,18 @@ export default function Navigation() {
                 {/* Mobile Navigation Links */}
                 <div className="flex flex-col gap-6 mb-8">
                   {navItems.map((item) => (
-                    <motion.a
+                    <Link
                       key={item.href}
                       href={item.href}
-                      onClick={() => {
-                        setActiveLink(item.href)
-                        toggleMenu()
-                      }}
-                      className={`text-md font-medium   transition-colors pb-2 ${
-                        activeLink === item.href
+                      onClick={toggleMenu}
+                      className={`text-md font-medium transition-colors pb-2 ${
+                        pathname === item.href
                           ? "text-pink-600 border-b-2 border-pink-600"
                           : "text-gray-700 hover:text-primary"
                       }`}
-                      whileTap={{ scale: 0.95 }}
                     >
                       {item.label}
-                    </motion.a>
+                    </Link>
                   ))}
                 </div>
 
@@ -139,10 +132,10 @@ export default function Navigation() {
 
                 {/* Mobile CTA Button */}
                 <Link href="/contact">
-                 <Button size='lg' className="bg-pink-600 rounded-full hover:bg-pink-700 w-fit font-semibold px-6 sm:px-6 text-xs">
-                CONTACT US
-              </Button>
-              </Link>
+                  <Button size='lg' className="bg-pink-600 rounded-full hover:bg-pink-700 w-fit font-semibold px-6 sm:px-6 text-xs">
+                    CONTACT US
+                  </Button>
+                </Link>
               </div>
             </motion.div>
           </>
