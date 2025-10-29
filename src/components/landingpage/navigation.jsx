@@ -40,7 +40,7 @@ export default function Navigation() {
                 <Link
                   key={item.href}
                   href={item.href}
-                  className={`text-md font-medium transition-colors pb-2 ${
+                  className={`text-lg font-medium transition-colors pb-2 ${
                     pathname === item.href
                       ? "text-pink-600 border-b-2 border-pink-600"
                       : "text-gray-700 hover:text-pink-600"
@@ -114,7 +114,7 @@ export default function Navigation() {
                       key={item.href}
                       href={item.href}
                       onClick={toggleMenu}
-                      className={`text-md font-medium transition-colors pb-2 ${
+                      className={`text-lg font-medium transition-colors pb-2 ${
                         pathname === item.href
                           ? "text-pink-600 border-b-2 border-pink-600"
                           : "text-gray-700 hover:text-primary"

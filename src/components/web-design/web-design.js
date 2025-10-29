@@ -5,10 +5,10 @@ import { Play } from "lucide-react"
 import Link from "next/link"
 
 const videos = [
-  { title: "Product Launch", href: "/", thumbnail: "/img.jpg" },
-  { title: "Jewelry Brand", href: "/", thumbnail: "/video-thumb-jewelry.jpg" },
-  { title: "Clothing Brand", href: "/", thumbnail: "/video-thumb-clothing.jpg" },
-  { title: "Pilates Studio", href: "/", thumbnail: "/video-thumb-pilates.jpg" },
+  { title: "Product Launch", href: "/", thumbnail: "https://res.cloudinary.com/dibwnfwk9/image/upload/v1761766563/p_rhkmyx.png" },
+  { title: "Jewelry Brand", href: "/", thumbnail: "https://res.cloudinary.com/dibwnfwk9/image/upload/v1761738821/D2FD4155-7C28-42CF-A864-7D5A622EE525_L0_001-06_01_2025_16_44_42_xvekdw.png" },
+  { title: "Clothing Brand", href: "/", thumbnail: "https://res.cloudinary.com/dibwnfwk9/image/upload/v1761738809/040E28D4-D1C3-4F65-B612-DEF1E0DAFE11_L0_001-06_01_2025_16_44_15_ovfbre.png" },
+  { title: "Pilates Studio", href: "/", thumbnail: "https://res.cloudinary.com/dibwnfwk9/image/upload/v1761738961/WEB_DESIGN_vip8te.jpg" },
   { title: "Wellness Community", href: "/", thumbnail: "/video-thumb-wellness.jpg" },
   { title: "Baby Product", href: "/", thumbnail: "/video-thumb-baby.jpg" },
  ]
@@ -27,12 +27,12 @@ export default function WebDesign() {
               transition={{ duration: 0.5, delay: index * 0.05 }}
               className=""
             >
-              <div className="relative md:aspect-[9/11] aspect-[9/10]   overflow-hidden mb-3">
+              <div className="relative md:aspect-[9/7] aspect-[9/10]   overflow-hidde mb-3">
              <Image
           fill
           src={video.thumbnail || "/placeholder.svg"}
           alt={video.title}
-          className="w-full h-full object-cover"
+          className="w-full h-full  object-fill"
         />
 
                 

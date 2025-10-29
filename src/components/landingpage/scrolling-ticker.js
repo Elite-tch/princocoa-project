@@ -20,7 +20,7 @@ export default function ScrollingTicker() {
         }}
         className="flex whitespace-nowrap"
       >
-        <span className="text-secondary-foreground  capitalize font-semibold text-md tracking-wider">{repeatedText}</span>
+        <span className="text-secondary-foreground  capitalize font-semibold text-lg tracking-wider">{repeatedText}</span>
       </motion.div>
     </div>
   )

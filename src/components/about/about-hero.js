@@ -9,7 +9,7 @@ export default function AboutHero() {
       {/* Background Image */}
       <div className="absolute inset-0 mt-[35%] md:mt-[10%]">
         <Image
-          src="/img.jpg"
+          src="https://res.cloudinary.com/dibwnfwk9/image/upload/v1761743075/12E1805F-9E4E-4474-9CDE-059EF2810718_L0_001-16_05_2023_04_19_47_qpp6ng.jpg"
           alt="Creative marketing agency based in Chicago"
           fill
           className=" object-cover object-center"

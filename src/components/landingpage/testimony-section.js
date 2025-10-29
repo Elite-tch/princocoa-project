@@ -5,6 +5,7 @@ import { useState, useEffect } from "react"
 import { ChevronLeft, ChevronRight } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import Image from "next/image"
+import Link from "next/link"
 
 const testimonials = [
   {
@@ -12,28 +13,32 @@ const testimonials = [
     text: "I had the opportunity to work with Princocoa Studios on…production for my brand and I was delighted with the outcome. Their professionalism, creativity and advise was invaluable. Equally important they created an enjoyable experience for the participants who will now be happy to work with us in future.",
     author: "Jill Morehouse",
     handle: "@fabfitfun",
-    img: "/img.jpg",
+    img: "https://res.cloudinary.com/dibwnfwk9/image/upload/v1761739857/orilifestyle_ewnqtb.jpg",
+    href: '/ '
   },
   {
     company: "Core Chicago Pilates",
     text: "Concise, innovative, fresh & prompt! could not be happier with the efficiency and professionalism of Princocoa Studios. They helped me grow my page from 1000 - over 4000 followers, They literally follow me everywhere, creating reels, coming up with new concepts for my tiktok and instagram, i could not be more grateful for them.",
     author: "Holly Vicars",
     handle: "@corechicagopilates",
-    img: "/img.jpg",
+    img: "https://res.cloudinary.com/dibwnfwk9/image/upload/v1761739857/chef_sia_nkowdl.jpg",
+     href: '/ '
   },
   {
     company: "Inkbox",
     text: "It's been amazing working with Princocoa Studios, their templates revamped my page, changed the aesthetic feel, drove up engagement and I made a sale by Day 2 of using their post ideas. I would definitely recommend them to anyone!.",
     author: "Haley Bentham",
     handle: "@inkbox",
-    img: "/img.jpg",
+    img: "https://res.cloudinary.com/dibwnfwk9/image/upload/v1761739855/25_02_2021_06_32_55_duhgxb.jpg",
+     href: '/ '
   },
   {
     company: "City Cruises",
     text: "Using Princocoa Studios is one of the best business decisions I have made so far. Charlize hair's Instagram page definitely looks much better, with vibrant, and fresh graphics. The captions are precise and to the point.They fully understands the Charlize woman! The followers have grown, hits to the website and sales have also increased.",
     author: "Carlita Kelly",
     handle: "@citycruises",
-    img: "/img.jpg",
+    img: "https://res.cloudinary.com/dibwnfwk9/image/upload/v1761739855/charlize_k1efqk.jpg",
+     href: '/ '
   },
 ]
 
@@ -121,20 +126,26 @@ export default function TestimonialsSection() {
                   transition={{ delay: index * 0.1 }}
                   className="text-center bg-pink-600 p-6 rounded-2xl shadow-md"
                 >
-                  <div className="bg-[#f2f6fb] w-24 h-24 rounded-full flex items-center justify-center mx-auto mb-3">
+                  <div className=" w-24 h-24 rounded-full flex items-center justify-center mx-auto mb-3">
                     <Image
                       src={t.img}
                       alt={t.author}
                       width={100}
                       height={100}
-                      className="w-24 h-24 rounded-full object-cover"
+                      className="w-full h-full rounded-full object-cover"
                     />
                   </div>
                   <p className="text-md text-white/90 mb-4 leading-relaxed line-clamp-6">
                     {t.text}
                   </p>
-               {/*    <p className="font-semibold text-white">{t.author}</p>
-                  <p className="text-white/70 text-sm">{t.handle}</p> */}
+                  <Link className="font-semibold text-white " href={t.href}>
+                   <button
+                className="px-4 py-2 bg-[#39FF14]/80 hover:bg-[#39FF14]/90 mt-3 text-white rounded-full"
+              >
+                Read more
+              </button>
+                   </Link>
+                 
                 </motion.div>
               ))}
             </motion.div>

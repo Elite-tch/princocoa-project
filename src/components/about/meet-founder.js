@@ -17,7 +17,7 @@ export default function MeetFounder() {
           >
             <div className="absolute z-10  inset-0 mt-[0%] md:mt-[-3%]  overflow-hidden h-[100%] md:h-[100%]">
         <motion.img 
-          src="/img2.jpg"
+          src="https://res.cloudinary.com/dibwnfwk9/image/upload/v1761743026/2E90C727-E7BF-445A-BAA9-4F3E9DDF1F88_L0_001-30_03_2023_22_13_27_vsipyr.jpg"
           alt="Background"
           className="absolute rounded-2xl left-0 top-[-3.5%] md:top-[0%] h-[200px] md:h-[300px] w-[22%] object-cover pointer-events-none select-none"
         />
@@ -35,7 +35,7 @@ export default function MeetFounder() {
           >
             <div className="absolute z-10 inset-0 mt-[0%] md:mt-[0%]  overflow-hidden h-[100%] md:h-screen">
         <motion.img 
-          src="/img2.jpg"
+          src="https://res.cloudinary.com/dibwnfwk9/image/upload/v1761743079/5F428854-29E1-4828-9DC8-FCA6490223B4_L0_001-30_03_2023_22_33_32_yg0art.jpg"
           alt="Background"
           className="absolute right-0 rounded-2xl top-[59%] md:top-[45%] h-[300px] md:h-[300px] w-[22%] object-cover  pointer-events-none select-none"
         />

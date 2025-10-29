@@ -78,11 +78,11 @@ export default function ServicesSection() {
                           onClick={() => toggleItem(service.category, itemIdx)}
                           className="w-full flex items-center justify-between py-3 text-left "
                         >
-                          <span className="md:text-xl text-md italic text-white group-hover:text-[#39FF14]/80 transition-colors">
+                          <span className="md:text-xl text-md italic text-white  transition-colors">
                             {item.name}
                           </span>
                           <motion.div animate={{ rotate: isOpen ? 180 : 0 }} transition={{ duration: 0.3 }}>
-                            <ChevronDown className="w-5 h-5 text-white group-hover:text-[#39FF14]/80" />
+                            <ChevronDown className="w-5 h-5 text-white " />
                           </motion.div>
                         </button>
                         <motion.div
@@ -91,7 +91,7 @@ export default function ServicesSection() {
                           transition={{ duration: 0.3 }}
                           className="overflow-hidden"
                         >
-                          <p className="text-[#39FF14]/90 pb-3">{item.description}</p>
+                          <p className="text-white pb-3">{item.description}</p>
                         </motion.div>
                       </motion.div>
                     )
@@ -101,7 +101,7 @@ export default function ServicesSection() {
             ))}
 <div className="flex justify-center">
   <Link href='/service'>
-            <Button size='lg' className="bg-[#39FF14]/80 hover:bg-[#39FF14]/90 font-semibold py-3 md:py-4 px-8 mt-8">
+            <Button size='lg' className="bg-[#39FF14]/80  hover:bg-[#39FF14]/90 font-semibold py-3 md:py-4 px-8 mt-8">
               SEE ALL SERVICES
             </Button>
             </Link>
@@ -121,14 +121,14 @@ export default function ServicesSection() {
              // transition={{ duration: 4, repeat: Number.POSITIVE_INFINITY, ease: "easeInOut" }}
               className="relative w-60 md:w-56 md:h-96 h-64 rounded-3xl overflow-hidden border-4 border-foreground shadow-2xl"
             >
-              <Image src="/img.jpg" alt="Phone mockup 1" fill className="object-cover" />
+              <Image src="https://res.cloudinary.com/dibwnfwk9/image/upload/v1761739234/22_07_2022_14_47_58_hntax4.jpg" alt="Phone mockup 1" fill className="object-cover" />
             </motion.div>
             <motion.div
               animate={{ y: [0, 20, 0] }}
              // transition={{ duration: 4, repeat: Number.POSITIVE_INFINITY, ease: "easeInOut", delay: 0.5 }}
               className="relative w-60 md:w-56 md:h-96 h-64 rounded-3xl mt-52 overflow-hidden border-4 border-foreground shadow-2xl"
             >
-              <Image src="/img.jpg" alt="Phone mockup 2" fill className="object-cover" />
+              <Image src="https://res.cloudinary.com/dibwnfwk9/image/upload/v1761742905/E98EC581-65FF-4B53-8CD1-1AE605E3EE3E_L0_001-16_05_2023_10_17_32_tq7eyg.jpg" alt="Phone mockup 2" fill className="object-cover" />
             </motion.div>
           </motion.div>
         </div>

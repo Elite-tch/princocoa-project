@@ -17,7 +17,7 @@ export default function HeroSection() {
             transition={{ duration: 0.8, ease: "easeOut" }}
             className="relative h-[600px]  overflow-hidden"
           >
-            <Image src="/img.jpg" alt="Creative workspace" fill className="object-cover" />
+            <Image src="https://res.cloudinary.com/dibwnfwk9/image/upload/v1761739833/lahanna_shoot_xgvy3h.jpg" alt="Creative workspace" fill className="object-cover" />
           </motion.div>
 
           {/* Right - Content */}

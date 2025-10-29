@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 "use client"
 
 import { motion } from "framer-motion"
@@ -38,7 +39,7 @@ export default function NewsletterSection() {
 <div className="flex w-[100%] items-center gap-12 mx-auto md:flex-row flex-col justify-between">
 
           <div className="md:w-[50%] mx-auto">
-          <Image src='/img2.jpg' alt=" " width={300} height={300}  className="w-full rounded-lg h-full"/>
+          <img src='https://res.cloudinary.com/dibwnfwk9/image/upload/v1761739852/Copy_of_E4BA7CE4-BF0B-4F02-AAAC-3690A60C79DD_L0_001-16_05_2023_10_21_05_c5io9u.jpg' alt=" " width={300} height={300}  className="w-full rounded-lg h-full"/>
           </div>
 
           {/* Newsletter Form */}

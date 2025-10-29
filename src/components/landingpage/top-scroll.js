@@ -20,7 +20,7 @@ export default function TopScrol() {
         }}
         className="flex whitespace-nowrap "
       >
-        <span className=" font-semibold flex gap-12 text-sm tracking-widest ">
+        <span className=" font-semibold flex gap-12 text-md tracking-widest ">
           {repeatedText}
         </span>
       </motion.div>

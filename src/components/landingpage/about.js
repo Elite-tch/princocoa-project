@@ -59,15 +59,19 @@ creative challenge with innovation and style.
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.4 }}
-              className="group cursor-pointer w-[300px] md:w-[600px] h-[300px] md:h-[400px]"
+              className="group cursor-pointer w-[300px] md:w-[600px] h-[300px] md:h-[500px]"
             >
-              <div className="relative overflow-hidden rounded-2xl w-full  h-full">
-                <Image
-                  src="/img.jpg"
-                  alt="Templates"
-                    fill
-                    className="object-cover transition-transform duration-500 "
-                  />
+              <div className="relative overflow-hidden  w-full  h-full">
+               <video
+  autoPlay
+  loop
+  muted
+  playsInline
+  className="object-cover absolute inset-0 w-full h-full"
+>
+  <source src="https://res.cloudinary.com/dibwnfwk9/video/upload/v1761740956/1_er4Ja2cI_vkrkqn.mp4" type="video/mp4" />
+</video>
+
               
                 </div>
                

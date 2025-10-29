@@ -17,7 +17,7 @@ const workCategories = [
   },
    {
     title: "Web Design",
-    image: "/img.jpg",
+    image: "https://res.cloudinary.com/dibwnfwk9/image/upload/v1761738825/A93DE538-27D3-42D8-BAB2-AE0C18FFB33C_L0_001-18_10_2024_15_46_58_zdzpdg.jpg",
     link: "/portfolio/web-design",
   },
   {
@@ -27,12 +27,12 @@ const workCategories = [
   },
    {
     title: "Interior Architectural Design",
-    image: "/img.jpg",
+    image: "https://res.cloudinary.com/dibwnfwk9/image/upload/v1761762436/pn3_xl53fb.png",
     link: "/portfolio/interior-design",
   },
   {
     title: "Other Notable Projects",
-    image: "/img.jpg",
+    image: "https://res.cloudinary.com/dibwnfwk9/image/upload/v1761762436/pn3_xl53fb.png",
     link: "/portfolio/other-project",
   },
 ]
