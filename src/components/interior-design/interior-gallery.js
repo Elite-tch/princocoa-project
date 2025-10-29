@@ -11,11 +11,11 @@ const professionalPhotos = [
   "https://res.cloudinary.com/dibwnfwk9/image/upload/v1761762405/33767f9e-2fdc-426c-b8a5-8a711d23833a_byl51g.jpg",
   "https://res.cloudinary.com/dibwnfwk9/image/upload/v1761762404/9d56452f-d481-49c6-a85d-4fb8985c15ef_jt5jnw.jpg",
   "https://res.cloudinary.com/dibwnfwk9/image/upload/v1761762442/CANTAGALI_1_miiqub.png",
-  "https://res.cloudinary.com/dibwnfwk9/image/upload/v1761762442/CANTAGALI_1_miiqub.png",
+  "https://res.cloudinary.com/dibwnfwk9/image/upload/v1761762441/CANTAGALI_5_bbomij.png",
   "https://res.cloudinary.com/dibwnfwk9/image/upload/v1761762453/CANTAGALI_3_cds6yw.jpg",
-  "/img.jpg",
-  "/img.jpg",
-  "/img.jpg",
+  "https://res.cloudinary.com/dibwnfwk9/image/upload/v1761767763/png_f3vywa.png",
+  "https://res.cloudinary.com/dibwnfwk9/image/upload/v1761767760/image_xiovil.png",
+  "https://res.cloudinary.com/dibwnfwk9/image/upload/v1761767880/CANTAGALI_6_kjjxot.png",
 ]
 
 export default function InteriorGallery() {
