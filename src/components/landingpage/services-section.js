@@ -121,7 +121,7 @@ export default function ServicesSection() {
              // transition={{ duration: 4, repeat: Number.POSITIVE_INFINITY, ease: "easeInOut" }}
               className="relative w-60 md:w-56 md:h-96 h-64 rounded-3xl overflow-hidden border-4 border-foreground shadow-2xl"
             >
-              <Image src="https://res.cloudinary.com/dibwnfwk9/image/upload/v1761739234/22_07_2022_14_47_58_hntax4.jpg" alt="Phone mockup 1" fill className="object-cover" />
+              <Image src="https://res.cloudinary.com/dibwnfwk9/image/upload/v1761767880/CANTAGALI_6_kjjxot.png" alt="Phone mockup 1" fill className="object-cover" />
             </motion.div>
             <motion.div
               animate={{ y: [0, 20, 0] }}

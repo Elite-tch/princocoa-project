@@ -31,9 +31,21 @@ const workCategories = [
     link: "/portfolio/interior-design",
   },
   {
-    title: "Other Notable Projects",
-    image: "https://res.cloudinary.com/dibwnfwk9/image/upload/v1761762436/pn3_xl53fb.png",
-    link: "/portfolio/other-project",
+    title: "Social Media Posts",
+    image: "https://res.cloudinary.com/dibwnfwk9/image/upload/v1761761557/19_05_2021_20_33_31_iv6pga.jpg",
+    link: "/portfolio/social-media",
+  },
+
+  {
+    title: "Events Reels",
+    image: "https://res.cloudinary.com/dibwnfwk9/image/upload/v1761743114/1853EA70-8A63-4F52-9B66-6A68194DF2EB_L0_001-30_03_2023_22_09_47_yae3vc.jpg",
+    link: "/portfolio/events-reels",
+  },
+
+  {
+    title: "Reels & Tiktoks",
+    image: "https://res.cloudinary.com/dibwnfwk9/image/upload/v1761738955/REELS_TIKTOKS_on5pif.jpg",
+    link: "/portfolio/reels-tiktoks",
   },
 ]
 

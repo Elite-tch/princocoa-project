@@ -59,7 +59,7 @@ creative challenge with innovation and style.
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.4 }}
-              className="group cursor-pointer w-[300px] md:w-[600px] h-[300px] md:h-[500px]"
+              className="group cursor-pointer w-[400px] md:w-[600px] h-[300px] md:h-[500px]"
             >
               <div className="relative overflow-hidden  w-full  h-full">
                <video
