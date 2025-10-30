@@ -10,17 +10,17 @@ const professionalPhotos = [
     desc: ""
   },
   {
-    url: "/v5.mov",
+    url: "/v5.mp4",
     title: "",
     desc: ""
   },
   {
-    url: "/v6.mp4",
+    url: "/v6.mov",
     title: "",
     desc: ""
   },
   {
-    url: "/v7.mp4",
+    url: "/v7.mov",
     title: "I have the floor podcast",
     desc: "Trending"
   },
@@ -31,19 +31,19 @@ const professionalPhotos = [
     desc: ""
   },
   {
-    url: "/v9.mp4",
+    url: "/v9.mov",
     title: "",
     desc: ""
   },
   {
     url: "/v0.mov",
-    title: "",
-    desc: ""
+    title: "Chef SIA",
+    desc: "Tiktok"
   },
   {
-    url: "/v11.mp4",
-   title: "I have the floor podcast",
-    desc: "Trending"
+    url: "/v11.mov",
+   title: "",
+    desc: ""
   },
   
    {

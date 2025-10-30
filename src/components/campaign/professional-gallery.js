@@ -84,7 +84,7 @@ const professionalPhotos = [
 
 export default function ProfessionalGallery() {
   return (
-    <section className="md:mt-[15%] mt-[8%] md:px-6">
+    <section className="md:mt-[15%] mt-[16%] md:px-6">
       <div className="max-w-7xl mx-auto w-[90%] md:w-[95%]">
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
@@ -113,11 +113,11 @@ export default function ProfessionalGallery() {
               />
 
               {(photo.title || photo.desc) && (
-                <div className="absolute bottom-4 left-4 right-8 p-2 bg-white">
-                  <h4 className="text-lg font-bold text-gray-700">
+                <div className="absolute md:bottom-4 md:left-4 md:right-8 p-2 bg-white">
+                  <h4 className="md:text-lg text-sm font-bold text-gray-700">
                     {photo.title}
                   </h4>
-                  <p className="text-sm text-gray-600">
+                  <p className="md:text-sm text-xs text-gray-600">
                     {photo.desc}
                   </p>
                 </div>
