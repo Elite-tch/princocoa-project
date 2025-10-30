@@ -12,13 +12,13 @@ const lifestylePhotos = [
   "https://res.cloudinary.com/dibwnfwk9/video/upload/v1761761829/9124d203cc25456499761c459eff3060_ivra1d.mp4",
   "https://res.cloudinary.com/dibwnfwk9/image/upload/v1761761800/YLR-4947_vbevyl.jpg",
   "https://res.cloudinary.com/dibwnfwk9/image/upload/v1761761792/IMG_9779_mlsevy.png",
-  ' https://res.cloudinary.com/dibwnfwk9/image/upload/v1761761779/YLR-4988_k1s18s.jpg',
-  'https://res.cloudinary.com/dibwnfwk9/image/upload/v1761761760/YLR-4605_hwtq52.jpg',
-  'https://res.cloudinary.com/dibwnfwk9/image/upload/v1761761759/YLR-4739_zexgdw.jpg',
-  'https://res.cloudinary.com/dibwnfwk9/image/upload/v1761761759/IMG_8167_yebsld.jpg',
-  'https://res.cloudinary.com/dibwnfwk9/image/upload/v1761761758/YLR-4627_ftltow.jpg',
-  'https://res.cloudinary.com/dibwnfwk9/image/upload/v1761762105/23_03_2021_17_19_29_mc5uqy.jpg',
-  'https://res.cloudinary.com/dibwnfwk9/image/upload/v1761761748/07_04_2021_18_34_19_vpkgkw.jpg',
+  "https://res.cloudinary.com/dibwnfwk9/image/upload/v1761761779/YLR-4988_k1s18s.jpg",
+  "https://res.cloudinary.com/dibwnfwk9/image/upload/v1761761760/YLR-4605_hwtq52.jpg",
+  "https://res.cloudinary.com/dibwnfwk9/image/upload/v1761761759/YLR-4739_zexgdw.jpg",
+  "https://res.cloudinary.com/dibwnfwk9/image/upload/v1761761759/IMG_8167_yebsld.jpg",
+  "https://res.cloudinary.com/dibwnfwk9/image/upload/v1761761758/YLR-4627_ftltow.jpg",
+  "https://res.cloudinary.com/dibwnfwk9/image/upload/v1761762105/23_03_2021_17_19_29_mc5uqy.jpg",
+  "https://res.cloudinary.com/dibwnfwk9/image/upload/v1761761748/07_04_2021_18_34_19_vpkgkw.jpg",
   'https://res.cloudinary.com/dibwnfwk9/image/upload/v1761761733/24_03_2021_19_07_41_fuxp2f.jpg'
 ]
 
@@ -36,33 +36,39 @@ export default function LifestyleGallery() {
         </motion.h2>
 
         <div className="grid grid-cols-2 md:grid-cols-3 gap-2 md:gap-4">
-          {lifestylePhotos.map((photo, index) => (
-            <motion.div
-              key={index}
-              initial={{ opacity: 0, scale: 0.9 }}
-              whileInView={{ opacity: 1, scale: 1 }}
-              viewport={{ once: false }}
-              transition={{ duration: 0.4, delay: index * 0.05 }}
-              className=" relative md:aspect-[9/11] aspect-[9/10]  overflow-hidden  group cursor-pointer"
-            >
-              
-              {index === 0 ? (
-        <video
-          src={photo}
-          className="w-full h-full object-cover"
-          controls
-          muted
-        />
-      ) : (
-        <Image
-          fill
-          src={photo || "/placeholder.svg"}
-          alt=''
-          className="w-full h-full object-cover"
-        />
-      )}
-            </motion.div>
-          ))}
+          {lifestylePhotos.map((photo, index) => {
+            const isVideo = photo.endsWith(".mp4") || photo.endsWith(".mov")
+
+            return (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, scale: 0.9 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                viewport={{ once: false }}
+                transition={{ duration: 0.4, delay: index * 0.05 }}
+                className="relative md:aspect-[9/11] aspect-[9/10] overflow-hidden group cursor-pointer"
+              >
+                {isVideo ? (
+                  <video
+                    src={photo}
+                    className="w-full h-full object-cover"
+                    autoPlay
+                    loop
+                    muted
+                    playsInline
+                    controls
+                  />
+                ) : (
+                  <Image
+                    fill
+                    src={photo}
+                    alt=""
+                    className="w-full h-full object-cover"
+                  />
+                )}
+              </motion.div>
+            )
+          })}
         </div>
       </div>
     </section>
