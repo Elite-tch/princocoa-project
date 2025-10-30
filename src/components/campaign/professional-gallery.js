@@ -103,7 +103,7 @@ export default function ProfessionalGallery() {
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
               transition={{ duration: 0.4, delay: index * 0.05 }}
-              className="md:aspect-[9/11] aspect-[9/10] relative overflow-hidden group cursor-pointer"
+              className="md:aspect-[9/11] aspect-[9/11] relative overflow-hidden group cursor-pointer"
             >
               <Image
                 src={photo.url}
@@ -113,7 +113,7 @@ export default function ProfessionalGallery() {
               />
 
               {(photo.title || photo.desc) && (
-                <div className="absolute md:bottom-4 md:left-4 md:right-8 p-2 bg-white">
+                <div className="absolute bottom-0 md:bottom-4 md:left-4 md:right-8 p-2 bg-white">
                   <h4 className="md:text-lg text-sm font-bold text-gray-700">
                     {photo.title}
                   </h4>
