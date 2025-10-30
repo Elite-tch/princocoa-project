@@ -5,7 +5,6 @@ import { Play } from "lucide-react"
 
 
 const videos = [
-  { title: "Product Launch", subtitle: "Teaser Content", thumbnail: "/video.mp4" },
   { title: "Jewelry Brand", subtitle: "Social Content", thumbnail: "https://res.cloudinary.com/dibwnfwk9/image/upload/v1761743016/FBB6EB18-4B0D-4F8D-BE36-1AD44A345840_L0_001-15_05_2023_20_56_03_zc6td2.jpg" },
   { title: "Clothing Brand", subtitle: "Social Content", thumbnail: "https://res.cloudinary.com/dibwnfwk9/image/upload/v1761742944/D7BA681E-F416-4355-BCA3-152D64E5703A_L0_001-15_05_2023_20_56_03_fu0wte.jpg" },
   { title: "Pilates Studio", subtitle: "Educational Content", thumbnail: "https://res.cloudinary.com/dibwnfwk9/image/upload/v1761742913/F443A943-4403-4CF4-9A4A-6CE5CC1BD99C_L0_001-15_05_2023_20_56_02_ebgjck.jpg" },
