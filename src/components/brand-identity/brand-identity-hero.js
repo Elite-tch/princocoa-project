@@ -12,7 +12,7 @@ export default function BrandIdentityHero() {
           transition={{ duration: 0.6 }}
           className="text-xl md:text-3xl font-bold uppercase text-gray-700 "
         >
-       Brand Identity Design Projects
+       Brand Identity Design
         </motion.h1>
       </div>
     </section>

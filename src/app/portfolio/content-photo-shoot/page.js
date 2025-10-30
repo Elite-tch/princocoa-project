@@ -1,6 +1,6 @@
-import VideoGallery from "@/components/video/video-gallery"
+import VideoGallery from "@/components/content-photo-shoot/video-gallery"
 import PortfolioCTA from "@/components/portfolio/portfolio-cta"
-import VideoHero from "@/components/video/video-hero"
+import VideoHero from "@/components/content-photo-shoot/video-hero"
 
 export default function VideoExamplesPage() {
   return (

@@ -4,18 +4,10 @@ import { motion } from "framer-motion"
 import Image from "next/image"
 
 const professionalPhotos = [
-  "/img2.jpg",
-  "/img.jpg",
-  "/img.jpg",
-  "/img.jpg",
-  "/img.jpg",
-  "/img.jpg",
-  "/img.jpg",
-  "/img.jpg",
-  "/img.jpg",
-  "/img.jpg",
-  "/img.jpg",
-  "/img.jpg",
+  "https://res.cloudinary.com/dibwnfwk9/image/upload/v1761739825/Bloom_Hair_Atelier_Brand_Manual_-_7_cwlaem.png",
+  "https://res.cloudinary.com/dibwnfwk9/image/upload/v1761739825/Bloom_Hair_Atelier_Brand_Manual_-_6_s68g0k.png",
+  "https://res.cloudinary.com/dibwnfwk9/image/upload/v1761739825/Bloom_Hair_Atelier_Brand_Manual_-_5_kdiwnj.png",
+ 
 ]
 
 export default function BrandIdentityGallery() {

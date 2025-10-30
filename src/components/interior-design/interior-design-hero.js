@@ -12,7 +12,7 @@ export default function InteriorDesignHero() {
           transition={{ duration: 0.6 }}
           className="text-xl md:text-3xl font-bold uppercase text-gray-700 "
         >
-       Interior Architectural Design Projects
+       Interior Architectural Design
         </motion.h1>
       </div>
     </section>

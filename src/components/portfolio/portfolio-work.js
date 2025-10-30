@@ -6,14 +6,14 @@ import Link from "next/link"
 
 const workCategories = [
   {
-    title: "Photography",
-    image: "/img.jpg",
-    link: "/portfolio/photography",
+    title: "Campaigns",
+    image: "https://res.cloudinary.com/dibwnfwk9/image/upload/v1761761754/5DB75267-5E0C-4FF7-9A0A-199FDCEAC94E_L0_001-16_05_2023_04_11_33_go2w2x.jpg",
+    link: "/portfolio/campaigns",
   },
   {
-    title: "Videography / Content Creation",
-    image: "/img.jpg",
-    link: "/portfolio/videography",
+    title: "Content Photo Shoot",
+    image: "https://res.cloudinary.com/dibwnfwk9/image/upload/v1761743016/FBB6EB18-4B0D-4F8D-BE36-1AD44A345840_L0_001-15_05_2023_20_56_03_zc6td2.jpg",
+    link: "/portfolio/content-photo-shoot",
   },
    {
     title: "Web Design",
@@ -22,7 +22,7 @@ const workCategories = [
   },
   {
     title: "Brand Identity Design",
-    image: "/img.jpg",
+    image: "https://res.cloudinary.com/dibwnfwk9/image/upload/v1761739825/Bloom_Hair_Atelier_Brand_Manual_-_7_cwlaem.png",
     link: "/portfolio/brand-identity",
   },
    {

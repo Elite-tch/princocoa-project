@@ -12,7 +12,7 @@ export default function VideoHero() {
           transition={{ duration: 0.6 }}
           className="text-xl md:text-3xl font-bold uppercase text-gray-700  mb-8"
         >
-          Video Projects
+         Content Photo shoot
         </motion.h1>
       </div>
     </section>
