@@ -6,78 +6,79 @@ import Image from "next/image"
 const professionalPhotos = [
   {
     url: "https://res.cloudinary.com/dibwnfwk9/image/upload/v1761762081/15_05_2022_22_04_16_y2olj3.jpg",
-    title: "Studio Mood",
-    desc: "Soft portrait with clean lighting."
+    title: "Defined DBG",
+    desc: "Summer Collection"
   },
   {
     url: "https://res.cloudinary.com/dibwnfwk9/image/upload/v1761762002/17_04_2022_13_59_45_xqtck7.jpg",
-    title: "Street Fashion",
-    desc: "Urban feel with natural tones."
+    title: "Defined DBG",
+    desc: "Spring Collection | Studio shoot."
   },
   {
     url: "https://res.cloudinary.com/dibwnfwk9/image/upload/v1761761952/17_04_2022_13_59_50_pp0tl6.jpg",
-    title: "",
-    desc: ""
+    title: "Defined DBG",
+    desc: "Spring Collection | Studio shoot."
   },
   {
     url: "https://res.cloudinary.com/dibwnfwk9/image/upload/v1761761874/991FD8BF-4834-4089-903F-B736B2661726_L0_001-16_05_2023_10_33_44_vfhwpt.jpg",
-    title: "",
-    desc: ""
+    title: "Defined DBG",
+    desc: "Spring Collection | Studio shoot."
   },
   {
     url: "https://res.cloudinary.com/dibwnfwk9/image/upload/v1761761810/9229484D-5E5E-4947-A4D0-BC2ADE20FEB2_L0_001-16_05_2023_10_34_51_xwxg5f.jpg",
-    title: "Concept Shot",
-    desc: "A calm and centered frame."
+    title: "Defined DBG",
+    desc: "Summer Collection"
   },
   {
     url: "https://res.cloudinary.com/dibwnfwk9/image/upload/v1761761768/CC519C70-998D-4277-B833-440081C69023_L0_001-16_05_2023_10_34_03_gk51rq.jpg",
-    title: "",
-    desc: ""
+   title: "Defined DBG",
+    desc: "Summer Collection"
   },
   {
     url: "https://res.cloudinary.com/dibwnfwk9/image/upload/v1761761736/15_05_2022_22_13_5_rzxlux.jpg",
-    title: "",
-    desc: ""
+    title: "Orilifestyle ",
+    desc: "Hair Course Campaign"
   },
-  {
-    url: "https://res.cloudinary.com/dibwnfwk9/image/upload/v1761761741/15_05_2022_22_14_01_wrow8v.jpg",
-    title: "",
-    desc: ""
-  },
+ 
   {
     url: "https://res.cloudinary.com/dibwnfwk9/image/upload/v1761761745/bts_ori_campaign_imdguc.jpg",
-    title: "Campaign BTS",
-    desc: "Behind the scene session."
+    title: "Orilifestyle ",
+    desc: "Hair Course Campaign"
   },
   {
     url: "https://res.cloudinary.com/dibwnfwk9/image/upload/v1761761747/19_10_2021_17_38_01_tevelf.jpg",
-    title: "",
-    desc: ""
+    title: "Orilifestyle ",
+    desc: "Hair Course Campaign"
   },
   {
     url: "https://res.cloudinary.com/dibwnfwk9/image/upload/v1761761865/15_05_2022_22_13_58_qgrjxw.jpg",
-    title: "",
-    desc: ""
+   title: "Orilifestyle ",
+    desc: "Hair Course Campaign"
   },
   {
     url: "https://res.cloudinary.com/dibwnfwk9/image/upload/v1761761778/08_08_2021_13_52_12_uslpym.jpg",
-    title: "",
-    desc: ""
+   title: "Orilifestyle ",
+    desc: "Hair Course Campaign"
   },
   {
     url: "https://res.cloudinary.com/dibwnfwk9/image/upload/v1761761893/3B43828D-598D-40C4-8AE0-E4948BE47976_Original_gxbdee.jpg",
-    title: "",
-    desc: ""
+    title: "Lahanna",
+    desc: "Accessories campaign"
   },
   {
     url: "https://res.cloudinary.com/dibwnfwk9/image/upload/v1761761735/IMG_2457_Original_rpiino.jpg",
-    title: "",
-    desc: ""
+   title: "Lahanna",
+    desc: "Accessories campaign"
   },
   {
     url: "https://res.cloudinary.com/dibwnfwk9/image/upload/v1761761737/IMG_2370_Original_ngpaxp.jpg",
-    title: "",
-    desc: ""
+   title: "Lahanna",
+    desc: "Accessories campaign"
+  },
+  {
+    url: "https://res.cloudinary.com/dibwnfwk9/image/upload/v1761761754/5DB75267-5E0C-4FF7-9A0A-199FDCEAC94E_L0_001-16_05_2023_04_11_33_go2w2x.jpg",
+   title: "Lahanna",
+    desc: "Accessories campaign"
   }
 ]
 
@@ -91,7 +92,7 @@ export default function ProfessionalGallery() {
           viewport={{ once: true }}
           className="font-poppins text-xl md:text-3xl font-bold uppercase text-center text-gray-700 mb-6 md:mb-10"
         >
-          Professional Photography Projects
+         Professional Campaigns Gallery
         </motion.h2>
 
         <div className="grid grid-cols-2 md:grid-cols-3 gap-2 md:gap-4">
@@ -112,11 +113,11 @@ export default function ProfessionalGallery() {
               />
 
               {(photo.title || photo.desc) && (
-                <div className="absolute bottom-0 left-0 right-0 p-2 bg-white">
-                  <h4 className="text-[10px] md:text-sm font-bold text-gray-700">
+                <div className="absolute bottom-4 left-4 right-8 p-2 bg-white">
+                  <h4 className="text-lg font-bold text-gray-700">
                     {photo.title}
                   </h4>
-                  <p className="text-[8px] md:text-xs text-gray-600">
+                  <p className="text-sm text-gray-600">
                     {photo.desc}
                   </p>
                 </div>
