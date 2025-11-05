@@ -5,12 +5,12 @@ import Link from "next/link"
 
 export default function AcademySection() {
   return (
-    <section className="relative overflow-hidden bg-pink-600">
+    <section className="relative overflow-hidden ">
       {/* Content Section */}
-      <div className="relative bg-[#FFF8E7] py-10 md:py-10 pb-12">
-        <div className="container flex md:flex-row flex-col w-[90%] items-center justify-between gap-3 md:gap-12 mx-auto px-6 md:px-4 text-center">
+      <div className="relative bg-[#d0e6f1] py-10 md:py-0 ">
+        <div className=" flex md:flex-row flex-col w-[90%]  items-center justify-between gap-3 md:gap-12 mx-auto px-6 md:px-0 text-center">
          
-         <div>
+         <div className="md:pl-6 2xl:w-[40%]">
            <motion.h2
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -59,7 +59,7 @@ creative challenge with innovation and style.
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.4 }}
-              className="group cursor-pointer w-[400px] md:w-[600px] h-[300px] md:h-[500px]"
+              className="group cursor-pointer w-[400px] md:w-[600px] lg:w-[600px] h-[300px] 2xl:h-[700px] lg:h-[600px] md:h-[500px] 2xl:w-[900px]"
             >
               <div className="relative overflow-hidden  w-full  h-full">
                <video
@@ -81,17 +81,7 @@ creative challenge with innovation and style.
         </div>
       </div>
 
-      {/* Curved Bottom Divider */}
-      <div className="relative -mt-1">
-        <svg 
-          className="w-full h-24 md:h-32 lg:h-28" 
-          viewBox="0 0 1440 120" 
-          preserveAspectRatio="none" 
-          fill="none"
-        >
-          <path d="M0,120 Q720,0 1440,120 L1440,0 L0,0 Z" fill="#FFF8E7" />
-        </svg>
-      </div>
+      
     </section>
   )
 }

@@ -7,25 +7,25 @@ export default function MeetFounder() {
   return (
     <section className="   pt-10 md:pt-28 mb:pb-0">
 
-         <div className="relative w-[95%]  mx-auto">
+         <div className="relative w-[95%]  md:w-[90%] mx-auto gap-6  md:flex-row flex-col flex justify-center items-center ">
               <motion.div
             initial={{ opacity: 0, x: -30 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.7 }}
-            className="relativ  rounded-lg md:block hidden overflow-hidden shadow-xl"
+            className="relativ md:w-[60%]  overflow-hidden"
           >
-            <div className="absolute z-10  inset-0 mt-[0%] md:mt-[-3%]  overflow-hidden h-[100%] md:h-[100%]">
+            <div className="  overflow-hidden ">
         <motion.img 
           src="https://res.cloudinary.com/dibwnfwk9/image/upload/v1761743026/2E90C727-E7BF-445A-BAA9-4F3E9DDF1F88_L0_001-30_03_2023_22_13_27_vsipyr.jpg"
           alt="Background"
-          className="absolute rounded-2xl left-0 top-[-3.5%] md:top-[0%] h-[200px] md:h-[300px] w-[22%] object-cover pointer-events-none select-none"
+          className=" h-[300px] md:h-[550px] w-[360px] md:w-[90%] object-cover pointer-events-none select-none"
         />
       </div>
 
           </motion.div>
 
-          {/* Right Image */}
+          {/* Right Image absolute z-10  inset-0 mt-[0%] md:mt-[-3%] // absolute rounded-2xl left-0 top-[-3.5%] md:top-[0%]
           <motion.div
             initial={{ opacity: 0, x: 30 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -40,37 +40,14 @@ export default function MeetFounder() {
           className="absolute right-0 rounded-2xl top-[59%] md:top-[45%] h-[300px] md:h-[300px] w-[22%] object-cover  pointer-events-none select-none"
         />
       </div>
-          </motion.div>
+          </motion.div> */}
 
 
           
 
-      <div className="container relative mx-auto px-3 md:px-12 max-w-7xl flex flex-col">
+      <div className="md:w-[60%] relative mx-auto px-3  max-w-7xl flex flex-col">
 
- <div className="fle flex-col  md:hidden items-center justify-center  mx-auto  pb-8">
-  {/* Left Image - appears on top on mobile */}
-  <motion.div
-    initial={{ opacity: 0, x: -30 }}
-    whileInView={{ opacity: 1, x: 0 }}
-    viewport={{ once: true }}
-    transition={{ duration: 0.7 }}
-    className="relative w-full md:w-auto order-1"
-  >
-    <div className="relative w-full md:w-[400px]  h-[300px] md:h-[450px]">
-      <Image
-        width={400}
-        height={450}
-        src="/img2.jpg"
-        alt="Founder Image 1"
-        className="rounded-2xl w-[100%] md:w-full h-full pt-[-50%] object-cover shadow-lg"
-      />
-    </div>
-  </motion.div>
-
-  {/* Right Image - appears below on mobile, overlaps on desktop */}
-  
-</div>
-
+ 
 
        <div>
  {/* Section Title */}
@@ -85,7 +62,7 @@ export default function MeetFounder() {
         </motion.h2>
 
         {/* Content Grid */}
-        <div className="  md:w-[55%] mx-auto">
+        <div className="   mx-auto">
           <motion.div
             initial={{ opacity: 0, x: 30 }}
             whileInView={{ opacity: 1, x: 0 }}

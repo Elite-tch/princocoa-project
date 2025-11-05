@@ -1,5 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Glacial+Indifference&display=swap');
 @import "tailwindcss";
 @import "tw-animate-css";
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Bebas Neue';
+}
+
+/* Body text */
+body, p, span, a, li {
+  font-family: 'Glacial Indifference';
+}
 
 @custom-variant dark (&:is(.dark *));
 

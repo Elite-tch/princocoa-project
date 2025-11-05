@@ -52,7 +52,7 @@ export default function NewsletterSection() {
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               required
-              className="flex-1 bg-white  text-white placeholder:text-gray-400 h-12 px-6 rounded-full border-[#39FF14] focus:ring-[#39FF14]"
+              className="flex-1 bg-white  text-white placeholder:text-gray-400 h-12 px-6 rounded-full border-[#004aad] focus:ring-[#004aad]"
             />
             <Input
               type="name"
@@ -60,7 +60,7 @@ export default function NewsletterSection() {
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               required
-              className="flex-1 bg-white  text-white placeholder:text-gray-400 h-12 px-6 rounded-full border-[#39FF14] focus:ring-[#39FF14]"
+              className="flex-1 bg-white  text-white placeholder:text-gray-400 h-12 px-6 rounded-full border-[#004aad] focus:ring-[#004aad]"
             />
             <Input
               type="email"
@@ -68,7 +68,7 @@ export default function NewsletterSection() {
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               required
-              className="flex-1 bg-white  text-white placeholder:text-gray-400 h-12 px-6 rounded-full border-[#39FF14] focus:ring-[#39FF14]"
+              className="flex-1 bg-white  text-white placeholder:text-gray-400 h-12 px-6 rounded-full border-[#004aad] focus:ring-[#004aad]"
             />
 
 
@@ -76,7 +76,7 @@ export default function NewsletterSection() {
             </div>
             <Button
               type="submit"
-              className="bg-[#39FF14] mt-6 hover:bg-[#39FF14]/90 text-white px-8 h-12 rounded-full font-semibold transition-all duration-300 hover:scale-105 hover:shadow-[0_0_30px_rgba(255,20,147,0.5)]"
+              className="bg-[#004aad] mt-6 hover:bg-[#004aad] text-white px-8 h-12 rounded-full font-semibold transition-all duration-300 hover:scale-105 hover:shadow-[0_0_30px_rgba(255,20,147,0.5)]"
             >
               Subscribe
             </Button>

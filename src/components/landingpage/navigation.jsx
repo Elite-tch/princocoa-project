@@ -25,7 +25,7 @@ export default function Navigation() {
         initial={{ y: -100, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.6, ease: "easeOut" }}
-        className="fixed top-12 text-[#FF1493] py-2 left-0 right-0 z-40 bg-[#FFF8E7] border-b border-[#004aad]"
+        className="fixed top-12 text-[#FF1493] py-2 left-0 right-0 z-40 bg-[#d0e6f1] border-b border-[#004aad]"
       >
         <div className="container mx-auto px-4 sm:px-6 py-4">
           <div className="flex items-center justify-between">

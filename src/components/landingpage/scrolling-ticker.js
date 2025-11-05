@@ -10,7 +10,7 @@ export default function ScrollingTicker() {
   const repeatedText = Array(8).fill(text.join(" • ")).join(" ")
 
   return (
-    <div className="bg-[#39FF14] z-50 py-4 overflow-hidden">
+    <div className="bg-pink-600 z-50 py-4 overflow-hidden">
       <motion.div
         animate={{ x: [0, -2000] }}
         transition={{
@@ -20,7 +20,7 @@ export default function ScrollingTicker() {
         }}
         className="flex whitespace-nowrap"
       >
-        <span className="text-secondary-foreground  capitalize font-semibold text-lg tracking-wider">{repeatedText}</span>
+        <span className="text-secondary-foreground  uppercase font-semibold text-md tracking-wider">{repeatedText}</span>
       </motion.div>
     </div>
   )

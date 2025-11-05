@@ -92,7 +92,7 @@ export default function TestimonialsSection() {
 
   return (
     <section className="py-8 px-6 ">
-      <div className="max-w-6xl mx-auto">
+      <div className="max-w-6xl xl:max-w-[90%] mx-auto">
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -124,7 +124,7 @@ export default function TestimonialsSection() {
                   initial={{ opacity: 0, scale: 0.8 }}
                   animate={{ opacity: 1, scale: 1 }}
                   transition={{ delay: index * 0.1 }}
-                  className="text-center bg-pink-600 p-6 rounded-2xl shadow-md"
+                  className="text-center bg-pink-600  p-6 rounded-2xl shadow-md"
                 >
                   <div className=" w-24 h-24 rounded-full flex items-center justify-center mx-auto mb-3">
                     <Image
@@ -135,7 +135,7 @@ export default function TestimonialsSection() {
                       className="w-full h-full rounded-full object-cover"
                     />
                   </div>
-                  <p className="text-md text-white/90 mb-4 leading-relaxed line-clamp-6">
+                  <p className="text-md text-white/90 mb-4 leading-relaxed line-clamp-8">
                     {t.text}
                   </p>
                   <Link className="font-semibold text-white " href={t.href}>
@@ -157,7 +157,7 @@ export default function TestimonialsSection() {
               onClick={prevSlide}
               variant="outline"
               size="icon"
-              className="rounded-full border-pink-600 text-[#004aad] hover:bg-pink-600 hover:text-white transition-all bg-white"
+              className="rounded-full border-pink-600  hover:bg-pink-600 text-white transition-all bg-pink-600"
             >
               <ChevronLeft className="h-6 w-6" />
             </Button>
@@ -165,7 +165,7 @@ export default function TestimonialsSection() {
               onClick={nextSlide}
               variant="outline"
               size="icon"
-              className="rounded-full border-pink-600 text-[#004aad] hover:bg-pink-600 hover:text-white transition-all bg-white"
+              className="rounded-full border-pink-600  hover:bg-pink-600 text-white transition-all bg-pink-600"
             >
               <ChevronRight className="h-6 w-6" />
             </Button>
@@ -181,7 +181,7 @@ export default function TestimonialsSection() {
                   setCurrentIndex(index)
                 }}
                 className={`w-2 h-2 rounded-full transition-all ${
-                  index === currentIndex ? "bg-pink-600 w-8" : "bg-gray-400"
+                  index === currentIndex ? "bg-pink-600 w-8" : "bg-pink-600"
                 }`}
               />
             ))}

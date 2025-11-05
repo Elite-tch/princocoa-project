@@ -8,14 +8,14 @@ import Link from "next/link"
 export default function HeroSection() {
   return (
     <section className="pt-28 pb-8 md:pb-0 md:pr-6 ">
-      <div className="container mx-auto">
-        <div className="grid md:grid-cols-2 gap-6 md:gap-12 items-center">
+      <div className="">
+        <div className="flex gap-6 md:flex-row flex-col md:gap-12 items-center">
           {/* Left - Image */}
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, ease: "easeOut" }}
-            className="relative h-[400px] md:h-[600px]  overflow-hidden"
+            className="relative h-[400px] md:h-[600px] w-full  overflow-hidden"
           >
             <Image src="https://res.cloudinary.com/dibwnfwk9/image/upload/v1761739833/lahanna_shoot_xgvy3h.jpg" alt="Creative workspace" fill className="object-cover" />
           </motion.div>
@@ -28,13 +28,13 @@ export default function HeroSection() {
             className="md:space-y-8 space-y-4"
           >
             <motion.h1
-              className="text-4xl md:text-6xl text-gray-700  text-center  font-ligt  font-serif leading-tight text-balance"
+              className="text-4xl md:text-6xl text-gray-700  text-center  font-ligt  leading-tight text-balance"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.4 }}
             >
-              We&apos;re <span className="italic  font-serif text-black">creating</span> solutions that{" "}
-              <span className="italic font-serif text-pink-600">elevate</span> your brand
+              We&apos;re <span className="  text-black">creating</span> solutions that{" "}
+              <span className=" text-pink-600">elevate</span> your brand
             </motion.h1>
 
             <motion.p

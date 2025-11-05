@@ -7,7 +7,7 @@ export default function AboutHero() {
   return (
     <section className="relative  h-[70vh] md:h-screen max-h-[800px] w-full overflow-hidden">
       {/* Background Image */}
-      <div className="absolute inset-0 mt-[35%] md:mt-[10%]">
+      <div className="absolute inset-0 mt-[30%] md:mt-[10%] 2xl:mt-[5%]">
         <Image
           src="https://res.cloudinary.com/dibwnfwk9/image/upload/v1761743075/12E1805F-9E4E-4474-9CDE-059EF2810718_L0_001-16_05_2023_04_19_47_qpp6ng.jpg"
           alt="Creative marketing agency based in Chicago"
