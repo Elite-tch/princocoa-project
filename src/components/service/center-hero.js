@@ -6,14 +6,14 @@ import Image from "next/image"
 
 export default function ServicesCenterHero() {
   return (
-    <section className="relative h-[40vh] md:h-screen max-h-[600px] flex items-start justify-start overflow-hidden ">
+    <section className="relative h-[40vh] md:h-screen max-h-[450px] flex items-star justify-star overflow-hidden ">
       {/* Background Image */}
             <div className="absolute inset-0 ">
               <Image
-                src="/img2.jpg"
+                src="https://res.cloudinary.com/dibwnfwk9/image/upload/v1761743075/12E1805F-9E4E-4474-9CDE-059EF2810718_L0_001-16_05_2023_04_19_47_qpp6ng.jpg"
                 alt="Creative marketing agency based in Chicago"
                 fill
-                className=" o "
+                className=" object-cover "
                 priority
               />
               <div className="absolute inset-0 bg-black/40" />
@@ -25,7 +25,7 @@ export default function ServicesCenterHero() {
         transition={{ duration: 0.8 }}
 className="relative z-10 px-8 md:px-24 pt-[8%] md:pt-[5%] flex flex-col gap-6 items-center justify-start "
       >
-        <h1 className="text-3xl md:text-4xl text-white tracking-wider md:mb-2 text-center font-semibold">See us in Action</h1>
+        <h1 className="text-3xl md:text-5xl text-white tracking-wider md:mb-2 text-center font-semibold">See us in Action</h1>
       <Link href="/portfolio"><Button size='lg' variant="outline" className='bg-pink-600 hover:bg-pink-700 text-white border-0 hover:text-white'>View Portfolio</Button></Link>
       
       </motion.div>

@@ -78,7 +78,7 @@ export default function ServicesSection() {
                           onClick={() => toggleItem(service.category, itemIdx)}
                           className="w-full flex items-center justify-between py-1 text-left "
                         >
-                          <span className="md:text-lg text-md text-gray-700 transition-colors">
+                          <span className=" text-md md:text-xl text-gray-700 transition-colors">
                             {item.name}
                           </span>
                           <motion.div animate={{ rotate: isOpen ? 180 : 0 }} transition={{ duration: 0.3 }}>
@@ -91,7 +91,7 @@ export default function ServicesSection() {
                           transition={{ duration: 0.3 }}
                           className="overflow-hidden"
                         >
-                          <p className="text-gray-700 pb-3">{item.description}</p>
+                          <p className="text-gray-700 text-md md:text-xl pb-3">{item.description}</p>
                         </motion.div>
                       </motion.div>
                     )

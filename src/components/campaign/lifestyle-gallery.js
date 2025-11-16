@@ -30,7 +30,7 @@ export default function LifestyleGallery() {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="text-xl md:text-3xl font-bold uppercase text-center text-gray-700 mb-6 md:mb-10"
+          className="text-xl md:text-4xl font-bold uppercase text-center text-gray-900 mb-6 md:mb-10"
         >
           Premium Style Gallery
         </motion.h2>

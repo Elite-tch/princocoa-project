@@ -7,17 +7,19 @@ import ConsultingSection from "@/components/service/content-section";
 import BrandBlueprintSection from "@/components/service/brand-blueprint-section";
 import NewsletterSection from "@/components/about/newsletter-section";
 import ProcessSection from "@/components/service/process-section";
+import ServicesSection from "@/components/service/service";
 export default function ServicesPage() {
   return (
     <main className="min-h-screen ">
       
       <ServicesHero />
-      <ServicesTagline />
-        <ContentCreationSection />
+  {/*  <ServicesTagline />    
+        <ContentCreationSection />*/}   
+       <ServicesSection/>
         <ServicesCenterHero />
-        <ConsultingSection />
-        <BrandBlueprintSection />
-        <ProcessSection/>
+        {/* <ConsultingSection />
+        <BrandBlueprintSection />  */}  
+       <ProcessSection/> 
         <NewsletterSection />
 
     

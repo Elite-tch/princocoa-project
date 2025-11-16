@@ -40,10 +40,10 @@ export default function Navigation() {
                 <Link
                   key={item.href}
                   href={item.href}
-                  className={`text-lg font-medium transition-colors pb-2 ${
+                  className={`text-lg md:text-xl font-semibold transition-colors pb-2 ${
                     pathname === item.href
                       ? "text-pink-600 border-b-2 border-pink-600"
-                      : "text-gray-700 hover:text-pink-600"
+                      : "text-gray-900 hover:text-pink-600"
                   }`}
                 >
                   {item.label}

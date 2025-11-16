@@ -1,14 +1,25 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Glacial+Indifference&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
 @import "tailwindcss";
 @import "tw-animate-css";
 
+@font-face {
+  font-family: "Glacial Indifference";
+  src: url("/glacial-indifference.regular.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Bebas Neue';
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 700;
 }
 
 /* Body text */
-body, p, span, a, li {
-  font-family: 'Glacial Indifference';
+body, p, span, a, li, Button {
+  font-family: "Glacial Indifference", sans-serif;
 }
 
 @custom-variant dark (&:is(.dark *));

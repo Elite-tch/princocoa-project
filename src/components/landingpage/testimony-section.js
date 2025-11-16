@@ -98,7 +98,7 @@ export default function TestimonialsSection() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="text-xl md:text-3xl font-bold uppercase tracking-wider text-gray-700 mb-6 md:mb-12 text-center"
+          className="text-xl md:text-4xl font-bold uppercase tracking-wider text-gray-900 mb-6 md:mb-12 text-center"
         >
           Client Love Letters
         </motion.h2>
@@ -135,7 +135,7 @@ export default function TestimonialsSection() {
                       className="w-full h-full rounded-full object-cover"
                     />
                   </div>
-                  <p className="text-md text-white/90 mb-4 leading-relaxed line-clamp-8">
+                  <p className="text-md md:text-lg text-white/90 mb-4 leading-6 line-clamp-8">
                     {t.text}
                   </p>
                   <Link className="font-semibold text-white " href={t.href}>

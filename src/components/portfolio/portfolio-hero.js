@@ -11,7 +11,7 @@ export default function PortfolioHero() {
         transition={{ duration: 0.8 }}
         className="max-w-4xl mx-auto mt-[33%] md:mt-[10%] text-center"
       >
-        <h1 className="font-serif text-xl md:text-3xl font-bold uppercase text-gray-700 mb-2 md:mb-4">Our Work</h1>
+        <h1 className="font-serif text-xl md:text-4xl font-bold uppercase text-gray-900 mb-2 md:mb-4">Our Work</h1>
       </motion.div>
     </section>
   )

@@ -3,11 +3,9 @@
 import { motion } from "framer-motion"
 
 export default function TopScrol() {
-  const text = ["Phone number : +2347066094764 ",
-'Email : paiconsulting.you@gmail.com',
-'Location : No 10 Lalupon close, Lagos State Nigeria   •'
+  const text = ["Create Content for Next 30 Days in 1 Day"
   ]
- const repeatedText = Array(3).fill(text.join(" • ")).join(" ")
+ const repeatedText = Array(10).fill(text.join(" • ")).join(" ")
 
   return (
     <div className="bg-[#004aad] text-white py-4 fixed top-0 z-50 w-full overflow-hidden">

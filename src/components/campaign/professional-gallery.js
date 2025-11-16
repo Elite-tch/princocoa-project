@@ -90,7 +90,7 @@ export default function ProfessionalGallery() {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="font-poppins text-xl md:text-3xl font-bold uppercase text-center text-gray-700 mb-6 md:mb-10"
+          className=" text-xl md:text-4xl font-bold uppercase text-center text-gray-900 mb-6 md:mb-10"
         >
          Professional Campaigns Gallery
         </motion.h2>
@@ -117,7 +117,7 @@ export default function ProfessionalGallery() {
                   <h4 className="md:text-lg text-sm font-bold text-gray-700">
                     {photo.title}
                   </h4>
-                  <p className="md:text-sm text-xs text-gray-600">
+                  <p className="md:text-xl text-md text-gray-600">
                     {photo.desc}
                   </p>
                 </div>

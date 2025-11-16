@@ -56,7 +56,7 @@ export default function MeetFounder() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="text-2xl md:text-3xl font-bold uppercase text-gray-700  tracking-wider mb-2 text-center "
+          className="text-2xl md:text-4xl font-bold uppercase text-gray-900  tracking-wider mb-2 text-center "
         >
           Meet The Founder
         </motion.h2>
@@ -68,15 +68,15 @@ export default function MeetFounder() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.7, delay: 0.2 }}
-            className="space-y-6 text-gray-600 leading-relaxed"
+            className="space-y-6 text-gray-700 leading-relaxed"
           >
-            <p className="md:text-lg text-md">
+            <p className="md:text-xl text-md">
               Hi friends, I&apos;m Christy! I&apos;ve known that marketing was my passion for as long as I can remember, but my
               journey into becoming a creative started in college with a spontaneous desire to learn graphic design. I
               really leaned into the whole DIY thing and taught myself the ropes using YouTube tutorials and Google
               articles.
             </p>
-            <p className="md:text-lg text-md">
+            <p className="md:text-xl text-md">
               From there, I took a detour into other creative marketing roles and eventually landed the title of Chief
               Marketing Officer at a prominent e-commerce jewelry brand. Wearing a multitude of hats, I managed every
               aspect of digital marketing from strategically selecting influencer partners to crafting standout
@@ -88,9 +88,9 @@ export default function MeetFounder() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.7 }}
-            className="text-gray-600 leading-relaxed "
+            className="text-gray-700 leading-relaxed "
           >
-            <p className="md:text-lg text-md">
+            <p className="md:text-xl text-md">
               Fast forward to now, I&apos;ve ditched corporate life to pursue my dream of founding my own agency! Seventh
               House Marketing is an embodiment of my digital marketing expertise and is driven by a genuine passion for
               helping brands achieve their goals.

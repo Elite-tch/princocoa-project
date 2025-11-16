@@ -9,7 +9,7 @@ export default function ServicesHero() {
       {/* Background Image */}
             <div className="absolute inset-0 mt-[35%] md:mt-[10%]">
               <Image
-                src="/img2.jpg"
+                src="https://res.cloudinary.com/dibwnfwk9/image/upload/v1761762404/9d56452f-d481-49c6-a85d-4fb8985c15ef_jt5jnw.jpg"
                 alt="Creative marketing agency based in Chicago"
                 fill
                 className=" o "

@@ -16,10 +16,9 @@ export default function AcademySection() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.1 }}
-           className="text-2xl md:text-3xl font-bold uppercase  tracking-wider mb-2 text-center text-gray-700 "
+           className="text-2xl md:text-4xl font-bold uppercase  tracking-wider mb-2 text-center text-gray-900 "
           >
-            Welcome to PAI
-Consulting
+           Create Content for 30 Days 
           </motion.h2>
 
            <motion.p
@@ -27,7 +26,7 @@ Consulting
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className=" md:text-lg text-md mb-4 text-gray-600 max-w-3xl mx-auto "
+            className=" md:text-xl text-md mb-4 text-gray-700 max-w-3xl mx-auto "
           >
            At P.A.I, we are all about bold ideas, sharp
             strategies, and fearless execution. From brand
