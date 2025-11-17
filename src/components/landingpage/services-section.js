@@ -101,7 +101,7 @@ export default function ServicesSection() {
             ))}
 <div className="flex justify-center">
   <Link href='/service'>
-            <Button size='lg' className="bg-pink-600  hover:bg-pink-700 font-semibold py-3 md:py-4 px-8 mt-8">
+            <Button size='lg' className="bg-pink-600  hover:bg-pink-700 font-semibold py-3 md:py-4 px-8 md:mt-8 mt-4">
               SEE ALL SERVICES
             </Button>
             </Link>
@@ -117,12 +117,12 @@ export default function ServicesSection() {
             className="relative md:h-full h-[430px] xl:pb-28 md:w-full w-[100%] mx-ato flex items-center justify-center pb- md:pb-0"
           >
             {/* wrapper to contain both frames */}
-            <div className="relative w-[380px] md:w-[540px] h-auto">
+            <div className="relative w-full md:w-[540px] h-auto">
               {/* Square frame (left) */}
               <motion.div
                 animate={{ y: [0, -8, 0] }}
                 //transition={{ duration: 4, repeat: Number.POSITIVE_INFINITY, ease: "easeInOut" }}
-                className="relative w-[350px] h-[300px] md:w-[420px] md:h-[420px] 2xl:w-[620px] 2xl:h-[540px] rounded-lg overflow-hidden border-4 border-foreground shadow-2xl mx-auto"
+                className="relative md:block hidden w-[350px] h-[300px] md:w-[420px] md:h-[420px] 2xl:w-[620px] 2xl:h-[540px] rounded-lg overflow-hidden border-4 border-foreground shadow-2xl mx-auto"
               >
                 <Image src="https://res.cloudinary.com/dibwnfwk9/image/upload/v1761767880/CANTAGALI_6_kjjxot.png" alt="Square mockup" fill className="object-cover" />
               </motion.div>
@@ -136,6 +136,23 @@ export default function ServicesSection() {
               >
                 <Image src="https://res.cloudinary.com/dibwnfwk9/image/upload/v1761742905/E98EC581-65FF-4B53-8CD1-1AE605E3EE3E_L0_001-16_05_2023_10_17_32_tq7eyg.jpg" alt="Phone mockup 2" fill className="object-cover" />
               </motion.div>
+
+              <motion.div
+                animate={{ y: [0, 10, 0] }}
+                //transition={{ duration: 4, repeat: Number.POSITIVE_INFINITY, ease: "easeInOut", delay: 0.5 }}
+                className="relative md:hidden  h-[350px] md:w-[420px] md:h-[420px] 2xl:w-[620px] 2xl:h-[540px]  overflow-hidden  shadow-2xl mx-auto"
+              
+              >
+                <video
+  autoPlay
+  loop
+  muted
+  playsInline
+  className="object-cover  inset-0 w-full h-full"
+>
+  <source src="https://res.cloudinary.com/dibwnfwk9/video/upload/v1761761829/9124d203cc25456499761c459eff3060_ivra1d.mp4" type="video/mp4" />
+</video>  </motion.div>
+
             </div>
           </motion.div>
         </div>

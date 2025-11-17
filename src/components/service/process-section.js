@@ -10,26 +10,26 @@ import { ChevronLeft, ChevronRight, Pause, Play } from "lucide-react"
 
 const galleryImages = [
   {
-    src: "/img.jpg",
+    src: "https://res.cloudinary.com/dibwnfwk9/image/upload/v1761762453/CANTAGALI_3_cds6yw.jpg",
     alt: "Team collaboration in office environment",
      title: "Interior Design Consultation ",
     description: "We will discuss your design needs and preferences.",
   },
   {
-    src: "/img2.jpg",
+    src: "https://res.cloudinary.com/dibwnfwk9/image/upload/v1761767880/CANTAGALI_6_kjjxot.png",
     alt: "Professional meeting and planning session",
      title: "Co-working space",
     description: "We will create a collaborative workspace that fosters creativity and productivity.",
   },
   {
-    src: "/img.jpg",
+    src: "https://res.cloudinary.com/dibwnfwk9/image/upload/v1761738815/44B45117-0787-4CB5-862C-107702A7ABC4_L0_001-06_01_2025_16_44_04_s0glab.png",
     alt: "Technical discussion and project review",
      title: "Web Design ",
     description: "We will create a stunning and functional website that meets your business goals.",
   },
   {
-    src: "/img.jpg",
-    alt: "Technical discussion and project review",
+    src: "https://res.cloudinary.com/dibwnfwk9/image/upload/v1761739825/Bloom_Hair_Atelier_Brand_Manual_-_7_cwlaem.png",
+    alt: "brand",
      title: "Brand Identity Design ",
     description: "We will create a unique brand identity that reflects your business values.",
   },
@@ -135,7 +135,7 @@ export default function ProcessSection() {
           transition={{ duration: 0.8, delay: 0.2 }}
           className="relative"
         >
-          {/* Main Carousel 
+          {/* Main Carousel */}
           <div className="relative overflow-hidden rounded-2xl">
             <motion.div
               className="flex"
@@ -159,12 +159,12 @@ export default function ProcessSection() {
             >
               {extendedImages.map((image, index) => (
                 <div key={index} className={`flex-shrink-0 px-2`} style={{ width: `${100 / slidesToShow}%` }}>
-                  <div className="group relative overflow-hidden aspect-[4/3]  transition-transform duration-500">
+                  <div className="group relative overflow-hidden aspect-[9/12] md:aspect-[9/12] transition-transform duration-500">
                     <Image
                       src={image.src || "/placeholder.svg"}
                       alt={image.alt}
                       fill
-                      className="object-cover  transition-transform duration-700"
+                      className="object-center  transition-transform duration-700"
                     />
                      </div>
                      <div>
@@ -191,7 +191,7 @@ export default function ProcessSection() {
             aria-label="Next images"
           >
             <ChevronRight className="w-6 h-6 text-gray-600" />
-          </button>
+          </button>*/}
 
           {/* Play/Pause Button 
           <button
@@ -203,7 +203,7 @@ export default function ProcessSection() {
           </button>
         </motion.div> */}
 
-        {/* Dots Indicator
+        {/* Dots Indicator */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
@@ -215,20 +215,20 @@ export default function ProcessSection() {
               key={index}
               onClick={() => goToSlide(index)}
               className={`w-3 h-3 rounded-full transition-all duration-300 ${
-                index === actualCurrentSlide ? "bg-blue-600 scale-125" : "bg-gray-300 hover:bg-gray-400"
+                index === actualCurrentSlide ? "bg-pink-600 scale-125" : "bg-gray-300 hover:bg-gray-400"
               }`}
               aria-label={`Go to slide ${index + 1}`}
             />
           ))}
         </motion.div>
- */}
+ 
 
         
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
           transition={{ duration: 0.8, delay: 0.8 }}
-          className="flex justify-center   space-x-2 overflow-x-auto md:pb-2"
+          className="flex justify-center pt-8 border-t mt-6 border-gray-700  space-x-2 overflow-x-auto md:pb-2"
         >
            <h2 className="text-xl md:text-3xl font-bold text-gray-900 uppercase text-center mb-8 md:w-[30%] leading-tight">Ready to Level Up
 Your Brand?</h2>

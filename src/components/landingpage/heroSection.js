@@ -28,13 +28,13 @@ export default function HeroSection() {
             className="md:space-y-8 space-y-4"
           >
             <motion.h1
-              className="text-4xl md:text-7xl text-gray-700  text-center  font-ligt  leading-18 text-balance"
+              className="text-4xl md:text-7xl text-gray-900  text-center  font-ligt leading-12 md:leading-20 text-balance"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.4 }}
             >
-              We&apos;re <span className="  text-black">creating</span> solutions that{" "}
-              <span className=" text-pink-600">elevate</span> your brand
+              We&apos; creating solutions that{" "}
+              <b className="text-4xl md:text-7xl text-pink-600">elevate</b> your brand
             </motion.h1>
 
             <motion.p
@@ -61,7 +61,7 @@ export default function HeroSection() {
               <Button
                 size="lg"
                 variant="outline" 
-                className="border-pink-600 rounded-full text-pink-600 md:text-base text-xs hover:bg-pink-600 hover:text-primary-foreground font-semibold md:px-8 px-4 bg-transparent"
+                className="bg-pink-600 rounded-full text-white md:text-base text-xs hover:bg-pink-600 hover:text-primary-foreground font-semibold md:px-8 px-4"
               >
                 LEARN MORE
               </Button>
