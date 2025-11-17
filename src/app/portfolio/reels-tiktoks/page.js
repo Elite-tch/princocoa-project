@@ -6,18 +6,18 @@ import Image from "next/image"
 const professionalPhotos = [
   {
     url: "/v4.mov",
-    title: "",
-    desc: ""
+   title: "I have the floor podcast",
+    desc: "Trending"
   },
   {
     url: "/v5.mp4",
-    title: "",
-    desc: ""
+   title: "I have the floor podcast",
+    desc: "Trending"
   },
   {
     url: "/v6.mov",
-    title: "",
-    desc: ""
+   title: "I have the floor podcast",
+    desc: "Trending"
   },
   {
     url: "/v7.mov",
@@ -27,13 +27,13 @@ const professionalPhotos = [
 
    {
     url: "/v8.mov",
-    title: "",
-    desc: ""
+   title: "I have the floor podcast",
+    desc: "Trending"
   },
   {
     url: "/v9.mov",
-    title: "",
-    desc: ""
+   title: "I have the floor podcast",
+    desc: "Trending"
   },
   {
     url: "/v0.mov",
@@ -42,51 +42,31 @@ const professionalPhotos = [
   },
   {
     url: "/v11.mov",
-   title: "",
-    desc: ""
+  title: "I have the floor podcast",
+    desc: "Trending"
   },
   
    {
     url: "/v12.mov",
-    title: "",
-    desc: ""
+    title: "I have the floor podcast",
+    desc: "Trending"
   },
   {
     url: "/v13.mov",
-    title: "",
-    desc: ""
+   title: "I have the floor podcast",
+    desc: "Trending"
   },
   {
     url: "/v14.mov",
     title: "Anne Simone",
     desc: "Summer Collection"
   },
-  {
-    url: "/v15.mp4",
-    title: "",
-    desc: ""
-  },
-   {
-    url: "/v16.mp4",
-    title: "",
-    desc: ""
-  },
-  {
-    url: "/v17.mov",
-    title: "Chef SIA",
-    desc: "Tiktok"
-  },
-  {
-    url: "/v18.mov",
-    title: "",
-    desc: ""
-  },
  
 ]
 
 export default function ProfessionalGallery() {
   return (
-    <section className="md:mt-[15%] pb-24 mt-[8%] px-2">
+    <section className="md:mt-[15%] pb-24 mt-[45%] 2xl:mt-[10%] px-2">
       <div className=" mx-auto ">
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
@@ -97,7 +77,7 @@ export default function ProfessionalGallery() {
          Reels & Tiktoks
         </motion.h2>
 
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-1 md:gap-1">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-1 md:gap-1">
           {professionalPhotos.map((photo, index) => {
             const isVideo = photo.url.endsWith(".mp4") || photo.url.endsWith(".mov")
 

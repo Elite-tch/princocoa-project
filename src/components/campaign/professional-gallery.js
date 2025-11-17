@@ -84,8 +84,8 @@ const professionalPhotos = [
 
 export default function ProfessionalGallery() {
   return (
-    <section className="md:mt-[15%] mt-[16%] md:px-6">
-      <div className="max-w-7xl mx-auto w-[90%] md:w-[95%]">
+    <section className="md:mt-[15%] mt-[45%] 2xl:mt-[10%] md:px-6">
+      <div className="max-w-7xl mx-auto w-[90%] md:w-[95%] 2xl:max-w-[90%]">
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -95,7 +95,7 @@ export default function ProfessionalGallery() {
          Professional Campaigns Gallery
         </motion.h2>
 
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-2 md:gap-4">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-4">
           {professionalPhotos.map((photo, index) => (
             <motion.div
               key={index}
@@ -114,10 +114,10 @@ export default function ProfessionalGallery() {
 
               {(photo.title || photo.desc) && (
                 <div className="absolute bottom-0 md:bottom-4 md:left-4 md:right-8 p-2 bg-white">
-                  <h4 className="md:text-lg text-sm font-bold text-gray-700">
+                  <h4 className="md:text-lg text-sm 2xl:text-xl font-bold text-gray-700">
                     {photo.title}
                   </h4>
-                  <p className="md:text-xl text-md text-gray-600">
+                  <p className="md:text-xl 2xl:text-xl text-md text-gray-600">
                     {photo.desc}
                   </p>
                 </div>

@@ -4,13 +4,13 @@ import { motion } from "framer-motion"
 
 export default function PhotoExamplesIntro() {
   return (
-    <section className="md:pt-20 pt-[38%] pb-4 px-6">
+    <section className="md:pt-20 pt-[45%] pb-4 px-6">
       <div className="max-w-4xl mx-auto mt-[10%] text-center">
         <motion.h1
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          className="font-poppins text-4xl md:text-4xl text-gray-700 mb-12"
+          className="font-poppins text-4xl md:text-4xl text-gray-900 mb-12"
         >
           We offer <span className="italic">different</span> kinds of photography: Professional and Lifestyle
         </motion.h1>

@@ -16,8 +16,8 @@ const videos = [
 export default function WebDesign() {
   return (
     <section className="pb-10 pt-4 md:px-6 ">
-      <div className="max-w-7xl mx-auto w-[90%] md:w-[95%] ">
-        <div className="grid grid-cols-2 md:grid-cols-3  gap-2 md:gap-4">
+      <div className="max-w-7xl mx-auto w-[90%] md:w-[95%] 2xl:max-w-[90%]">
+        <div className="grid grid-cols-1 md:grid-cols-3  gap-4 md:gap-4">
           {videos.map((video, index) => (
             <motion.div
               key={index}
@@ -27,7 +27,7 @@ export default function WebDesign() {
               transition={{ duration: 0.5, delay: index * 0.05 }}
               className=""
             >
-              <div className="relative md:aspect-[9/7] aspect-[9/10]   overflow-hidde mb-3">
+              <div className="relative md:aspect-[9/10] aspect-[9/12]   overflow-hidde mb-3">
              <Image
           fill
           src={video.thumbnail || "/placeholder.svg"}
@@ -37,7 +37,7 @@ export default function WebDesign() {
 
                 
               </div>
-              <h3 className="font-serif text-lg text-gray-700 ">{video.title}</h3>
+              <h3 className="font-serif text-lg text-gray-900 ">{video.title}</h3>
               <Link href={video.href} className="text-sm underline text-gray-600 "> View the website</Link>
             </motion.div>
           ))}

@@ -26,8 +26,8 @@ const videos = [
 export default function VideoGallery() {
   return (
     <section className="pb-10 md:px-6 ">
-      <div className="max-w-7xl mx-auto w-[90%] md:w-[95%] ">
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-2 md:gap-4">
+      <div className="max-w-7xl mx-auto w-[90%] md:w-[95%] 2xl:max-w-[90%]">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-4">
           {videos.map((video, index) => (
             <motion.div
               key={index}

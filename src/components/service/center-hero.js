@@ -6,7 +6,7 @@ import Image from "next/image"
 
 export default function ServicesCenterHero() {
   return (
-    <section className="relative h-[40vh] md:h-screen max-h-[450px] flex items-star justify-star overflow-hidden ">
+    <section className="relative h-[40vh] md:h-screen md:max-h-[450px] 2xl:max-h-[550px] flex items-star justify-star overflow-hidden ">
       {/* Background Image */}
             <div className="absolute inset-0 ">
               <Image

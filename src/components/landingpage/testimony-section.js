@@ -138,6 +138,7 @@ export default function TestimonialsSection() {
                   <p className="text-md md:text-lg text-white/90 mb-4 leading-6 line-clamp-8">
                     {t.text}
                   </p>
+               {/* 
                   <Link className="font-semibold text-white " href={t.href}>
                    <button
                 className="px-4 py-2 bg-[#39FF14]/80 hover:bg-[#39FF14]/90 mt-3 text-white rounded-full"
@@ -145,7 +146,7 @@ export default function TestimonialsSection() {
                 Read more
               </button>
                    </Link>
-                 
+                 */}
                 </motion.div>
               ))}
             </motion.div>

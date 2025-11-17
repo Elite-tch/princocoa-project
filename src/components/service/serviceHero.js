@@ -7,7 +7,7 @@ export default function ServicesHero() {
   return (
     <section className="relative h-[70vh] md:h-screen max-h-[800px] flex items-center justify-center overflow-hidden">
       {/* Background Image */}
-            <div className="absolute inset-0 mt-[35%] md:mt-[10%]">
+            <div className="absolute inset-0 mt-[35%] md:mt-[10%] 2xl:mt-[5%]">
               <Image
                 src="https://res.cloudinary.com/dibwnfwk9/image/upload/v1761762404/9d56452f-d481-49c6-a85d-4fb8985c15ef_jt5jnw.jpg"
                 alt="Creative marketing agency based in Chicago"

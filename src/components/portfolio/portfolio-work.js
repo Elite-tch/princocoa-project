@@ -52,8 +52,8 @@ const workCategories = [
 export default function PortfolioWork() {
   return (
     <section className="pb-20 pt-3 px-6">
-      <div className="max-w-6xl mx-auto">
-        <div className="grid md:grid-cols-3 space-y-3 md:space-y-6 gap-6">
+      <div className="max-w-6xl 2xl:max-w-[90%] mx-auto">
+        <div className="grid md:grid-cols-3 space-y-3  md:space-y-6 gap-6">
           {workCategories.map((category, index) => (
             <motion.div
               key={index}
@@ -63,7 +63,7 @@ export default function PortfolioWork() {
               transition={{ duration: 0.6, delay: index * 0.2 }}
               className="text-center"
             >
-              <div className="relative md:aspect-[9/11] aspect-[9/10] rounded overflow-hidden mb-6 shadow-lg">
+              <div className="relative md:aspect-[9/11] 2xl:aspect-[9/11] aspect-[9/10] rounded overflow-hidden mb-6 shadow-lg">
                 <Image src={category.image || "/placeholder.svg"} alt={category.title} fill className="object-cover" />
               </div>
 

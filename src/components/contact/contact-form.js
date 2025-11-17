@@ -33,7 +33,7 @@ export default function ContactForm() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.1 }}
-          className="text-gray-700 text-center "
+          className="text-gray-900 text-center md:text-xl "
         >
           Fill out the form below and we will be in touch with you as soon as possible!
         </motion.p>
@@ -48,7 +48,7 @@ export default function ContactForm() {
           >
             {/* Name */}
             <div>
-              <label className="block text-gray-800 font-semibold mb-2">
+              <label className="block text-gray-900  md:text-xl font-semibold mb-2">
                 Name <span className="text-red-500">*</span>
               </label>
               <div className="grid grid-cols-2 gap-4">
@@ -59,7 +59,7 @@ export default function ContactForm() {
                     required
                     value={formData.firstName}
                     onChange={(e) => setFormData({ ...formData, firstName: e.target.value })}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-0 focus:ring-[#39FF14]"
+                    className="w-full px-4 py-3 border border-gray-400 rounded-lg focus:outline-none focus:ring-0 focus:ring-[#39FF14]"
                   />
                 </div>
                 <div>
@@ -69,7 +69,7 @@ export default function ContactForm() {
                     required
                     value={formData.lastName}
                     onChange={(e) => setFormData({ ...formData, lastName: e.target.value })}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-0 focus:ring-[#39FF14]"
+                    className="w-full px-4 py-3 border border-gray-400 rounded-lg focus:outline-none focus:ring-0 focus:ring-[#39FF14]"
                   />
                 </div>
               </div>
@@ -77,7 +77,7 @@ export default function ContactForm() {
 
             {/* Email */}
             <div>
-              <label className="block text-gray-800 font-semibold mb-2">
+              <label className="block text-gray-900  md:text-xl font-semibold mb-2">
                 Email <span className="text-red-500">*</span>
               </label>
               <input
@@ -85,13 +85,13 @@ export default function ContactForm() {
                 required
                 value={formData.email}
                 onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-0 focus:ring-[#39FF14]"
+                className="w-full px-4 py-3 border border-gray-400 rounded-lg focus:outline-none focus:ring-0 focus:ring-[#39FF14]"
               />
             </div>
 
             {/* Services */}
             <div>
-              <label className="block text-gray-800 font-semibold mb-3">
+              <label className="block text-gray-900  md:text-xl font-semibold mb-3">
                 Service(s) needed <span className="text-red-500">*</span>
               </label>
               <div className="grid grid-cols-2 md:grid-cols-2 gap-3">
@@ -108,8 +108,8 @@ export default function ContactForm() {
                   'others'
                 ].map((service) => (
                   <div key={service} className="flex items-center space-x-2">
-                    <Checkbox id={service} />
-                    <label htmlFor={service} className="text-gray-700 text-sm cursor-pointer">
+                    <Checkbox id={service} className='border border-gray-400' />
+                    <label htmlFor={service} className="text-gray-700 text-md  md:text-lg cursor-pointer">
                       {service}
                     </label>
                   </div>
@@ -119,7 +119,7 @@ export default function ContactForm() {
 
            {/* Message */}
             <div>
-              <label className="block text-gray-800 font-semibold mb-2">
+              <label className="block text-gray-900  md:text-xl font-semibold mb-2">
                 How can we help? <span className="text-red-500">*</span>
               </label>
               <textarea
@@ -127,7 +127,7 @@ export default function ContactForm() {
                 rows={4}
                 value={formData.message}
                 onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-0 focus:ring-[#39FF14]"
+                className="w-full px-4 py-3 border border-gray-400 rounded-lg focus:outline-none focus:ring-0 focus:ring-[#39FF14]"
               />
             </div>
 
@@ -150,7 +150,7 @@ export default function ContactForm() {
 >
   <Image
     fill
-    src="/img.jpg"
+    src="https://res.cloudinary.com/dibwnfwk9/image/upload/v1761761778/08_08_2021_13_52_12_uslpym.jpg"
     alt="Contact us"
     className="object-cover rounded-lg"
   />

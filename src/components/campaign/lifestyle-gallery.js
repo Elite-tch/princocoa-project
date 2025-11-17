@@ -35,7 +35,7 @@ export default function LifestyleGallery() {
           Premium Style Gallery
         </motion.h2>
 
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-2 md:gap-4">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-4">
           {lifestylePhotos.map((photo, index) => {
             const isVideo = photo.endsWith(".mp4") || photo.endsWith(".mov")
 

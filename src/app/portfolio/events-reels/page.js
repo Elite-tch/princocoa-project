@@ -29,7 +29,7 @@ const professionalPhotos = [
 
 export default function ProfessionalGallery() {
   return (
-    <section className="md:mt-[15%] pb-24 mt-[8%] px-2">
+    <section className="md:mt-[15%] pb-24 mt-[45%] 2xl:mt-[10%] px-2">
       <div className="">
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
@@ -40,7 +40,7 @@ export default function ProfessionalGallery() {
           Events Reels
         </motion.h2>
 
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-1 md:gap-1">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-1 md:gap-1">
           {professionalPhotos.map((photo, index) => {
             const isVideo = photo.url.endsWith(".mp4") || photo.url.endsWith(".mov")
 
