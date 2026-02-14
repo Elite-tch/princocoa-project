@@ -53,7 +53,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${poppins.variable} font-sans antialiased bg-[#d0e6f1]`}>
+      <body className={`${poppins.variable} font-sans antialiased bg-gray-100`}>
         <TopScrol />
         <Navigation />
         {children}

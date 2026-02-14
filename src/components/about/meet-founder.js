@@ -68,33 +68,34 @@ export default function MeetFounder() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.7, delay: 0.2 }}
-            className="space-y-6 text-gray-700 leading-relaxed"
+            className="space-y-3 text-gray-800 md:text-lg text-md leading-relaxed"
           >
-            <p className="md:text-xl text-md">
-              Hi friends, I&apos;m Christy! I&apos;ve known that marketing was my passion for as long as I can remember, but my
-              journey into becoming a creative started in college with a spontaneous desire to learn graphic design. I
-              really leaned into the whole DIY thing and taught myself the ropes using YouTube tutorials and Google
-              articles.
+            <p className="">
+             I’m <b className="font-bold text-black">Princess Adefolami</b>, founder of Princocoa Studios X P.A.I Consulting.
             </p>
-            <p className="md:text-xl text-md">
-              From there, I took a detour into other creative marketing roles and eventually landed the title of Chief
-              Marketing Officer at a prominent e-commerce jewelry brand. Wearing a multitude of hats, I managed every
-              aspect of digital marketing from strategically selecting influencer partners to crafting standout
-              campaigns that drove conversions. I also created two successful ambassador programs that expanded our
-              brand community by thousands of members.
+            <p>My career has been shaped by a simple belief: creativity should bring clarity, not confusion. Behind every brand is a leader making high-stakes decisions, balancing growth with responsibility, and trying to maintain a standard of excellence. I understand how heavy that can feel.
+          </p>
+          <p>My background allows me to see challenges from multiple angles. I have bachelor’s  in <b className="font-bold text-black">Interior Architecture</b>, developed my foundation as a <b className="font-bold text-black">fine artist</b>, worked in <b>production and set design</b>, and became a <b className="font-bold text-black"> Meta-certified social media marketing plus Brand Marketing professional  from London Business School </b>. Together, these disciplines taught me how to move ideas carefully from concept to execution — without losing intention or quality.</p>
+          <div>
+            <p>I am deeply passionate about building work that is not only beautiful, but dependable.</p>
+            <p> Work that holds up.</p>
+            <p> Work that performs.</p>
+             </div>
+            <p className="">
+             Clients often come to me when they need someone who can step in calmly, understand the vision, and create structure around it. Someone who can protect the brand while still pushing it forward.
             </p>
+
             <motion.div
             initial={{ opacity: 0, x: -30 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.7 }}
-            className="text-gray-700 leading-relaxed "
+            className="text-gray-700 space-y-3 leading-relaxed "
           >
-            <p className="md:text-xl text-md">
-              Fast forward to now, I&apos;ve ditched corporate life to pursue my dream of founding my own agency! Seventh
-              House Marketing is an embodiment of my digital marketing expertise and is driven by a genuine passion for
-              helping brands achieve their goals.
+            <p className=" ">
+              Projects such as <b className="font-bold text-black">I Have The Floor </b> are a reflection of this approach — thoughtful, collaborative, and executed with care.
             </p>
+            <p>When you work with Princocoa Studios/ P.A.I Consulting, you work directly with me. My role is to listen closely, think rigorously, and ensure that what you are building is expressed with consistency and refinement at every touchpoint.</p>
           </motion.div>
 
           </motion.div>

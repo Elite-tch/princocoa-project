@@ -41,7 +41,7 @@ export default function GallerySection() {
           transition={{ duration: 0.6, delay: 0.1 }}
           className="text-xl md:text-4xl font-bold uppercase text-gray-900 tracking-wider mb-6 md:mb-12 text-center"
         >
-        Our Gallery
+      Meet The Crew
         </motion.h2>
 
         <div className="grid grid-cols-1 md:grid-cols-3 2xl:grid-cols-3 lg:grid-cols-3 gap-4 md:gap-4 xl:gap-12 items-center justify-items-center w-[90%] mx-auto">

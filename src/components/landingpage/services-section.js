@@ -9,29 +9,24 @@ import Link from "next/link"
 
 const services = [
   {
-    category: "Content Creation",
+    category: "PRINCOCOA STUDIOS",
     items: [
-      { name: "Bring your brand to life with compelling content.", description: "Whether it’s eye-catching graphics, professional videos, or creative campaigns, we make our vision a reality." },
-        { name: "Photography & Videography", description: "High-quality visuals that tell your brand's story." },
-    ],
+      { name: "Productions", description: "text" },
+        { name: "Content Creation", description: "text" },
+       { name: "Social Media Campaigns", description: "text" },
+   
+      ],
   },
   {
-    category: "Consulting",
+    category: "P.A.I CONSULTING",
     items: [
-      { name: "Engage, grow, and connect with your audience.", description: "We handle everything from content calendars and caption writing to building meaningful engagement on your social platforms. " },
-        { name: "Craft a memorable identity that tells your story.", description: "From logo creation to comprehensive brand guidelines, we design visuals and messaging that set your business apart." },
+      { name: "Brand Management Consultancy", description: "text" },
+        { name: "Creative Direction", description: "text" },
+       { name: "Content Mapping", description: "Brainstorm (1hr) Get a feasible content roadmap for the quarter: goal oriented, directed by you: growth, revenue, community" },
 
     ],
   },
 
-   {
-    category: "Digital Solutions",
-    items: [
-      { name: "Custom websites that work as beautifully as they look.", description: "We create sleek, user-friendly websites tailored to your business goals and your audience’s needs. " },
-          { name: "SEO Optimization", description: "Strategies to improve your website's visibility and ranking on search engines." },
-
-    ],
-  },
 ]
 
 export default function ServicesSection() {
@@ -66,7 +61,7 @@ export default function ServicesSection() {
           >
             {services.map((service, idx) => (
               <div key={idx} className="space-y-4">
-                <h3 className="md:text-2xl text-xl  font-semibold pt- md:pt-  border-b uppercase  pb-3 text-center">{service.category}</h3>
+                <h3 className="md:text-2xl text-xl  font-semibold pt- md:pt-4  border-b uppercase  pb-3 text-center">{service.category}</h3>
                 <div className="space-y-2">
                   {service.items.map((item, itemIdx) => {
                     const key = `${service.category}-${itemIdx}`
@@ -91,7 +86,7 @@ export default function ServicesSection() {
                           transition={{ duration: 0.3 }}
                           className="overflow-hidden"
                         >
-                          <p className="text-gray-700 text-md md:text-xl pb-3">{item.description}</p>
+                          <p className="text-gray-700 text-md md:text-lg pb-3">{item.description}</p>
                         </motion.div>
                       </motion.div>
                     )

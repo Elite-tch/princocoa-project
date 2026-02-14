@@ -1,5 +1,6 @@
 "use client"
 import Link from "next/link"
+import Image from "next/image"
 import { usePathname } from "next/navigation"
 import { useState, useEffect } from "react"
 import { motion, AnimatePresence } from "framer-motion"
@@ -25,13 +26,22 @@ export default function Navigation() {
         initial={{ y: -100, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.6, ease: "easeOut" }}
-        className="fixed top-12 text-[#FF1493] py-2 left-0 right-0 z-40 bg-[#d0e6f1] border-b border-[#004aad]"
+        className="fixed top-12 text-[#FF1493] py-2 left-0 right-0 z-40 bg-gray-100 border-b border-gray-700"
       >
-        <div className="container mx-auto px-4 sm:px-6 py-4">
+        <div className="container mx-auto py-4 px-4 sm:px-6">
           <div className="flex items-center justify-between">
             {/* Logo */}
-            <motion.div whileHover={{ scale: 1.05 }} className="text-xl sm:text-2xl font-bold">
-              <span className="text-primary font-[var(--font-montserrat)]">Logo</span>
+            <motion.div whileHover={{ scale: 1.05 }} className="flex items-center">
+              <Link href="/">
+                <Image
+                  src="/logo1.png"
+                  alt="Princocoa Logo"
+                  className="object-contain w-auto h-20 md:h-12"
+                  width={300}
+                  height={100}
+                  priority
+                />
+              </Link>
             </motion.div>
 
             {/* Desktop Navigation Links */}
@@ -40,11 +50,10 @@ export default function Navigation() {
                 <Link
                   key={item.href}
                   href={item.href}
-                  className={`text-lg md:text-xl font-semibold transition-colors pb-2 ${
-                    pathname === item.href
-                      ? "text-pink-600 border-b-2 border-pink-600"
-                      : "text-gray-900 hover:text-pink-600"
-                  }`}
+                  className={`text-lg md:text-lg font- transition-colors pb-2 ${pathname === item.href
+                    ? "text-pink-600 border-b-2 border-pink-600"
+                    : "text-gray-700 hover:text-pink-600"
+                    }`}
                 >
                   {item.label}
                 </Link>
@@ -114,11 +123,10 @@ export default function Navigation() {
                       key={item.href}
                       href={item.href}
                       onClick={toggleMenu}
-                      className={`text-xl  font-semibold transition-colors pb-2 ${
-                        pathname === item.href
-                          ? "text-pink-600 border-b-2 border-pink-600"
-                          : "text-gray-700 hover:text-primary"
-                      }`}
+                      className={`text-xl  font-semibold transition-colors pb-2 ${pathname === item.href
+                        ? "text-pink-600 border-b-2 border-pink-600"
+                        : "text-gray-700 hover:text-primary"
+                        }`}
                     >
                       {item.label}
                     </Link>
@@ -151,9 +159,8 @@ function NavLink({ href, children, isActive, onClick }) {
       whileHover={{ y: -2 }}
       href={href}
       onClick={onClick}
-      className={`text-sm font-medium transition-colors pb-1 relative ${
-        isActive ? "text-primary" : "text-foreground hover:text-pink-600"
-      }`}
+      className={`text-sm font-medium transition-colors pb-1 relative ${isActive ? "text-primary" : "text-foreground hover:text-pink-600"
+        }`}
     >
       {children}
       {isActive && (

@@ -25,16 +25,16 @@ export default function HeroSection() {
             initial={{ opacity: 0, x: 50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
-            className="md:space-y-8 space-y-4"
+            className=" "
           >
             <motion.h1
-              className="text-4xl md:text-7xl text-gray-900  text-center  font-ligt leading-12 md:leading-20 text-balance"
+              className="text-4xl md:text-6xl text-gray-900  text-center  font-ligt leading-12 md:leading-20 text-balance "
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.4 }}
             >
-              We&apos; creating solutions that{" "}
-              <b className="text-4xl md:text-7xl text-pink-600">elevate</b> your brand
+             Your plug-in creative 
+              <b className="text-4xl md:text-5xl text-pink-600"> Engine </b> 
             </motion.h1>
 
             <motion.p
@@ -43,11 +43,11 @@ export default function HeroSection() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.6 }}
             >
-              From brand identity and content creation to interior design and web experiences, we blend creativity with strategy to make your brand stand out.
+             We connect strategy, identity, content, and production into one eco- system that keeps your brand growing.
             </motion.p>
 
             <motion.div
-              className="flex gap-4 mx-auto text-p w-[80%] justify-between pt-4"
+              className="flex gap-4 mx-auto text-p mt-5 w-[80%] justify-center pt-4"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.8 }}
@@ -57,15 +57,7 @@ export default function HeroSection() {
                 WORK WITH US
               </Button>
               </Link>
-              <Link href='/service'>
-              <Button
-                size="lg"
-                variant="outline" 
-                className="bg-pink-600 rounded-full text-white md:text-base text-xs hover:bg-pink-600 hover:text-primary-foreground font-semibold md:px-8 px-4"
-              >
-                LEARN MORE
-              </Button>
-              </Link>
+              
             </motion.div>
           </motion.div>
         </div>

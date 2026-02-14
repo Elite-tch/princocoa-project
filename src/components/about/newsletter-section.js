@@ -28,12 +28,11 @@ export default function NewsletterSection() {
           className="text-center"
         >
           {/* Title */}
-          <h2 className="text-2xl md:text-4xl font-bold uppercase text-gray-100  mb-2">House Headlines Newsletter</h2>
+          <h2 className="text-2xl md:text-4xl font-bold uppercase text-gray-100  mb-2">Become a Cocoabean </h2>
 
           {/* Description */}
           <p className="text-gray-200  md:text-xl text-md leading-8 mb-10 max-w-2xl mx-auto">
-            Get FREE marketing tips, social media hacks, the latest on industry trends, and more delivered straight to
-            your inbox!
+            Get free newsletter teams, discounts and keep up with trends you can implement into your business 
           </p>
 
 <div className="flex w-[100%] items-center gap-12 mx-auto md:flex-row flex-col justify-between">

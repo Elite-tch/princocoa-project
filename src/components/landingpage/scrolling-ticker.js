@@ -3,10 +3,7 @@
 import { motion } from "framer-motion"
 
 export default function ScrollingTicker() {
-  const text = ["Social media consultations ", 'Brand identity design',
-    'Interior design', 'Website design',' Content creation', 'Custom artwork'
-    , 'Photo', 'Video   •',
-  ]
+  const text = ["We handle the bold creative ideas and the consistency—so you can focus on growing your brand", '']
   const repeatedText = Array(8).fill(text.join(" • ")).join(" ")
 
   return (
