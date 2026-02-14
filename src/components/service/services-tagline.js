@@ -12,9 +12,9 @@ export default function ServicesTagline() {
         transition={{ duration: 0.6 }}
         className="max-w-4xl mx-auto text-center"
       >
-        <p className="text-white/80 text-lg mb-4">We&apos;ve mastered the art of blending</p>
+        <p className="text-white/80 text-lg mb-4">Your creative content engine</p>
         <h2 className="font-serif text-xl md:text-4xl text-white mb-6 text-balance">
-          we don&apos;t just create, we build , maintain, and grow brands
+          Services that work together to build a sustainable content eco-system
         </h2>
         
       </motion.div>

@@ -13,13 +13,14 @@ export default function ServicesPage() {
     <main className="min-h-screen ">
       
       <ServicesHero />
-       <ServicesTagline />    
-        <ContentCreationSection />
-       {/* <ServicesSection/> */} 
+       <ServicesTagline /> 
+        <ConsultingSection />   
+       {/* <ContentCreationSection />
+        <ServicesSection/> 
         <ServicesCenterHero />
-        <ConsultingSection />
+       
         <BrandBlueprintSection />  
-       <ProcessSection/> 
+       <ProcessSection/> */} 
         <NewsletterSection />
 
     
