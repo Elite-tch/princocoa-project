@@ -12,28 +12,28 @@ const galleryImages = [
   {
     src: "https://res.cloudinary.com/dibwnfwk9/image/upload/v1761762453/CANTAGALI_3_cds6yw.jpg",
     alt: "Team collaboration in office environment",
-     title: "Interior Design Consultation ",
+    title: "Interior Design Consultation ",
     description: "We will discuss your design needs and preferences.",
   },
   {
     src: "https://res.cloudinary.com/dibwnfwk9/image/upload/v1761767880/CANTAGALI_6_kjjxot.png",
     alt: "Professional meeting and planning session",
-     title: "Co-working space",
+    title: "Co-working space",
     description: "We will create a collaborative workspace that fosters creativity and productivity.",
   },
   {
     src: "https://res.cloudinary.com/dibwnfwk9/image/upload/v1761738815/44B45117-0787-4CB5-862C-107702A7ABC4_L0_001-06_01_2025_16_44_04_s0glab.png",
     alt: "Technical discussion and project review",
-     title: "Web Design ",
+    title: "Web Design ",
     description: "We will create a stunning and functional website that meets your business goals.",
   },
   {
     src: "https://res.cloudinary.com/dibwnfwk9/image/upload/v1761739825/Bloom_Hair_Atelier_Brand_Manual_-_7_cwlaem.png",
     alt: "brand",
-     title: "Brand Identity Design ",
+    title: "Brand Identity Design ",
     description: "We will create a unique brand identity that reflects your business values.",
   },
- 
+
 ]
 
 
@@ -126,8 +126,8 @@ export default function ProcessSection() {
   return (
     <section ref={ref} className="md:py-20 py-10  overflow-hidden">
       <div className="container mx-auto px-4 lg:px-6">
-        
-      {/* <h2 className="text-xl md:text-4xl text-gray-900 font-bold uppercase text-center mb-8">Our Process</h2>
+
+        {/* <h2 className="text-xl md:text-4xl text-gray-900 font-bold uppercase text-center mb-8">Our Process</h2>
         Carousel Container 
         <motion.div
           initial={{ opacity: 0, y: 50 }}
@@ -136,47 +136,47 @@ export default function ProcessSection() {
           className="relative"
         >
           {/* Main Carousel */}
-          <div className="relative overflow-hidden rounded-2xl">
-            <motion.div
-              className="flex"
-              animate={{
-                x: `${-currentIndex * (100 / slidesToShow)}%`,
-              }}
-                             transition={
-                 isTransitioning
-                   ? { duration: 0 }
-                   : {
-                       type: "tween",
-                       duration: 0.8,
-                       ease: "easeInOut",
-                     }
-               }
-              onAnimationComplete={() => {
-                if (isTransitioning) {
-                  setIsTransitioning(false)
+        <div className="relative overflow-hidden rounded-2xl">
+          <motion.div
+            className="flex"
+            animate={{
+              x: `${-currentIndex * (100 / slidesToShow)}%`,
+            }}
+            transition={
+              isTransitioning
+                ? { duration: 0 }
+                : {
+                  type: "tween",
+                  duration: 0.8,
+                  ease: "easeInOut",
                 }
-              }}
-            >
-              {extendedImages.map((image, index) => (
-                <div key={index} className={`flex-shrink-0 px-2`} style={{ width: `${100 / slidesToShow}%` }}>
-                  <div className="group relative overflow-hidden aspect-[9/12] md:aspect-[9/12] transition-transform duration-500">
-                    <Image
-                      src={image.src || "/placeholder.svg"}
-                      alt={image.alt}
-                      fill
-                      className="object-center  transition-transform duration-700"
-                    />
-                     </div>
-                     <div>
-                        <h3 className="mt-4 text-xl md:text-xl font-semibold  text-gray-900">{image.title}</h3>
-                        <p className="mt-0 text-gray-700 md:text-lg w-[90%]">{image.description}</p>
-                     </div>
+            }
+            onAnimationComplete={() => {
+              if (isTransitioning) {
+                setIsTransitioning(false)
+              }
+            }}
+          >
+            {extendedImages.map((image, index) => (
+              <div key={index} className={`flex-shrink-0 px-2`} style={{ width: `${100 / slidesToShow}%` }}>
+                <div className="group relative overflow-hidden aspect-[9/12] md:aspect-[9/12] transition-transform duration-500">
+                  <Image
+                    src={image.src || "/placeholder.svg"}
+                    alt={image.alt}
+                    fill
+                    className="object-center  transition-transform duration-700"
+                  />
                 </div>
-              ))}
-            </motion.div>
-          </div>
+                <div>
+                  <h3 className="mt-4 text-xl md:text-xl font-semibold  text-gray-900">{image.title}</h3>
+                  <p className="mt-0 text-gray-700 md:text-lg w-[90%]">{image.description}</p>
+                </div>
+              </div>
+            ))}
+          </motion.div>
+        </div>
 
-          {/* Navigation Buttons 
+        {/* Navigation Buttons 
           <button
             onClick={prevSlide}
             className="absolute left-4  top-1/2 -translate-y-1/2 bg-white/90 hover:bg-white backdrop-blur-sm p-3 rounded-full shadow-lg transition-all duration-300 hover:scale-110 z-10"
@@ -193,7 +193,7 @@ export default function ProcessSection() {
             <ChevronRight className="w-6 h-6 text-gray-600" />
           </button>*/}
 
-          {/* Play/Pause Button 
+        {/* Play/Pause Button 
           <button
             onClick={togglePlayPause}
             className="absolute top-4 right-4 bg-white/90 hover:bg-white backdrop-blur-sm p-3 rounded-full shadow-lg transition-all duration-300 hover:scale-110 z-10"
@@ -214,37 +214,36 @@ export default function ProcessSection() {
             <button
               key={index}
               onClick={() => goToSlide(index)}
-              className={`w-3 h-3 rounded-full transition-all duration-300 ${
-                index === actualCurrentSlide ? "bg-pink-600 scale-125" : "bg-gray-300 hover:bg-gray-400"
-              }`}
+              className={`w-3 h-3 rounded-full transition-all duration-300 ${index === actualCurrentSlide ? "bg-pink-600 scale-125" : "bg-gray-300 hover:bg-gray-400"
+                }`}
               aria-label={`Go to slide ${index + 1}`}
             />
           ))}
         </motion.div>
- 
 
-        
+
+
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
           transition={{ duration: 0.8, delay: 0.8 }}
           className="flex justify-center pt-8 border-t mt-6 border-gray-700  space-x-2 overflow-x-auto md:pb-2"
         >
-           <h2 className="text-xl md:text-3xl font-bold text-gray-900 uppercase text-center mb-8 md:w-[30%] leading-tight">Ready to Level Up
-Your Brand?</h2>
-        </motion.div> 
+          <h2 className="text-xl md:text-3xl font-bold text-gray-900 uppercase text-center mb-8 md:w-[30%] leading-tight">Ready to Level Up
+            Your Brand?</h2>
+        </motion.div>
 
-<div className="  flex justify-center">
-              <Link href='/contact'>
-                <Button
-                  size="lg"
-                  className="bg-pink-600 hover:bg-pink-600 text-white px-8 py-4 text-md font-semibold rounded-md shadow-none transition-all duration-200"
-                >
-                  Get In Touch
-                  <ArrowRight className="ml-2 w-5 h-5" />
-                </Button>
-              </Link>
-            </div>
+        <div className="  flex justify-center">
+          <Link href='/contact'>
+            <Button
+              size="lg"
+              className="bg-pink-600 hover:bg-pink-600 text-white px-8 py-4 text-md font-semibold rounded-md shadow-none transition-all duration-200"
+            >
+              Get In Touch
+              <ArrowRight className="ml-2 w-5 h-5" />
+            </Button>
+          </Link>
+        </div>
       </div>
     </section>
   )

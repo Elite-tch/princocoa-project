@@ -23,6 +23,19 @@ export default function MeetFounder() {
         />
       </div>
 
+       <motion.div
+            initial={{ opacity: 0, x: -30 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.7 }}
+            className="text-gray-700 space-y-3 pt-3 md:block hidden leading-relaxed "
+          >
+            <p className=" ">
+              Projects such as <b className="font-bold text-black">I Have The Floor </b> are a reflection of this approach — thoughtful, collaborative, and executed with care.
+            </p>
+            <p>When you work with Princocoa Studios/ P.A.I Consulting, you work directly with me. My role is to listen closely, think rigorously, and ensure that what you are building is expressed with consistency and refinement at every touchpoint.</p>
+          </motion.div>
+
           </motion.div>
 
           {/* Right Image absolute z-10  inset-0 mt-[0%] md:mt-[-3%] // absolute rounded-2xl left-0 top-[-3.5%] md:top-[0%]
@@ -90,7 +103,7 @@ export default function MeetFounder() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.7 }}
-            className="text-gray-700 space-y-3 leading-relaxed "
+            className="text-gray-700 space-y-3 md:hidden leading-relaxed "
           >
             <p className=" ">
               Projects such as <b className="font-bold text-black">I Have The Floor </b> are a reflection of this approach — thoughtful, collaborative, and executed with care.

@@ -7,29 +7,10 @@ import { Button } from "@/components/ui/button"
 import Image from "next/image"
 import Link from "next/link"
 
-const services = [
-  {
-    category: "PRINCOCOA STUDIOS",
-    items: [
-      { name: "Productions", description: "text" },
-        { name: "Content Creation", description: "text" },
-       { name: "Social Media Campaigns", description: "text" },
-   
-      ],
-  },
-  {
-    category: "P.A.I CONSULTING",
-    items: [
-      { name: "Brand Management Consultancy", description: "text" },
-        { name: "Creative Direction", description: "text" },
-       { name: "Content Mapping", description: "Brainstorm (1hr) Get a feasible content roadmap for the quarter: goal oriented, directed by you: growth, revenue, community" },
-
-    ],
-  },
-
-]
+import { siteData } from "@/data/site-data"
 
 export default function ServicesSection() {
+  const services = siteData.services;
   const [openItems, setOpenItems] = useState({})
 
   const toggleItem = (category, index) => {
@@ -45,7 +26,7 @@ export default function ServicesSection() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="text-xl md:text-3xl lg:text-4xl font-bold uppercase text-pink-600 tracking-wider mb-4 text-center "
+          className="text-xl md:text-4xl font-sans font-bold uppercase tracking-wider text-[#0a0a0a] mb-6 md:mb-12 text-center"
         >
           Services
         </motion.h2>
@@ -61,23 +42,27 @@ export default function ServicesSection() {
           >
             {services.map((service, idx) => (
               <div key={idx} className="space-y-4">
-                <h3 className="md:text-2xl text-xl  font-semibold pt- md:pt-4  border-b uppercase  pb-3 text-center">{service.category}</h3>
+                <h3 className="md:text-2xl text-xl font-sans font-semibold pt- md:pt-4 border-b uppercase pb-3 text-center text-[#0a0a0a]">{service.category}</h3>
                 <div className="space-y-2">
                   {service.items.map((item, itemIdx) => {
                     const key = `${service.category}-${itemIdx}`
                     const isOpen = openItems[key]
 
                     return (
-                      <motion.div key={itemIdx} className="border-b group group-hover:border-[#004aad] group-hover:border pb-" whileHover={{ x: 5 }}>
+                      <motion.div
+                        key={itemIdx}
+                        className="border-b border-gray-100 group transition-colors duration-300 hover:border-[#0a0a0a]"
+                        whileHover={{ x: 10 }}
+                      >
                         <button
                           onClick={() => toggleItem(service.category, itemIdx)}
                           className="w-full flex items-center justify-between py-1 text-left "
                         >
-                          <span className=" text-md md:text-xl text-gray-700 transition-colors">
+                          <span className=" text-md md:text-xl text-[#0a0a0a] font-medium transition-colors">
                             {item.name}
                           </span>
                           <motion.div animate={{ rotate: isOpen ? 180 : 0 }} transition={{ duration: 0.3 }}>
-                            <ChevronDown className="w-5 h-5 text-gray-700 " />
+                            <ChevronDown className="w-5 h-5 text-[#0a0a0a] " />
                           </motion.div>
                         </button>
                         <motion.div
@@ -94,13 +79,13 @@ export default function ServicesSection() {
                 </div>
               </div>
             ))}
-<div className="flex justify-center">
-  <Link href='/service'>
-            <Button size='lg' className="bg-pink-600  hover:bg-pink-700 font-semibold py-3 md:py-4 px-8 md:mt-8 mt-4">
-              SEE ALL SERVICES
-            </Button>
-            </Link>
-</div>
+            <div className="flex justify-center">
+              <Link href='/service'>
+                <Button size='lg' className="bg-gray-900 hover:bg-[#0a0a0a] font-sans font-semibold py-3 md:py-4 px-8 md:mt-8 mt-4">
+                  SEE ALL SERVICES
+                </Button>
+              </Link>
+            </div>
           </motion.div>
 
           {/* Right - Phone Mockups (square + iPhone overlap) */}
@@ -127,7 +112,7 @@ export default function ServicesSection() {
                 animate={{ y: [0, 10, 0] }}
                 //transition={{ duration: 4, repeat: Number.POSITIVE_INFINITY, ease: "easeInOut", delay: 0.5 }}
                 className="absolute rounded-3xl md:block hidden overflow-hidden border-4 w-[280px] h-[360px] 2xl:w-[410px] 2xl:h-[490px] left-[68%] top-[35%] 2xl:top-[30%] border-foreground shadow-2xl z-10"
-              
+
               >
                 <Image src="https://res.cloudinary.com/dibwnfwk9/image/upload/v1761742905/E98EC581-65FF-4B53-8CD1-1AE605E3EE3E_L0_001-16_05_2023_10_17_32_tq7eyg.jpg" alt="Phone mockup 2" fill className="object-cover" />
               </motion.div>
@@ -136,17 +121,17 @@ export default function ServicesSection() {
                 animate={{ y: [0, 10, 0] }}
                 //transition={{ duration: 4, repeat: Number.POSITIVE_INFINITY, ease: "easeInOut", delay: 0.5 }}
                 className="relative md:hidden  h-[350px] md:w-[420px] md:h-[420px] 2xl:w-[620px] 2xl:h-[540px]  overflow-hidden  shadow-2xl mx-auto"
-              
+
               >
                 <video
-  autoPlay
-  loop
-  muted
-  playsInline
-  className="object-cover  inset-0 w-full h-full"
->
-  <source src="https://res.cloudinary.com/dibwnfwk9/video/upload/v1761761829/9124d203cc25456499761c459eff3060_ivra1d.mp4" type="video/mp4" />
-</video>  </motion.div>
+                  autoPlay
+                  loop
+                  muted
+                  playsInline
+                  className="object-cover  inset-0 w-full h-full"
+                >
+                  <source src="https://res.cloudinary.com/dibwnfwk9/video/upload/v1761761829/9124d203cc25456499761c459eff3060_ivra1d.mp4" type="video/mp4" />
+                </video>  </motion.div>
 
             </div>
           </motion.div>

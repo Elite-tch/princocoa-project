@@ -21,9 +21,9 @@ export default function TrustSection() {
     { name: "Bloom Hair elier", logo: "https://res.cloudinary.com/dibwnfwk9/image/upload/v1761739856/glow_up_hwnuoe.png" },
     { name: "Beautie On Deand", logo: "https://res.cloudinary.com/dibwnfwk9/image/upload/v1761739856/earth_incaa5.png" },
     { name: "Bloom Hair Ateier", logo: "https://res.cloudinary.com/dibwnfwk9/image/upload/v1761739856/ccv_2_r7w0tv.png" },
-     { name: "Bloom Hair Atelr", logo: "https://res.cloudinary.com/dibwnfwk9/image/upload/v1761739854/18_06_2021_18_57_42_t2yjys.png" },
+    { name: "Bloom Hair Atelr", logo: "https://res.cloudinary.com/dibwnfwk9/image/upload/v1761739854/18_06_2021_18_57_42_t2yjys.png" },
     { name: "Bloom Hair Atelie", logo: "https://res.cloudinary.com/dibwnfwk9/image/upload/v1761739854/20_10_2021_15_01_49_zfitzs.jpg" },
-    
+
   ]
 
   const [showMore, setShowMore] = useState(false)
@@ -78,14 +78,14 @@ export default function TrustSection() {
             {!showMore ? (
               <button
                 onClick={() => setShowMore(true)}
-                className="px-4 py-2 bg-pink-600 hover:bg-pink-700 text-white rounded"
+                className="px-6 py-2 bg-gray-900 hover:bg-[#0a0a0a] transition-colors text-white rounded font-sans uppercase text-sm tracking-widest"
               >
                 Load More
               </button>
             ) : (
               <button
                 onClick={() => setShowMore(false)}
-                className="px-4 py-2 bg-pink-600 hover:bg-pink-700 text-white rounded"
+                className="px-6 py-2 bg-gray-900 hover:bg-[#0a0a0a] transition-colors text-white rounded font-sans uppercase text-sm tracking-widest"
               >
                 Show Less
               </button>

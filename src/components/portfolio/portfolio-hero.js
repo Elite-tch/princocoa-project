@@ -1,17 +1,41 @@
 "use client"
 
 import { motion } from "framer-motion"
+import Image from "next/image"
+import { siteData } from "@/data/site-data"
 
 export default function PortfolioHero() {
   return (
-    <section className="pt-20 px-6">
+    <section className="relative h-[40vh] md:h-[80vh] mt-32 flex items-center justify-center overflow-hidden mb-10">
+      {/* Background Image */}
+      <div className="absolute inset-0 z-0">
+        <Image
+          src={siteData.hero.portfolio.image}
+          alt="Portfolio Background"
+          fill
+          className="object-cover"
+          priority
+        />
+        {/* Deep Overlay for contrast */}
+        <div className="absolute inset-0 bg-[#0a0a0a]/50 backdrop-blur-[2px]" />
+      </div>
+
+      {/* Content */}
       <motion.div
-        initial={{ opacity: 0, y: 20 }}
+        initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8 }}
-        className="max-w-4xl mx-auto mt-[33%] md:mt-[10%] text-center"
+        transition={{ duration: 1, ease: "easeOut" }}
+        className="relative z-10 text-center px-6"
       >
-        <h1 className="font-serif text-xl md:text-4xl font-bold uppercase text-gray-900 mb-2 md:mb-4">Our Work</h1>
+        <h1 className="font-sans text-5xl md:text-8xl font-bold uppercase tracking-[0.2em] text-white">
+          Portfolio
+        </h1>
+        <motion.div
+          initial={{ width: 0 }}
+          animate={{ width: "100px" }}
+          transition={{ delay: 0.5, duration: 0.8 }}
+          className="h-1 bg-white mx-auto mt-4"
+        />
       </motion.div>
     </section>
   )

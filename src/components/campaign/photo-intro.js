@@ -23,8 +23,8 @@ export default function PhotoExamplesIntro() {
         >
           <h2 className="font-bold text-xl mb-4 text-gray-100">WHAT&apos;S THE DIFFERENCE?</h2>
           <p className="text-gray-200 leading-relaxed">
-  Our professional photos deliver a <strong>studio-inspired look</strong>, shot with high-end equipment for sharp and polished visuals. In contrast, our lifestyle photos, often captured on an iPhone, highlight your product in <strong>everyday settings</strong>, creating a genuine and relatable feel. While each style serves a unique purpose, we’ve found that a <em>blend of both</em> gives the most balanced and effective results for our clients.
-</p>
+            Our professional photos deliver a <strong>studio-inspired look</strong>, shot with high-end equipment for sharp and polished visuals. In contrast, our lifestyle photos, often captured on an iPhone, highlight your product in <strong>everyday settings</strong>, creating a genuine and relatable feel. While each style serves a unique purpose, we’ve found that a <em>blend of both</em> gives the most balanced and effective results for our clients.
+          </p>
 
         </motion.div>
       </div>

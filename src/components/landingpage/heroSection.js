@@ -28,13 +28,13 @@ export default function HeroSection() {
             className=" "
           >
             <motion.h1
-              className="text-4xl md:text-6xl text-gray-900  text-center  font-ligt leading-12 md:leading-20 text-balance "
+              className="text-4xl md:text-6xl text-gray-900  text-center  font-light leading-12 md:leading-20 text-balance "
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.4 }}
             >
-             Your plug-in creative 
-              <b className="text-4xl md:text-5xl text-pink-600"> Engine </b> 
+              Your plug-in creative
+              <b className="text-4xl md:text-5xl text-[#0a0a0a]"> Engine </b>
             </motion.h1>
 
             <motion.p
@@ -43,7 +43,7 @@ export default function HeroSection() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.6 }}
             >
-             We connect strategy, identity, content, and production into one eco- system that keeps your brand growing.
+              We connect strategy, identity, content, and production into one eco-system that keeps your brand growing.
             </motion.p>
 
             <motion.div
@@ -52,12 +52,12 @@ export default function HeroSection() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.8 }}
             >
-              <Link href='/contact'> 
-              <Button size="lg" className="bg-pink-600 md:text-base text-xs rounded-full text-primary-foreground hover:bg-pink-700 font-semibold md:px-8 px-4">
-                WORK WITH US
-              </Button>
+              <Link href='/contact'>
+                <Button size="lg" className="bg-gray-900 md:text-base text-xs rounded-full text-white hover:bg-[#0a0a0a] font-semibold md:px-8 px-4 transition-all duration-300 shadow-sm hover:shadow-md">
+                  WORK WITH US
+                </Button>
               </Link>
-              
+
             </motion.div>
           </motion.div>
         </div>

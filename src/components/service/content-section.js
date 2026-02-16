@@ -56,7 +56,7 @@ const contentServices = [
       answer: "text"
     }
   },
-   {
+  {
     title: "Content Strategy",
     image: "https://res.cloudinary.com/dibwnfwk9/image/upload/v1761742905/E98EC581-65FF-4B53-8CD1-1AE605E3EE3E_L0_001-16_05_2023_10_17_32_tq7eyg.jpg",
     heading: "Production",
@@ -67,11 +67,12 @@ const contentServices = [
       "Campaigns",
       "Behind The Scenes",
       "Talk Show",
-     
+
     ],
     faq: {
       question: "Who it’s best for ?",
-      answer: "Wardrobe styling, Makeup, Hair, Set Design The full works available - contact us "   }
+      answer: "Wardrobe styling, Makeup, Hair, Set Design The full works available - contact us "
+    }
   },
   {
     title: "Photography / Videography",
@@ -86,7 +87,8 @@ const contentServices = [
     ],
     faq: {
       question: "Who it’s best for ?",
-      answer: "text"    }
+      answer: "text"
+    }
   },
   {
     title: "Content Shoots",
@@ -101,7 +103,8 @@ const contentServices = [
     ],
     faq: {
       question: "Who it’s best for ?",
-     answer: "text" }
+      answer: "text"
+    }
   },
 
   {
@@ -119,7 +122,8 @@ const contentServices = [
     ],
     faq: {
       question: "Who it’s best for ?",
-     answer: "text" }
+      answer: "text"
+    }
   },
 
   {
@@ -136,7 +140,8 @@ const contentServices = [
     ],
     faq: {
       question: "Who it’s best for ?",
-     answer: "text" }
+      answer: "text"
+    }
   }
 ]
 
@@ -172,35 +177,34 @@ export default function ConsultingSection() {
                 </div>
               </div>
 
-              {/* Content Container */}
               <div className="w-full md:w-1/2 space-y-8">
                 <div className="space-y-4">
-                  <h3 className="text-3xl md:text-4xl font-bold text-gray-900">
+                  <h3 className="text-3xl md:text-4xl font-sans font-bold text-gray-950 uppercase tracking-tight">
                     {service.heading}
                   </h3>
                 </div>
 
-                <ul className="space-y-4">
+                <ul className="space-y-6">
                   {service.bullets.map((bullet, idx) => (
-                    <li key={idx} className="flex items-start gap-3 text-gray-800">
-                      <span className="mt-2 w-2 h-2 rounded-full bg-pink-600 shrink-0" />
-                      <span className="text-lg font-medium">{bullet}</span>
+                    <li key={idx} className="flex items-start gap-4 text-gray-800">
+                      <span className="mt-2.5 w-1.5 h-1.5 rounded-full bg-[#0a0a0a] shrink-0" />
+                      <span className="text-lg md:text-xl font-body leading-snug">{bullet}</span>
                     </li>
                   ))}
                 </ul>
 
                 {/* FAQ Style Dropdown */}
                 {service.faq && (
-                  <div className="pt-6 border-t border-gray-100">
+                  <div className="pt-2 border-t border-gray-100">
                     <button
                       onClick={() => setOpenFaq(openFaq === index ? null : index)}
                       className="w-full flex items-center justify-between py-4 text-left group"
                     >
-                      <span className="text-xl font-bold text-gray-900 group-hover:text-pink-600 transition-colors">
+                      <span className="text-lg font-sans font-bold text-[#0a0a0a] group-hover:opacity-70 transition-opacity uppercase tracking-wider">
                         {service.faq.question}
                       </span>
                       <ChevronDown
-                        className={`w-6 h-6 text-gray-500 transition-transform duration-300 ${openFaq === index ? "rotate-180 text-pink-600" : ""
+                        className={`w-6 h-6 text-[#0a0a0a] transition-transform duration-500 ${openFaq === index ? "rotate-180" : ""
                           }`}
                       />
                     </button>
@@ -210,10 +214,10 @@ export default function ConsultingSection() {
                         height: openFaq === index ? "auto" : 0,
                         opacity: openFaq === index ? 1 : 0
                       }}
-                      transition={{ duration: 0.3, ease: "easeInOut" }}
+                      transition={{ duration: 0.4, ease: [0.33, 1, 0.68, 1] }}
                       className="overflow-hidden"
                     >
-                      <p className="pb-6 text-gray-600 text-lg leading-relaxed">
+                      <p className="pb-8 text-gray-600 text-lg font-body leading-relaxed max-w-xl">
                         {service.faq.answer}
                       </p>
                     </motion.div>

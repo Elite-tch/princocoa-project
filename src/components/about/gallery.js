@@ -14,7 +14,7 @@ export default function GallerySection() {
     { name: "SYPD Limited", logo: "https://res.cloudinary.com/dibwnfwk9/image/upload/v1761743120/DE2B38FD-5AB9-4B39-90FE-E681F7E06981_L0_001-30_03_2023_22_36_13_iuz4hc.jpg" },
     { name: "Creative Control Ventures", logo: "https://res.cloudinary.com/dibwnfwk9/image/upload/v1761742976/71E191BB-337D-4ADA-B055-B83F592C2B56_L0_001-25_07_2023_04_12_48_dnu1rb.jpg" },
     { name: "Glow Up", logo: "https://res.cloudinary.com/dibwnfwk9/image/upload/v1761742922/B880EB2F-BBDB-4574-A02F-56346313FA19_L0_001-18_08_2024_10_34_25_ahemid.jpg" },
-        
+
   ]
 
   const [showMore, setShowMore] = useState(false)
@@ -41,7 +41,7 @@ export default function GallerySection() {
           transition={{ duration: 0.6, delay: 0.1 }}
           className="text-xl md:text-4xl font-bold uppercase text-gray-900 tracking-wider mb-6 md:mb-12 text-center"
         >
-      Meet The Crew
+          Meet The Crew
         </motion.h2>
 
         <div className="grid grid-cols-1 md:grid-cols-3 2xl:grid-cols-3 lg:grid-cols-3 gap-4 md:gap-4 xl:gap-12 items-center justify-items-center w-[90%] mx-auto">

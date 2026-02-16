@@ -22,7 +22,7 @@ const testimonials = [
     author: "Holly Vicars",
     handle: "@corechicagopilates",
     img: "https://res.cloudinary.com/dibwnfwk9/image/upload/v1761739857/chef_sia_nkowdl.jpg",
-     href: '/ '
+    href: '/ '
   },
   {
     company: "Inkbox",
@@ -30,7 +30,7 @@ const testimonials = [
     author: "Haley Bentham",
     handle: "@inkbox",
     img: "https://res.cloudinary.com/dibwnfwk9/image/upload/v1761739855/25_02_2021_06_32_55_duhgxb.jpg",
-     href: '/ '
+    href: '/ '
   },
   {
     company: "City Cruises",
@@ -38,7 +38,7 @@ const testimonials = [
     author: "Carlita Kelly",
     handle: "@citycruises",
     img: "https://res.cloudinary.com/dibwnfwk9/image/upload/v1761739855/charlize_k1efqk.jpg",
-     href: '/ '
+    href: '/ '
   },
 ]
 
@@ -75,7 +75,7 @@ export default function TestimonialsSection() {
     return visible
   }
 
- {/*  const slideVariants = {
+  {/*  const slideVariants = {
     enter: (direction) => ({
       x: direction > 0 ? 1000 : -500,
       opacity: 0,
@@ -98,7 +98,7 @@ export default function TestimonialsSection() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="text-xl md:text-4xl font-bold uppercase tracking-wider text-gray-900 mb-6 md:mb-12 text-center"
+          className="text-xl md:text-4xl font-sans font-bold uppercase tracking-wider text-[#0a0a0a] mb-6 md:mb-12 text-center"
         >
           Client Love Letters
         </motion.h2>
@@ -123,22 +123,38 @@ export default function TestimonialsSection() {
                   key={`${currentIndex}-${index}`}
                   initial={{ opacity: 0, scale: 0.8 }}
                   animate={{ opacity: 1, scale: 1 }}
-                  transition={{ delay: index * 0.1 }}
-                  className="text-center bg-pink-600  p-6 rounded-2xl shadow-md"
+                  whileHover={{
+                    scale: 1.03,
+                    boxShadow: "0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1)",
+                    borderColor: "rgba(255,255,255,0.2)"
+                  }}
+                  whileTap={{ scale: 0.98 }}
+                  transition={{
+                    type: "spring",
+                    stiffness: 400,
+                    damping: 17,
+                    delay: index * 0.1
+                  }}
+                  className="text-center bg-[#0a0a0a] p-8 rounded-2xl shadow-xl border border-white/5 transition-all duration-500 group relative overflow-hidden"
                 >
-                  <div className=" w-24 h-24 rounded-full flex items-center justify-center mx-auto mb-3">
+                  <div className="absolute inset-0 bg-gradient-to-br from-white/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                  <div className="w-24 h-24 rounded-full flex items-center justify-center mx-auto mb-6 overflow-hidden ring-4 ring-white/5 group-hover:ring-white/10 transition-all duration-300">
                     <Image
                       src={t.img}
                       alt={t.author}
                       width={100}
                       height={100}
-                      className="w-full h-full rounded-full object-cover"
+                      className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                     />
                   </div>
-                  <p className="text-md md:text-lg text-white/90 mb-4 leading-6 line-clamp-8">
+                  <p className="text-md md:text-lg text-white/90 mb-6 leading-relaxed line-clamp-8 font-body font-light">
                     {t.text}
                   </p>
-               {/* 
+                  <div className="mt-auto">
+                    <p className="font-sans font-bold text-white text-lg uppercase tracking-wider">{t.author}</p>
+                    <p className="font-sans text-white/50 text-sm mt-1">{t.company}</p>
+                  </div>
+                  {/* 
                   <Link className="font-semibold text-white " href={t.href}>
                    <button
                 className="px-4 py-2 bg-[#39FF14]/80 hover:bg-[#39FF14]/90 mt-3 text-white rounded-full"
@@ -158,7 +174,7 @@ export default function TestimonialsSection() {
               onClick={prevSlide}
               variant="outline"
               size="icon"
-              className="rounded-full border-pink-600  hover:bg-pink-600 text-white transition-all bg-pink-600"
+              className="rounded-full border-gray-900 hover:bg-[#0a0a0a] hover:border-[#0a0a0a] text-white transition-all bg-gray-900 font-sans"
             >
               <ChevronLeft className="h-6 w-6" />
             </Button>
@@ -166,7 +182,7 @@ export default function TestimonialsSection() {
               onClick={nextSlide}
               variant="outline"
               size="icon"
-              className="rounded-full border-pink-600  hover:bg-pink-600 text-white transition-all bg-pink-600"
+              className="rounded-full border-gray-900 hover:bg-[#0a0a0a] hover:border-[#0a0a0a] text-white transition-all bg-gray-900 font-sans"
             >
               <ChevronRight className="h-6 w-6" />
             </Button>
@@ -181,9 +197,8 @@ export default function TestimonialsSection() {
                   setDirection(index > currentIndex ? 1 : -1)
                   setCurrentIndex(index)
                 }}
-                className={`w-2 h-2 rounded-full transition-all ${
-                  index === currentIndex ? "bg-pink-600 w-8" : "bg-pink-600"
-                }`}
+                className={`w-2 h-2 rounded-full transition-all ${index === currentIndex ? "bg-[#0a0a0a] w-8" : "bg-gray-400"
+                  }`}
               />
             ))}
           </div>

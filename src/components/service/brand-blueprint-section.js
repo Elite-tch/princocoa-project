@@ -27,7 +27,7 @@ export default function BrandBlueprintSection() {
             Brands looking for a comprehensive refresh or growth strategy with clear direction and actionable insights
             Those who aren&rsquo;t ready for full-time social media support but want expert guidance and support
           </p>
-         
+
         </div>
       </motion.div>
     </section>

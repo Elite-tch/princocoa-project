@@ -7,7 +7,7 @@ export default function ScrollingTicker() {
   const repeatedText = Array(8).fill(text.join(" • ")).join(" ")
 
   return (
-    <div className="bg-pink-600 z-50 py-4 overflow-hidden">
+    <div className="bg- z-50 py-4 overflow-hidden">
       <motion.div
         animate={{ x: [0, -2000] }}
         transition={{

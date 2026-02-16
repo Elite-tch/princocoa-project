@@ -4,7 +4,7 @@ import { motion } from "framer-motion"
 
 export default function ServicesTagline() {
   return (
-    <section className="bg-pink-600 py-10 md:py-20  px-6">
+    <section className=" bg-white pt-10 md:pt-20  px-6">
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -12,10 +12,10 @@ export default function ServicesTagline() {
         transition={{ duration: 0.6 }}
         className="max-w-4xl mx-auto text-center"
       >
-        <p className="text-white/80 text-lg mb-4">Your creative content engine</p>
-        <h2 className="font-serif text-xl md:text-4xl text-white mb-6 text-balance">
+        <h2 className=" text-3xl md:text-4xl font-sans font-bold text-gray-950 uppercase tracking-tight ">Your creative content engine</h2>
+        <p className="font-serif  text-lg  text-balance">
           Services that work together to build a sustainable content eco-system
-        </h2>
+        </p>
         
       </motion.div>
     </section>

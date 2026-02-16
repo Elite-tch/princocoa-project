@@ -5,7 +5,7 @@ import Link from "next/link"
 
 export default function AcademySection() {
   return (
-    <section className="relative overflow-hidden bg-white py-20">
+    <section className="relative overflow-hidden  py-20">
       <div className="container mx-auto px-4 md:px-6">
         <div className="flex flex-col mx-auto md:w-[90%] w-[95%] md:flex-row items-center gap-12">
           {/* Left - Content */}
@@ -15,9 +15,9 @@ export default function AcademySection() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
-              className="text-3xl md:text-5xl font-bold uppercase tracking-tight text-gray-900"
+              className="text-3xl md:text-4xl font-sans font-semibold uppercase tracking-tight text-gray-900"
             >
-              Meet the <span className="text-pink-600">Team</span>
+              Meet the Team
             </motion.h2>
 
             <motion.p
@@ -40,9 +40,9 @@ export default function AcademySection() {
             >
               <Link
                 href="/about"
-                className="inline-block bg-pink-600 text-white px-10 py-4 rounded-full font-bold text-lg hover:bg-pink-700 transition-all transform hover:scale-105 shadow-lg"
+                className="inline-block bg-gray-900 text-white px-10 py-3 rounded-full font-sans font-bold text-lg hover:bg-[#0a0a0a] transition-all transform hover:scale-105 shadow-lg"
               >
-                ABOUT US
+                About us
               </Link>
             </motion.div>
           </div>

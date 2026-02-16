@@ -117,7 +117,7 @@ export default function ContactForm() {
               </div>
             </div>
 
-           {/* Message */}
+            {/* Message */}
             <div>
               <label className="block text-gray-900  md:text-xl font-semibold mb-2">
                 How can we help? <span className="text-red-500">*</span>
@@ -131,7 +131,7 @@ export default function ContactForm() {
               />
             </div>
 
-           
+
 
             <Button
               type="submit"
@@ -143,18 +143,18 @@ export default function ContactForm() {
 
           {/* Image */}
           <motion.div
-  initial={{ opacity: 0, x: 20 }}
-  whileInView={{ opacity: 1, x: 0 }}
-  viewport={{ once: true }}
-  className="hidden relative lg:block w-full h-[600px]"
->
-  <Image
-    fill
-    src="https://res.cloudinary.com/dibwnfwk9/image/upload/v1761761778/08_08_2021_13_52_12_uslpym.jpg"
-    alt="Contact us"
-    className="object-cover rounded-lg"
-  />
-</motion.div>
+            initial={{ opacity: 0, x: 20 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            className="hidden relative lg:block w-full h-[600px]"
+          >
+            <Image
+              fill
+              src="https://res.cloudinary.com/dibwnfwk9/image/upload/v1761761778/08_08_2021_13_52_12_uslpym.jpg"
+              alt="Contact us"
+              className="object-cover rounded-lg"
+            />
+          </motion.div>
 
         </div>
       </div>
