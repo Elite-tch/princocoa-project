@@ -53,7 +53,7 @@ export default function HeroSection() {
               transition={{ duration: 0.8, delay: 0.8 }}
             >
               <Link href='/contact'>
-                <Button size="lg" className="bg-gray-900 md:text-base text-xs rounded-full text-white hover:bg-[#0a0a0a] font-semibold md:px-8 px-4 transition-all duration-300 shadow-sm hover:shadow-md">
+                <Button size="lg" className="bg-gray-900 md:text-base text-xs rounded text-white hover:bg-[#0a0a0a] font-semibold md:px-8 px-4 transition-all duration-300 shadow-sm hover:shadow-md">
                   WORK WITH US
                 </Button>
               </Link>

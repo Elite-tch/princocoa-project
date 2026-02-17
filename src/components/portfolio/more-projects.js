@@ -13,9 +13,9 @@ export default function MoreProjects({ categorySlug, currentProjectSlug, project
     if (otherProjects.length === 0) return null;
 
     return (
-        <section className="py-20 bg-gray-50 px-6">
+        <section className="md:py-20 py-10 bg-gray-50 px-6">
             <div className="max-w-7xl mx-auto">
-                <h2 className="text-3xl md:text-4xl font-sans  mb-6 text-gray-900">
+                <h2 className="text-2xl md:text-4xl font-sans  mb-6 text-gray-900">
                     Check out more projects
                 </h2>
 
@@ -42,7 +42,7 @@ export default function MoreProjects({ categorySlug, currentProjectSlug, project
                                     </div>
                                 </div>
                                 <div className="space-y-1">
-                                    <span className="text-[10px] font-sans font-bold uppercase tracking-[0.2em] text-pink-600">
+                                    <span className="text-[10px] font-sans font-bold uppercase tracking-[0.2em] text-gray-500">
                                         {(project.categorySlug || categorySlug).replace('-', ' ')}
                                     </span>
                                     <h3 className="text-xl font-sans text-gray-900 group-hover:text-pink-600 transition-colors leading-tight">

@@ -36,7 +36,7 @@ export default function Navigation() {
                 <Image
                   src="/logo1.png"
                   alt="Princocoa Logo"
-                  className="object-contain w-auto h-20 md:h-12"
+                  className="object-contain w-auto h-10 md:h-12"
                   width={300}
                   height={100}
                   priority
@@ -64,7 +64,7 @@ export default function Navigation() {
             <div className="hidden md:flex items-center gap-4">
               <SocialIcons />
               <Link href="/contact">
-                <Button size='lg' className="bg-gray-900 rounded-full hover:bg-[#0a0a0a] font-semibold px-4 sm:px-6 text-xs">
+                <Button size='lg' className="bg-gray-900 rounded hover:bg-[#0a0a0a] font-semibold px-4 sm:px-6 text-xs">
                   CONTACT US
                 </Button>
               </Link>
@@ -140,7 +140,7 @@ export default function Navigation() {
 
                 {/* Mobile CTA Button */}
                 <Link href="/contact">
-                  <Button size='lg' className="bg-gray-900 rounded-full hover:bg-[#0a0a0a] w-fit font-semibold px-6 sm:px-6 text-xs">
+                  <Button size='lg' className="bg-gray-900 rounded hover:bg-[#0a0a0a] w-fit font-semibold px-6 sm:px-6 text-xs">
                     CONTACT US
                   </Button>
                 </Link>

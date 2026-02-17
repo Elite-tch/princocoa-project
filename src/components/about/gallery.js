@@ -39,12 +39,12 @@ export default function GallerySection() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.1 }}
-          className="text-xl md:text-4xl font-bold uppercase text-gray-900 tracking-wider mb-6 md:mb-12 text-center"
+          className="text-2xl md:text-4xl font-bold uppercase text-gray-900 tracking-wider mb-6 md:mb-12 text-center"
         >
           Meet The Crew
         </motion.h2>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 2xl:grid-cols-3 lg:grid-cols-3 gap-4 md:gap-4 xl:gap-12 items-center justify-items-center w-[90%] mx-auto">
+        <div className="grid  grid-cols-1 md:grid-cols-3 2xl:grid-cols-3 lg:grid-cols-3 gap-4 md:gap-4 xl:gap-12 items-center justify-items-center w-[90%] mx-auto">
           {visibleClients.map((client, index) => (
             <motion.div
               key={client.name}
@@ -52,7 +52,7 @@ export default function GallerySection() {
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: index * 0.05 }}
-              className="relative h-[480px] w-[360px] md:w-[380px] 2xl:w-full 2xl:h-[650px] flex items-center justify-center  transition-all duration-300 cursor-pointer"
+              className="relative h-[380px] w-[310px] md:w-[380px] 2xl:w-full 2xl:h-[650px] flex items-center justify-center  transition-all duration-300 cursor-pointer"
             >
               <Image
                 src={client.logo}
@@ -69,14 +69,14 @@ export default function GallerySection() {
             {!showMore ? (
               <button
                 onClick={() => setShowMore(true)}
-                className="px-4 py-2 bg-pink-600 hover:bg-pink-700 text-white rounded"
+                className="px-4 py-2 bg-[#0a0a0a]  text-white rounded"
               >
                 Load More
               </button>
             ) : (
               <button
                 onClick={() => setShowMore(false)}
-                className="px-4 py-2 bg-pink-600 hover:bg-pink-700 text-white rounded"
+                className="px-4 py-2 bg-[#0a0a0a] text-white rounded"
               >
                 Show Less
               </button>

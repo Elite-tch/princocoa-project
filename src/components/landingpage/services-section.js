@@ -26,7 +26,7 @@ export default function ServicesSection() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="text-xl md:text-4xl font-sans font-bold uppercase tracking-wider text-[#0a0a0a] mb-6 md:mb-12 text-center"
+          className="text-2xl md:text-4xl font-sans font-bold uppercase tracking-wider text-[#0a0a0a] mb-6 md:mb-12 text-center"
         >
           Services
         </motion.h2>
@@ -42,7 +42,7 @@ export default function ServicesSection() {
           >
             {services.map((service, idx) => (
               <div key={idx} className="space-y-4">
-                <h3 className="md:text-2xl text-xl font-sans font-semibold pt- md:pt-4 border-b uppercase pb-3 text-center text-[#0a0a0a]">{service.category}</h3>
+                <h3 className="md:text-2xl text-lg font-sans font-semibold pt- md:pt-4 border-b uppercase pb-3 text-center text-[#0a0a0a]">{service.category}</h3>
                 <div className="space-y-2">
                   {service.items.map((item, itemIdx) => {
                     const key = `${service.category}-${itemIdx}`
@@ -94,7 +94,7 @@ export default function ServicesSection() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="relative md:h-full h-[430px] xl:pb-28 md:w-full w-[100%] mx-ato flex items-center justify-center pb- md:pb-0"
+            className="relative md:h-full h-[430px] xl:pb-28 md:w-full w-[100%] mx-ato flex items-center justify-center md:pb-0"
           >
             {/* wrapper to contain both frames */}
             <div className="relative w-full md:w-[540px] h-auto">
@@ -120,18 +120,11 @@ export default function ServicesSection() {
               <motion.div
                 animate={{ y: [0, 10, 0] }}
                 //transition={{ duration: 4, repeat: Number.POSITIVE_INFINITY, ease: "easeInOut", delay: 0.5 }}
-                className="relative md:hidden  h-[350px] md:w-[420px] md:h-[420px] 2xl:w-[620px] 2xl:h-[540px]  overflow-hidden  shadow-2xl mx-auto"
+                className="relative md:hidden  h-[350px] md:w-[420px] md:h-[420px] 2xl:w-[620px] 2xl:h-[540px]  overflow-hidden  shadow mx-auto"
 
               >
-                <video
-                  autoPlay
-                  loop
-                  muted
-                  playsInline
-                  className="object-cover  inset-0 w-full h-full"
-                >
-                  <source src="https://res.cloudinary.com/dibwnfwk9/video/upload/v1761761829/9124d203cc25456499761c459eff3060_ivra1d.mp4" type="video/mp4" />
-                </video>  </motion.div>
+                  <Image src="https://res.cloudinary.com/dibwnfwk9/image/upload/v1761742905/E98EC581-65FF-4B53-8CD1-1AE605E3EE3E_L0_001-16_05_2023_10_17_32_tq7eyg.jpg" alt="Phone mockup 2" fill className="object-cover" />
+             </motion.div>
 
             </div>
           </motion.div>

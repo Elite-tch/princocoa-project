@@ -19,7 +19,7 @@ export default function NewsletterSection() {
 
   return (
     <section className="bg-gray-200 py-16 md:py-24">
-      <div className="container mx-auto px-6 md:px-12 max-w-[90%]">
+      <div className="container mx-auto px-6 md:px-12  md:max-w-[90%]">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -28,7 +28,7 @@ export default function NewsletterSection() {
           className="text-center"
         >
           {/* Title */}
-          <h2 className="text-3xl md:text-4xl font-sans font-bold uppercase  mb-4 tracking-tight">
+          <h2 className="text-2xl md:text-4xl font-sans font-bold uppercase  mb-4 tracking-tight">
             Become a Cocoabean
           </h2>
 
@@ -54,13 +54,13 @@ export default function NewsletterSection() {
                   type="text"
                   placeholder="First Name"
                   required
-                  className="bg-white/5 text-white placeholder:text-gray-500 h-14 px-8 rounded-full border-gray-300 focus:border-white/30 focus:ring-0 font-body transition-all"
+                  className="bg-white/5  placeholder:text-gray-500 h-14 px-8 rounded-full border-gray-300 focus:border-white/30 focus:ring-0 font-body transition-all"
                 />
                 <Input
                   type="text"
                   placeholder="Last Name"
                   required
-                  className="bg-white/5 text-white placeholder:text-gray-500 h-14 px-8 rounded-full border-gray-300 focus:border-black focus:ring-0 font-body transition-all"
+                  className="bg-white/5  placeholder:text-gray-500 h-14 px-8 rounded-full border-gray-300 focus:border-black focus:ring-0 font-body transition-all"
                 />
                 <Input
                   type="email"
@@ -68,7 +68,7 @@ export default function NewsletterSection() {
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                   required
-                  className="bg-white/5 text-white placeholder:text-gray-500 h-14 px-8 rounded-full border-gray-300 focus:border-white/30 focus:ring-0 font-body transition-all"
+                  className="bg-white/5  placeholder:text-gray-500 h-14 px-8 rounded-full border-gray-300 focus:border-white/30 focus:ring-0 font-body transition-all"
                 />
               </div>
 

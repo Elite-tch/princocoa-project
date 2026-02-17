@@ -5,17 +5,17 @@ import Link from "next/link"
 
 export default function AcademySection() {
   return (
-    <section className="relative overflow-hidden  py-20">
+    <section className="relative overflow-hidden py-10  md:py-20">
       <div className="container mx-auto px-4 md:px-6">
         <div className="flex flex-col mx-auto md:w-[90%] w-[95%] md:flex-row items-center gap-12">
           {/* Left - Content */}
-          <div className="flex-1 space-y-6 text-center md:text-left">
+          <div className="flex-1 md:space-y-6 space-y-4 text-center md:text-left">
             <motion.h2
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
-              className="text-3xl md:text-4xl font-sans font-semibold uppercase tracking-tight text-gray-900"
+              className="text-2xl md:text-4xl font-sans font-semibold uppercase tracking-tight text-gray-900"
             >
               Meet the Team
             </motion.h2>
@@ -25,7 +25,7 @@ export default function AcademySection() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.1 }}
-              className="text-lg md:text-xl text-gray-700 leading-relaxed"
+              className="text-md md:text-xl text-gray-700 leading-relaxed"
             >
               At Princocoa Studios, we are a collective of bold thinkers, sharp strategists, and fearless creators.
               Our diverse team brings together expertise in brand management, creative direction, and digital production
@@ -40,7 +40,7 @@ export default function AcademySection() {
             >
               <Link
                 href="/about"
-                className="inline-block bg-gray-900 text-white px-10 py-3 rounded-full font-sans font-bold text-lg hover:bg-[#0a0a0a] transition-all transform hover:scale-105 shadow-lg"
+                className="inline-block bg-gray-900 text-white px-10 py-3 rounded font-sans font-bold text-lg hover:bg-[#0a0a0a] transition-all transform hover:scale-105 shadow-lg"
               >
                 About us
               </Link>
@@ -54,7 +54,7 @@ export default function AcademySection() {
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
               transition={{ duration: 0.8 }}
-              className="relative aspect-video md:aspect-square overflow-hidden rounded-2xl shadow-2xl"
+              className="relative aspect-video md:aspect-square overflow-hidden rounded shadow-xl"
             >
               <Image
                 src="/img2.jpg"

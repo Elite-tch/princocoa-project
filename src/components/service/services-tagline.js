@@ -12,8 +12,8 @@ export default function ServicesTagline() {
         transition={{ duration: 0.6 }}
         className="max-w-4xl mx-auto text-center"
       >
-        <h2 className=" text-3xl md:text-4xl font-sans font-bold text-gray-950 uppercase tracking-tight ">Your creative content engine</h2>
-        <p className="font-serif  text-lg  text-balance">
+        <h2 className=" text-2xl md:text-4xl font-sans font-bold text-gray-950 uppercase tracking-tight ">Your creative content engine</h2>
+        <p className="font-serif text-md md:text-lg  text-balance">
           Services that work together to build a sustainable content eco-system
         </p>
         

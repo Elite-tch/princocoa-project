@@ -1,5 +1,5 @@
 "use client"
-
+import Image from "next/image"
 import { motion } from "framer-motion"
 import { Instagram, Linkedin, Music } from "lucide-react"
 
@@ -16,7 +16,7 @@ export default function Footer() {
             transition={{ duration: 0.6 }}
           >
             <div className="text-2xl font-bold mb-4">
-              <span className="text-[#f2f6fb]">LOGO</span>
+              <Image src="/logow.png" alt="Logo" width={120} height={100} />
               
             </div>
             <p className="text-md text-[#f2f6fb]">Creatives at heart driven by purposeful strategy</p>

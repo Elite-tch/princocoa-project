@@ -153,7 +153,7 @@ export default function ConsultingSection() {
       <div className="max-w-7xl mx-auto space-y-24">
 
         {/* Services List */}
-        <div className="space-y-32">
+        <div className="md:space-y-24 space-y-12">
           {contentServices.map((service, index) => (
             <motion.div
               key={index}
@@ -161,12 +161,12 @@ export default function ConsultingSection() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.8 }}
-              className={`flex flex-col gap-12 justify-center w-[90%] mx-auto items-start ${index % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"
+              className={`flex flex-col gap-6 md:gap-12 justify-center  md:w-[90%] mx-auto items-start ${index % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"
                 }`}
             >
               {/* Image Container */}
               <div className="w-full md:w-1/2">
-                <div className="relative h-[400px] md:h-[500px] w-full rounded overflow-hidden shadow-2xl">
+                <div className="relative h-[300px] md:h-[500px] w-full rounded overflow-hidden shadow">
                   <Image
                     src={service.image}
                     alt={service.title}
@@ -177,18 +177,18 @@ export default function ConsultingSection() {
                 </div>
               </div>
 
-              <div className="w-full md:w-1/2 space-y-8">
+              <div className="w-full md:w-1/2 space-y-4 md:space-y-8">
                 <div className="space-y-4">
-                  <h3 className="text-3xl md:text-4xl font-sans font-bold text-gray-950 uppercase tracking-tight">
+                  <h3 className="text-xl md:text-4xl font-sans font-bold text-gray-950 uppercase tracking-tight">
                     {service.heading}
                   </h3>
                 </div>
 
-                <ul className="space-y-6">
+                <ul className="md:space-y-6 space-y-3 ">
                   {service.bullets.map((bullet, idx) => (
                     <li key={idx} className="flex items-start gap-4 text-gray-800">
-                      <span className="mt-2.5 w-1.5 h-1.5 rounded-full bg-[#0a0a0a] shrink-0" />
-                      <span className="text-lg md:text-xl font-body leading-snug">{bullet}</span>
+                      <span className="mt-2.5 w-1.5 h-1.5  rounded-full bg-[#0a0a0a] shrink-0" />
+                      <span className="text-md md:text-xl font-body leading-snug">{bullet}</span>
                     </li>
                   ))}
                 </ul>
@@ -200,7 +200,7 @@ export default function ConsultingSection() {
                       onClick={() => setOpenFaq(openFaq === index ? null : index)}
                       className="w-full flex items-center justify-between py-4 text-left group"
                     >
-                      <span className="text-lg font-sans font-bold text-[#0a0a0a] group-hover:opacity-70 transition-opacity uppercase tracking-wider">
+                      <span className="md:text-lg text-md font-sans font-bold text-[#0a0a0a] group-hover:opacity-70 transition-opacity uppercase">
                         {service.faq.question}
                       </span>
                       <ChevronDown
@@ -217,7 +217,7 @@ export default function ConsultingSection() {
                       transition={{ duration: 0.4, ease: [0.33, 1, 0.68, 1] }}
                       className="overflow-hidden"
                     >
-                      <p className="pb-8 text-gray-600 text-lg font-body leading-relaxed max-w-xl">
+                      <p className="pb-8 text-gray-600 text-md md:text-lg font-body leading-relaxed max-w-xl">
                         {service.faq.answer}
                       </p>
                     </motion.div>

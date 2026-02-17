@@ -27,26 +27,26 @@ export default function ProjectDetail({ project, categorySlug }) {
                             <div className="h-[1px] w-12 bg-gray-100" />
                         </div>
 
-                        <h1 className="text-4xl md:text-4xl font-bold uppercase leading-[0.9] tracking-tighter mb-12 text-[#0a0a0a]">
+                        <h1 className="text-2xl md:text-4xl font-bold uppercase leading-[0.9] tracking-tighter mb-6 md:mb-12 text-[#0a0a0a]">
                             {project.title}
                         </h1>
 
                         {/* Project Narrative Block - Strictly Data Driven */}
                         {hasStoryDetails && (
                             <div className="grid md:grid-cols-12 gap-12 md:gap-24 items-start">
-                                <div className="md:col-span-8 space-y-12">
+                                <div className="md:col-span-8 space-y-4 md:space-y-12">
                                     {project.challenge && (
-                                        <div className="space-y-4">
-                                            <h3 className="text-[10px] font-bold tracking-[0.5em] uppercase text-gray-400">The Challenge</h3>
-                                            <p className="text-2xl md:text-3xl text-[#0a0a0a] font-light leading-tight">
+                                        <div className="md:space-y-4 space-y-2">
+                                            <h3 className="text-[10px] font-bold tracking-[0.5em] uppercase text-gray-500">The Challenge</h3>
+                                            <p className="text-md md:text-3xl text-[#0a0a0a] font-light leading-tight">
                                                 {project.challenge}
                                             </p>
                                         </div>
                                     )}
                                     {project.approach && (
                                         <div className="space-y-4">
-                                            <h3 className="text-[10px] font-bold tracking-[0.5em] uppercase text-gray-400">The Strategy</h3>
-                                            <p className="text-lg md:text-xl text-gray-600 font-light leading-relaxed max-w-3xl">
+                                            <h3 className="text-[10px] font-bold tracking-[0.5em] uppercase text-gray-500">The Strategy</h3>
+                                            <p className="text-md md:text-xl text-gray-600 font-light leading-relaxed max-w-3xl">
                                                 {project.approach}
                                             </p>
                                         </div>
@@ -54,17 +54,17 @@ export default function ProjectDetail({ project, categorySlug }) {
                                 </div>
 
                                 <div className="md:col-span-4 border-l border-gray-100 pl-10">
-                                    <div className="space-y-10">
+                                    <div className="md:space-y-10 space-y-3">
                                         {project.results && (
                                             <div>
-                                                <h3 className="text-[10px] font-bold tracking-[0.4em] uppercase text-gray-400 mb-4">Results</h3>
+                                                <h3 className="text-[10px] font-bold tracking-[0.4em] uppercase text-gray-500 mb-4">Results</h3>
                                                 <p className="text-2xl text-[#0a0a0a] font-serif lowercase italic leading-snug">
                                                     &quot;{project.results}&quot;
                                                 </p>
                                             </div>
                                         )}
-                                        <div className="pt-10 border-t border-gray-50">
-                                            <h3 className="text-[10px] font-bold tracking-[0.4em] uppercase text-gray-300 mb-2">Discipline</h3>
+                                        <div className="md:pt-10 pt-3  border-t border-gray-50">
+                                            <h3 className="text-[10px] font-bold tracking-[0.4em] uppercase text-gray-500 mb-2">Discipline</h3>
                                             <p className="text-xs font-bold tracking-widest uppercase text-gray-950">{categorySlug.replace('-', ' ')}</p>
                                         </div>
                                     </div>
@@ -76,13 +76,13 @@ export default function ProjectDetail({ project, categorySlug }) {
             </section>
 
             {/* 2. THE "FLEX" GALLERY (Horizontal Cinematic Scroll) */}
-            <section className="py-24 overflow-hidden bg-white">
+            <section className="md:py-24 py-10 overflow-hidden bg-white">
                 <div className="px-6 md:px-16 mb-16 flex justify-between items-end">
-                    <h3 className="text-3xl md:text-4xl font-sans font-bold text-gray-950 uppercase tracking-tighter leading-none">
-                        Visual<br /><span className="text-gray-300 font-light lowercase font-serif italic">In-situ</span>
+                    <h3 className="text-2xl md:text-4xl font-sans font-bold text-gray-950 uppercase tracking-tighter leading-none">
+                        Visual<br /><span className="text-gray-500 font-light lowercase font-serif italic">In-situ</span>
                     </h3>
 
-                    <span className="text-[10px] font-bold tracking-[0.5em] uppercase text-gray-300">
+                    <span className="text-[10px] font-bold tracking-[0.5em] uppercase text-gray-500">
                         {project.images.length} Visual Assets
                     </span>
                 </div>

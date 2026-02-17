@@ -17,7 +17,7 @@ export default function PortfolioHero() {
           priority
         />
         {/* Deep Overlay for contrast */}
-        <div className="absolute inset-0 bg-[#0a0a0a]/50 backdrop-blur-[2px]" />
+        <div className="absolute inset-0 bg-[#0a0a0a]/50 backdrop-blur-[0.9px]" />
       </div>
 
       {/* Content */}
@@ -27,7 +27,7 @@ export default function PortfolioHero() {
         transition={{ duration: 1, ease: "easeOut" }}
         className="relative z-10 text-center px-6"
       >
-        <h1 className="font-sans text-5xl md:text-8xl font-bold uppercase tracking-[0.2em] text-white">
+        <h1 className="font-sans text-3xl md:text-8xl font-bold uppercase tracking-[0.2em] text-white">
           Portfolio
         </h1>
         <motion.div
