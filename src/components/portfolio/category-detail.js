@@ -64,7 +64,7 @@ export default function CategoryDetail({ category, slug }) {
                                 </p>
                             )) : (
                                 <p className="text-xl md:text-2xl text-gray-700 leading-relaxed font-light">
-                                    In an increasingly crowded digital landscape, the challenge isn't just to be seen; it's to be understood. We bridge the gap between corporate rigidity and creative soul, ensuring every asset speaks to stakeholders and enthusiasts alike without losing its heartbeat.
+                                    In an increasingly crowded digital landscape, the challenge isn&apos;t just to be seen; it&apos;s to be understood. We bridge the gap between corporate rigidity and creative soul, ensuring every asset speaks to stakeholders and enthusiasts alike without losing its heartbeat.
                                 </p>
                             )}
                         </div>

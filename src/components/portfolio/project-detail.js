@@ -59,7 +59,7 @@ export default function ProjectDetail({ project, categorySlug }) {
                                             <div>
                                                 <h3 className="text-[10px] font-bold tracking-[0.4em] uppercase text-gray-400 mb-4">Results</h3>
                                                 <p className="text-2xl text-[#0a0a0a] font-serif lowercase italic leading-snug">
-                                                    "{project.results}"
+                                                    &quot;{project.results}&quot;
                                                 </p>
                                             </div>
                                         )}
@@ -80,8 +80,8 @@ export default function ProjectDetail({ project, categorySlug }) {
                 <div className="px-6 md:px-16 mb-16 flex justify-between items-end">
                     <h3 className="text-3xl md:text-4xl font-sans font-bold text-gray-950 uppercase tracking-tighter leading-none">
                         Visual<br /><span className="text-gray-300 font-light lowercase font-serif italic">In-situ</span>
-                        </h3>
-                  
+                    </h3>
+
                     <span className="text-[10px] font-bold tracking-[0.5em] uppercase text-gray-300">
                         {project.images.length} Visual Assets
                     </span>
@@ -102,7 +102,7 @@ export default function ProjectDetail({ project, categorySlug }) {
                                 viewport={{ once: true, margin: "-100px" }}
                                 transition={{ duration: 0.8, ease: "easeOut" }}
                                 className={`relative rounded-sm overflow-hidden group bg-gray-50 shadow-sm hover:shadow-2xl transition-shadow duration-700 ${isFullWidth ? "md:col-span-12 aspect-video" :
-                                        isTall ? "md:col-span-5 aspect-[4/3.6]" : "md:col-span-7 aspect-[16/10]"
+                                    isTall ? "md:col-span-5 aspect-[4/3.6]" : "md:col-span-7 aspect-[16/10]"
                                     }`}
                             >
                                 <Image
