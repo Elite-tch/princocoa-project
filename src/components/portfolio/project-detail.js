@@ -11,7 +11,7 @@ export default function ProjectDetail({ project, categorySlug }) {
     const hasStoryDetails = project.challenge || project.approach;
 
     return (
-        <div className="min-h-screen text-[#0a0a0a] font-sans selection:bg-pink-100 bg-white">
+        <div className="min-h-screen text-[#0a0a0a] font-sans selection:bg-gray-100 bg-white">
             {/* 1. PROFESSIONAL PROJECT HEADER */}
             <section className="pt-32 pb-16 px-6 md:px-16 border-b border-gray-50">
                 <div className="max-w-[1600px] mx-auto">
@@ -27,9 +27,14 @@ export default function ProjectDetail({ project, categorySlug }) {
                             <div className="h-[1px] w-12 bg-gray-100" />
                         </div>
 
-                        <h1 className="text-2xl md:text-4xl font-bold uppercase leading-[0.9] tracking-tighter mb-6 md:mb-12 text-[#0a0a0a]">
+                        <h1 className="text-2xl md:text-5xl font-bold uppercase leading-[0.9] tracking-tighter mb-4 text-[#0a0a0a]">
                             {project.title}
                         </h1>
+                        {project.client && (
+                            <p className="text-[10px] font-bold tracking-[0.5em] uppercase text-gray-500 mb-12">
+                                Client: {project.client}
+                            </p>
+                        )}
 
                         {/* Project Narrative Block - Strictly Data Driven */}
                         {hasStoryDetails && (
@@ -49,6 +54,21 @@ export default function ProjectDetail({ project, categorySlug }) {
                                             <p className="text-md md:text-xl text-gray-600 font-light leading-relaxed max-w-3xl">
                                                 {project.approach}
                                             </p>
+                                        </div>
+                                    )}
+
+                                    {/* Work Scope - New Detailed Breakdown */}
+                                    {project.scope && (
+                                        <div className="pt-12 border-t border-gray-50">
+                                            <h3 className="text-[10px] font-bold tracking-[0.5em] uppercase text-gray-500 mb-8">Work Scope</h3>
+                                            <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-4">
+                                                {project.scope.map((item, idx) => (
+                                                    <div key={idx} className="flex items-center gap-3">
+                                                        <div className="w-1.5 h-1.5 bg-[#0a0a0a] rounded-full" />
+                                                        <span className="text-sm text-gray-700 font-medium">{item}</span>
+                                                    </div>
+                                                ))}
+                                            </div>
                                         </div>
                                     )}
                                 </div>
@@ -75,7 +95,54 @@ export default function ProjectDetail({ project, categorySlug }) {
                 </div>
             </section>
 
-            {/* 2. THE "FLEX" GALLERY (Horizontal Cinematic Scroll) */}
+            {/* 2. MODULAR PROJECT CHAPTERS (Chapters of the Story) */}
+            {project.sections && (
+                <section className="py-12 md:py-24 bg-white overflow-hidden">
+                    <div className="max-w-[1600px] mx-auto px-6 md:px-16 space-y-32">
+                        {project.sections.map((section, idx) => (
+                            <motion.div
+                                key={idx}
+                                initial={{ opacity: 0, y: 50 }}
+                                whileInView={{ opacity: 1, y: 0 }}
+                                viewport={{ once: true, margin: "-100px" }}
+                                transition={{ duration: 0.8 }}
+                                className={`grid md:grid-cols-12 gap-12 md:gap-24 items-center ${idx % 2 !== 0 ? "md:flex-row-reverse" : ""
+                                    }`}
+                            >
+                                <div className={`md:col-span-5 space-y-6 ${idx % 2 !== 0 ? "md:order-2" : ""}`}>
+                                    <div className="space-y-2">
+                                        <span className="text-[10px] font-bold tracking-[0.5em] uppercase text-gray-400 block">Chapter 0{idx + 1}</span>
+                                        <h2 className="text-3xl md:text-5xl font-bold uppercase tracking-tighter leading-none text-[#0a0a0a]">
+                                            {section.title}
+                                        </h2>
+                                        <p className="text-gray-500 font-serif lowercase italic text-xl">
+                                            {section.subtitle}
+                                        </p>
+                                    </div>
+                                    <p className="text-lg text-gray-600 font-light leading-relaxed max-w-xl">
+                                        {section.content}
+                                    </p>
+                                </div>
+
+                                <div className={`md:col-span-7 relative ${idx % 2 !== 0 ? "md:order-1" : ""}`}>
+                                    <div className="relative aspect-[16/10] rounded-sm overflow-hidden shadow-2xl">
+                                        <Image
+                                            src={section.images[0]}
+                                            fill
+                                            alt={section.title}
+                                            className="object-cover"
+                                        />
+                                    </div>
+                                    {/* Abstract background element for extra "perception" vibe */}
+                                    <div className={`absolute -inset-4 bg-gray-50 -z-10 rounded-sm ${idx % 2 === 0 ? "translate-x-8" : "-translate-x-8"}`} />
+                                </div>
+                            </motion.div>
+                        ))}
+                    </div>
+                </section>
+            )}
+
+            {/* 3. THE GALLERY GRID (Definitive Flex Grid) */}
             <section className="md:py-24 py-10 overflow-hidden bg-white">
                 <div className="px-6 md:px-16 mb-16 flex justify-between items-end">
                     <h3 className="text-2xl md:text-4xl font-sans font-bold text-gray-950 uppercase tracking-tighter leading-none">

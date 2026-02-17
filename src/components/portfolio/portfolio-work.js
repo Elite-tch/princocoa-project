@@ -39,7 +39,7 @@ export default function PortfolioWork() {
 
               </div>
 
-              <h5 className="font-sans text-lg md:text-xl font-light mb-3 text-[#0a0a0a] uppercae tracking-tight transition-colors group-hover:text-pink-600">
+              <h5 className="font-sans text-lg md:text-xl font-light mb-3 text-[#0a0a0a] uppercase tracking-tight transition-colors">
                 {category.title}
               </h5>
 

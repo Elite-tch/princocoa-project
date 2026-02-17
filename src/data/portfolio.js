@@ -1,4 +1,119 @@
 export const portfolioData = {
+    "productions": {
+        title: "Productions",
+        coverImage: "https://res.cloudinary.com/dibwnfwk9/image/upload/v1761743114/1853EA70-8A63-4F52-9B66-6A68194DF2EB_L0_001-30_03_2023_22_09_47_yae3vc.jpg",
+        description: "High-Conversion Media. Strategically Engineered. We don't just produce content; we architect perception.",
+        behindTheScenes: [
+            "https://res.cloudinary.com/dibwnfwk9/image/upload/v1761743114/1853EA70-8A63-4F52-9B66-6A68194DF2EB_L0_001-30_03_2023_22_09_47_yae3vc.jpg",
+            "https://res.cloudinary.com/dibwnfwk9/image/upload/v1761761745/bts_ori_campaign_imdguc.jpg"
+        ],
+        details: {
+            strategyQuote: "We don’t just record stories; we build fully realised media presences that position leaders with authority.",
+            challengeTitle: "Media Architecture",
+            challengeText: [
+                "Launching a high-level digital platform requires more than just filming. It requires a comprehensive production ecosystem.",
+                "We bridge the gap between abstract intention and executable visual engineering."
+            ]
+        },
+        projects: [
+            {
+                slug: "i-have-the-floor",
+                title: "I Have The Floor",
+                subtitle: "Podcast Production & Brand Ecosystem",
+                client: "Adeyele",
+                challenge: "When Adeyele approached us, the vision was clear: to create a safe, empowering digital space. Our mandate was not simply to film episodes, but to build a fully realized media presence.",
+                approach: "We delivered a 'mother load' production blueprint including guest coordination, custom set design, cinematic capture, and professional sound mixing for global distribution.",
+                scope: [
+                    "Guest scheduling & production coordination",
+                    "Custom set design & art direction",
+                    "Lighting design & cinematic capture",
+                    "Bespoke intro/outro music production",
+                    "Full YouTube production (Thumbnails, Highlights)",
+                    "Social media rollout strategy",
+                    "Audio mastering for Buzzsprout"
+                ],
+                sections: [
+                    {
+                        title: "Set Design",
+                        subtitle: "Home — Elevated.",
+                        content: "The brief: cosy yet refined. We created a set that felt like a luxurious living room—warm, intimate, and inviting. The space was designed to host one to three guests comfortably while preserving a plush visual tone.",
+                        images: ["https://res.cloudinary.com/dibwnfwk9/image/upload/v1761743114/1853EA70-8A63-4F52-9B66-6A68194DFEB_L0_001-30_03_2023_22_09_47_yae3vc.jpg"]
+                    },
+                    {
+                        title: "Lighting",
+                        subtitle: "Warm. Intentional. Flattering.",
+                        content: "We designed lighting that enhanced skin tone, maintained depth, and complemented the atmosphere of thoughtful conversation. No harsh studio glare—just effortless glow.",
+                        images: ["https://res.cloudinary.com/dibwnfwk9/image/upload/v1761762081/15_05_2022_22_04_16_y2olj3.jpg"]
+                    },
+                    {
+                        title: "YouTube Assets",
+                        subtitle: "Long-Form Authority.",
+                        content: "Every element—from high-impact thumbnails to strategic retention hooks—was designed to strengthen positioning and increase watch time.",
+                        images: ["https://res.cloudinary.com/dibwnfwk9/image/upload/v1761761745/bts_ori_campaign_imdguc.jpg"]
+                    }
+                ],
+                images: ["https://res.cloudinary.com/dibwnfwk9/image/upload/v1761743114/1853EA70-8A63-4F52-9B66-6A68194DFEB_L0_001-30_03_2023_22_09_47_yae3vc.jpg", "https://res.cloudinary.com/dibwnfwk9/image/upload/v1761762081/15_05_2022_22_04_16_y2olj3.jpg"],
+                results: "A podcast platform positioned with authority, cohesive identity, and a scalable content ecosystem."
+            }
+        ]
+    },
+    "corporate": {
+        title: "Corporate",
+        coverImage: "https://res.cloudinary.com/dibwnfwk9/image/upload/v1761761754/5DB75267-5E0C-4FF7-9A0A-199FDCEAC94E_L0_001-16_05_2023_04_11_33_go2w2x.jpg",
+        description: "Strategic Brand Modernisation. We strengthen internal execution and implement scalable content structures for market leaders.",
+        behindTheScenes: [
+            "https://res.cloudinary.com/dibwnfwk9/image/upload/v1761738825/A93DE538-27D3-42D8-BAB2-AE0C18FFB33C_L0_001-18_10_2024_15_46_58_zdzpdg.jpg",
+            "https://res.cloudinary.com/dibwnfwk9/image/upload/v1761762436/pn3_xl53fb.png"
+        ],
+        details: {
+            strategyQuote: "Transition from reactive posting to intentional, corporate communication that humanises the brand.",
+            challengeTitle: "Digital Infrastructure",
+            challengeText: [
+                "Legacy corporate entities often face brand drift. Our mandate is to modernise digital presence while maintaining executive tone.",
+                "We implement systems that ensure long-term sustainability and brand consistency."
+            ]
+        },
+        projects: [
+            {
+                slug: "shoreline-natural-resources",
+                title: "Shoreline Ltd",
+                subtitle: "Strategic Brand Modernisation",
+                client: "Shoreline Natural Resources",
+                challenge: "Shoreline engaged us to modernise its digital presence, strengthen internal execution, and implement a scalable content structure.",
+                approach: "Conducted a comprehensive digital audit, oversaw a website revamp, and delivered a 360-degree content ecosystem including team training.",
+                scope: [
+                    "Comprehensive digital & website audit",
+                    "Brand identity refresh & visual systems",
+                    "Social media ecosystem development",
+                    "Corporate Production Day capture",
+                    "Workers' Day Campaign initiative",
+                    "Team training & implementation coaching"
+                ],
+                sections: [
+                    {
+                        title: "Digital Audit",
+                        subtitle: "Infrastructure Analysis.",
+                        content: "We assessed messaging clarity, structural flow, and visual cohesion, delivering a roadmap for improved user experience and corporate positioning. We identified the gap between their heritage and their digital future.",
+                        images: ["https://res.cloudinary.com/dibwnfwk9/image/upload/v1761738825/A93DE538-27D3-42D8-BAB2-AE0C18FFB33C_L0_001-18_10_2024_15_46_58_zdzpdg.jpg"]
+                    },
+                    {
+                        title: "Brand Refresh",
+                        subtitle: "Modernising Authority.",
+                        content: "Modernised visual systems, social graphics, and feed design ensures a cohesive and recognisable brand presentation. We transitioned Shoreline from reactive posting to intentional, legacy-building communication.",
+                        images: ["https://res.cloudinary.com/dibwnfwk9/image/upload/v1761761754/5DB75267-5E0C-4FF7-9A0A-199FDCEAC94E_L0_001-16_05_2023_04_11_33_go2w2x.jpg"]
+                    },
+                    {
+                        title: "Campaign Hub",
+                        subtitle: "Humanising the Industrial.",
+                        content: "For the Workers' Day initiative, we spotlighted day-to-day operations and internal culture. This effectively reinforced their external brand storytelling while building internal pride.",
+                        images: ["https://res.cloudinary.com/dibwnfwk9/image/upload/v1761762436/pn3_xl53fb.png"]
+                    }
+                ],
+                images: ["https://res.cloudinary.com/dibwnfwk9/image/upload/v1761761754/5DB75267-5E0C-4FF7-9A0A-199FDCEAC94E_L0_001-16_05_2023_04_11_33_go2w2x.jpg", "https://res.cloudinary.com/dibwnfwk9/image/upload/v1761738825/A93DE538-27D3-42D8-BAB2-AE0C18FFB33C_L0_001-18_10_2024_15_46_58_zdzpdg.jpg"],
+                results: "Operating with a refined digital identity and a structured, communicable content system."
+            }
+        ]
+    },
     "videography": {
         title: "Videography",
         coverImage: "https://res.cloudinary.com/dibwnfwk9/image/upload/v1761743114/1853EA70-8A63-4F52-9B66-6A68194DF2EB_L0_001-30_03_2023_22_09_47_yae3vc.jpg",
@@ -13,11 +128,6 @@ export const portfolioData = {
             challengeText: [
                 "In a world of static noise, video must cut through with rhythm and emotional precision.",
                 "We balance technical high-fidelity with raw, authentic movement that resonates."
-            ],
-            approachPhilosophy: "The camera is a storyteller, not just a witness.",
-            approachText: [
-                "We focus on the pacing and the soundscape to ensure every second carries weight.",
-                "Our post-production turns raw footage into a curated atmospheric experience."
             ]
         },
         projects: [
@@ -29,33 +139,6 @@ export const portfolioData = {
                 approach: "Utilizing fast-paced cutting and custom orchestral sound design to maintain the grandeur.",
                 images: ["https://res.cloudinary.com/dibwnfwk9/image/upload/v1761743114/1853EA70-8A63-4F52-9B66-6A68194DFEB_L0_001-30_03_2023_22_09_47_yae3vc.jpg", "https://res.cloudinary.com/dibwnfwk9/image/upload/v1761762081/15_05_2022_22_04_16_y2olj3.jpg"],
                 results: "15k+ organic views within 48 hours."
-            },
-            {
-                slug: "fashion-week-bts",
-                title: "Fashion Week",
-                subtitle: "Behind the Scenes",
-                challenge: "Capturing the fast-paced, chaotic energy of backstage fashion into a cohesive narrative.",
-                approach: "Raw handheld shooting combined with stylish slow-motion transitions.",
-                images: ["https://res.cloudinary.com/dibwnfwk9/image/upload/v1761761745/bts_ori_campaign_imdguc.jpg", "https://res.cloudinary.com/dibwnfwk9/image/upload/v1761761810/9229484D-5E5E-4947-A4D0-BC2ADE20FEB2_L0_001-16_05_2023_10_34_51_xwxg5f.jpg"],
-                results: "Increased backstage social engagement by 45%."
-            },
-            {
-                slug: "brand-manifesto-film",
-                title: "Brand Manifesto",
-                subtitle: "Cinematic Short",
-                challenge: "Visualizing the intangible 'soul' of a luxury consultancy firm through abstract imagery.",
-                approach: "Slow-motion macro shots of textures combined with a deep, authoritative voiceover.",
-                images: ["https://res.cloudinary.com/dibwnfwk9/image/upload/v1761762081/15_05_2022_22_04_16_y2olj3.jpg", "https://res.cloudinary.com/dibwnfwk9/image/upload/v1761761893/3B43828D-598D-40C4-8AE0-E4948BE47976_Original_gxbdee.jpg"],
-                results: "Adopted as the primary investor relations asset."
-            },
-            {
-                slug: "viral-tutorial-video",
-                title: "Style Tutorial",
-                subtitle: "Short-form Content",
-                challenge: "Making educational style content feel fast-paced and entertaining for TikTok.",
-                approach: "High-speed editing with text overlays and trending sound integration.",
-                images: ["https://res.cloudinary.com/dibwnfwk9/image/upload/v1761738955/REELS_TIKTOKS_on5pif.jpg", "https://res.cloudinary.com/dibwnfwk9/image/upload/v1761743016/FBB6EB18-4B0D-4F8D-BE36-1AD44A345840_L0_001-15_05_2023_20_56_03_zc6td2.jpg"],
-                results: "50k+ shares across social platforms."
             }
         ]
     },
@@ -80,28 +163,10 @@ export const portfolioData = {
                 slug: "editorial-lifestyle-v1",
                 title: "Editorial",
                 subtitle: "Lifestyle Series",
+                images: ["https://res.cloudinary.com/dibwnfwk9/image/upload/v1761743016/FBB6EB18-4B0D-4F8D-BE36-1AD44A345840_L0_001-15_05_2023_20_56_03_zc6td2.jpg"],
                 challenge: "Creating a library of assets that feel authentic and unplanned yet perfectly on-brand.",
                 approach: "Natural light photography using a high-grain film aesthetic for a nostalgic feel.",
-                images: ["https://res.cloudinary.com/dibwnfwk9/image/upload/v1761743016/FBB6EB18-4B0D-4F8D-BE36-1AD44A345840_L0_001-15_05_2023_20_56_03_zc6td2.jpg", "https://res.cloudinary.com/dibwnfwk9/image/upload/v1761761736/15_05_2022_22_13_5_rzxlux.jpg"],
                 results: "Reduced content production costs by 40%."
-            },
-            {
-                slug: "product-focus-jewelry",
-                title: "Product Focus",
-                subtitle: "Macro Series",
-                challenge: "Highlighting the intricate details of luxury jewelry without losing the editorial vibe.",
-                approach: "Stark studio lighting and macro lenses to showcase textures and craftsmanship.",
-                images: ["https://res.cloudinary.com/dibwnfwk9/image/upload/v1761761893/3B43828D-598D-40C4-8AE0-E4948BE47976_Original_gxbdee.jpg", "https://res.cloudinary.com/dibwnfwk9/image/upload/v1761761754/5DB75267-5E0C-4FF7-9A0A-199FDCEAC94E_L0_001-16_05_2023_04_11_33_go2w2x.jpg"],
-                results: "Significant increase in luxury product sales."
-            },
-            {
-                slug: "outdoor-lifestyle-campaign",
-                title: "Outdoor Life",
-                subtitle: "Brand Storytelling",
-                challenge: "Capturing a sense of adventure and freedom for a lifestyle brand.",
-                approach: "Golden-hour photography in diverse natural settings to evoke emotion.",
-                images: ["https://res.cloudinary.com/dibwnfwk9/image/upload/v1761761557/19_05_2021_20_33_31_iv6pga.jpg", "https://res.cloudinary.com/dibwnfwk9/image/upload/v1761761810/9229484D-5E5E-4947-A4D0-BC2ADE20FEB2_L0_001-16_05_2023_10_34_51_xwxg5f.jpg"],
-                results: "High audience retention on visual campaigns."
             }
         ]
     },
@@ -110,158 +175,32 @@ export const portfolioData = {
         coverImage: "https://res.cloudinary.com/dibwnfwk9/image/upload/v1761761754/5DB75267-5E0C-4FF7-9A0A-199FDCEAC94E_L0_001-16_05_2023_04_11_33_go2w2x.jpg",
         description: "Integrated visual strategies that move the needle. We create the look, the feel, and the momentum for your brand launch.",
         behindTheScenes: [
-            "https://res.cloudinary.com/dibwnfwk9/image/upload/v1761761754/5DB75267-5E0C-4FF7-9A0A-199FDCEAC94E_L0_001-16_05_2023_04_11_33_go2w2x.jpg",
-            "https://res.cloudinary.com/dibwnfwk9/image/upload/v1761761745/bts_ori_campaign_imdguc.jpg"
+            "https://res.cloudinary.com/dibwnfwk9/image/upload/v1761761754/5DB75267-5E0C-4FF7-9A0A-199FDCEAC94E_L0_001-16_05_2023_04_11_33_go2w2x.jpg"
         ],
         details: {
-            strategyQuote: "A campaign is a symphony of diverse assets playing a single, powerful brand message.",
-            challengeTitle: "Launch Velocity",
-            challengeText: [
-                "Maintaining a single soul across billboard, social, and digital assets.",
-                "Bridging the gap between creative ambition and commercial reality."
-            ]
+            strategyQuote: "A campaign is a symphony of diverse assets playing a single, powerful brand message."
         },
         projects: [
             {
                 slug: "defined-dbg-summer",
                 title: "Defined DBG",
                 subtitle: "Summer Collection",
+                images: ["https://res.cloudinary.com/dibwnfwk9/image/upload/v1761762081/15_05_2022_22_04_16_y2olj3.jpg"],
                 challenge: "Capturing the high-energy essence of urban summer fashion for a global audience.",
                 approach: "Raw, grit-focused editing style and street-casting for lived-in authenticity.",
-                images: ["https://res.cloudinary.com/dibwnfwk9/image/upload/v1761762081/15_05_2022_22_04_16_y2olj3.jpg", "https://res.cloudinary.com/dibwnfwk9/image/upload/v1761761810/9229484D-5E5E-4947-A4D0-BC2ADE20FEB2_L0_001-16_05_2023_10_34_51_xwxg5f.jpg", "https://res.cloudinary.com/dibwnfwk9/image/upload/v1761743016/FBB6EB18-4B0D-4F8D-BE36-1AD44A345840_L0_001-15_05_2023_20_56_03_zc6td2.jpg"],
                 results: "30% increase in social engagement."
-            },
-            {
-                slug: "orilifestyle-hair-course",
-                title: "Orilifestyle",
-                subtitle: "Hair Course Campaign",
-                challenge: "Making a technical hair course feel aspirational and luxurious.",
-                approach: "Focusing on 'after-state' emotions with warm, sun-drenched lighting.",
-                images: ["https://res.cloudinary.com/dibwnfwk9/image/upload/v1761761736/15_05_2022_22_13_5_rzxlux.jpg", "https://res.cloudinary.com/dibwnfwk9/image/upload/v1761761865/15_05_2022_22_13_58_qgrjxw.jpg", "https://res.cloudinary.com/dibwnfwk9/image/upload/v1761761754/5DB75267-5E0C-4FF7-9A0A-199FDCEAC94E_L0_001-16_05_2023_04_11_33_go2w2x.jpg"],
-                results: "Sold out course within the first week."
-            },
-            {
-                slug: "lahanna-accessories",
-                title: "Lahanna",
-                subtitle: "Accessories Campaign",
-                challenge: "Ensuring small products make a massive visual impact in editorial layouts.",
-                approach: "Macro-photography combined with high-contrast studio lighting.",
-                images: ["https://res.cloudinary.com/dibwnfwk9/image/upload/v1761761893/3B43828D-598D-40C4-8AE0-E4948BE47976_Original_gxbdee.jpg", "https://res.cloudinary.com/dibwnfwk9/image/upload/v1761761754/5DB75267-5E0C-4FF7-9A0A-199FDCEAC94E_L0_001-16_05_2023_04_11_33_go2w2x.jpg", "https://res.cloudinary.com/dibwnfwk9/image/upload/v1761762081/15_05_2022_22_04_16_y2olj3.jpg"],
-                results: "Significant increase in website traffic."
-            },
-            {
-                slug: "defined-lookbook",
-                title: "Defined Summer",
-                subtitle: "Lookbook Shoot",
-                challenge: "Creating a manual for style that feels like an art piece.",
-                approach: "Cinematic framing and a cohesive color palette.",
-                images: ["https://res.cloudinary.com/dibwnfwk9/image/upload/v1761761810/9229484D-5E5E-4947-A4D0-BC2ADE20FEB2_L0_001-16_05_2023_10_34_51_xwxg5f.jpg", "https://res.cloudinary.com/dibwnfwk9/image/upload/v1761743016/FBB6EB18-4B0D-4F8D-BE36-1AD44A345840_L0_001-15_05_2023_20_56_03_zc6td2.jpg", "https://res.cloudinary.com/dibwnfwk9/image/upload/v1761762081/15_05_2022_22_04_16_y2olj3.jpg"],
-                results: "Created a high-energy visual manual."
             }
         ]
     },
-    "web-design": {
-        title: "Web Design",
-        coverImage: "https://res.cloudinary.com/dibwnfwk9/image/upload/v1761738825/A93DE538-27D3-42D8-BAB2-AE0C18FFB33C_L0_001-18_10_2024_15_46_58_zdzpdg.jpg",
-        description: "Digital homes for world-class movements. We blend elite aesthetics with high-performance user journeys.",
-        behindTheScenes: [
-            "https://res.cloudinary.com/dibwnfwk9/image/upload/v1761738825/A93DE538-27D3-42D8-BAB2-AE0C18FFB33C_L0_001-18_10_2024_15_46_58_zdzpdg.jpg",
-            "https://res.cloudinary.com/dibwnfwk9/image/upload/v1761738809/040E28D4-D1C3-4F65-B612-DEF1E0DAFE11_L0_001-06_01_2025_16_44_15_ovfbre.png"
-        ],
-        details: {
-            strategyQuote: "Your website is your silent ambassador. It should look as good as you sound.",
-            challengeTitle: "Digital UX",
-            challengeText: [
-                "Interfaces that arrest attention and guide intent.",
-                "Solving for the millisecond gap between curiosity and trust."
-            ]
-        },
-        projects: [
-            {
-                slug: "resi-renewable-africa",
-                title: "Resi Renewable Africa",
-                subtitle: "Corporate Website",
-                challenge: "Communicating technical innovation to stakeholders human-centrically.",
-                approach: "Minimalist layout with bold typography and high-impact imagery.",
-                images: ["https://res.cloudinary.com/dibwnfwk9/image/upload/v1761738809/040E28D4-D1C3-4F65-B612-DEF1E0DAFE11_L0_001-06_01_2025_16_44_15_ovfbre.png", "https://res.cloudinary.com/dibwnfwk9/image/upload/v1761738825/A93DE538-27D3-42D8-BAB2-AE0C18FFB33C_L0_001-18_10_2024_15_46_58_zdzpdg.jpg"],
-                results: "Clarity in mission led to increased trust."
-            },
-            {
-                slug: "zendit-finance-web",
-                title: "Zendit Finance",
-                subtitle: "Fintech Platform",
-                challenge: "Building trust in a new fintech space with a modern, secure UI.",
-                approach: "Glassmorphism and deep blue palettes for transparency and security.",
-                images: ["https://res.cloudinary.com/dibwnfwk9/image/upload/v1761738825/A93DE538-27D3-42D8-BAB2-AE0C18FFB33C_L0_001-18_10_2024_15_46_58_zdzpdg.jpg", "https://res.cloudinary.com/dibwnfwk9/image/upload/v1761738809/040E28D4-D1C3-4F65-B612-DEF1E0DAFE11_L0_001-06_01_2025_16_44_15_ovfbre.png"],
-                results: "Simplified the complex crypto-to-fiat journey."
-            },
-            {
-                slug: "creative-portfolio-v1",
-                title: "Creative v1",
-                subtitle: "Artist Portfolio",
-                challenge: "Showcasing multiple disciplines without losing personal brand identity.",
-                approach: "Art-gallery style grid that acts as a neutral canvas.",
-                images: ["https://res.cloudinary.com/dibwnfwk9/image/upload/v1761738955/REELS_TIKTOKS_on5pif.jpg", "https://res.cloudinary.com/dibwnfwk9/image/upload/v1761743016/FBB6EB18-4B0D-4F8D-BE36-1AD44A345840_L0_001-15_05_2023_20_56_03_zc6td2.jpg"],
-                results: "High engagement on project case studies."
-            }
-        ]
-    },
-    "graphic-design": {
-        title: "Graphic Design",
-        coverImage: "https://res.cloudinary.com/dibwnfwk9/image/upload/v1761739825/Bloom_Hair_Atelier_Brand_Manual_-_7_cwlaem.png",
-        description: "Visual identity systems that stand the test of time. From logos to comprehensive brand manuals.",
-        behindTheScenes: [
-            "https://res.cloudinary.com/dibwnfwk9/image/upload/v1761739825/Bloom_Hair_Atelier_Brand_Manual_-_7_cwlaem.png",
-            "https://res.cloudinary.com/dibwnfwk9/image/upload/v1761743016/FBB6EB18-4B0D-4F8D-BE36-1AD44A345840_L0_001-15_05_2023_20_56_03_zc6td2.jpg"
-        ],
-        details: {
-            strategyQuote: "A logo is a signature. A brand system is a personality.",
-            challengeTitle: "Visual Soul",
-            challengeText: [
-                "Distilling brand missions into iconic visual marks.",
-                "Ensuring consistency across every touchpoint."
-            ]
-        },
-        projects: [
-            {
-                slug: "bloom-hair-atelier",
-                title: "Bloom Hair Atelier",
-                subtitle: "Brand Manual",
-                challenge: "Rebranding a boutique into a premium hair destination.",
-                approach: "Sophisticated serif typography and a palette of muted, earthy luxury.",
-                images: ["https://res.cloudinary.com/dibwnfwk9/image/upload/v1761739825/Bloom_Hair_Atelier_Brand_Manual_-_7_cwlaem.png", "https://res.cloudinary.com/dibwnfwk9/image/upload/v1761743016/FBB6EB18-4B0D-4F8D-BE36-1AD44A345840_L0_001-15_05_2023_20_56_03_zc6td2.jpg"],
-                results: "Established as the premier luxury hair spot."
-            },
-            {
-                slug: "safira-fintech-brand",
-                title: "Safira Identity",
-                subtitle: "Modern Fintech",
-                challenge: "Breaking the boring fintech stereotype with vibrant visuals.",
-                approach: "Neon gradients and bold, rounded typography for accessibility.",
-                images: ["https://res.cloudinary.com/dibwnfwk9/image/upload/v1761767880/CANTAGALI_6_kjjxot.png", "https://res.cloudinary.com/dibwnfwk9/image/upload/v1761738825/A93DE538-27D3-42D8-BAB2-AE0C18FFB33C_L0_001-18_10_2024_15_46_58_zdzpdg.jpg"],
-                results: "Increased trust and security perception."
-            },
-            {
-                slug: "vogue-visuals-identity",
-                title: "Vogue Visuals",
-                subtitle: "Photography Brand",
-                challenge: "An identity that complements rather than competes with stunning imagery.",
-                approach: "Minimalist, monochrome palette with a sophisticated watermark logo.",
-                images: ["https://res.cloudinary.com/dibwnfwk9/image/upload/v1761743016/FBB6EB18-4B0D-4F8D-BE36-1AD44A345840_L0_001-15_05_2023_20_56_03_zc6td2.jpg", "https://res.cloudinary.com/dibwnfwk9/image/upload/v1761761745/bts_ori_campaign_imdguc.jpg"],
-                results: "Attracted high-end fashion clientele."
-            }
-        ]
-    },
-    "brand-management-consulting": {
-        title: "Brand Management Consulting",
+    "consultations": {
+        title: "Consultations",
         coverImage: "https://res.cloudinary.com/dibwnfwk9/image/upload/v1761761754/5DB75267-5E0C-4FF7-9A0A-199FDCEAC94E_L0_001-16_05_2023_04_11_33_go2w2x.jpg",
-        description: "Strategic advisory for premium brands. We don't just design; we define your market positioning.",
+        description: "Strategic Clarity. Structured Vision. Sustainable Execution. Before production begins, structure must exist.",
         behindTheScenes: [
-            "https://res.cloudinary.com/dibwnfwk9/image/upload/v1761738825/A93DE538-27D3-42D8-BAB2-AE0C18FFB33C_L0_001-18_10_2024_15_46_58_zdzpdg.jpg",
             "https://res.cloudinary.com/dibwnfwk9/image/upload/v1761762436/pn3_xl53fb.png"
         ],
         details: {
-            strategyQuote: "Consulting is the maintenance of excellence through strategic decisions.",
+            strategyQuote: "Strategy is the blueprint. Creative is the construction. Consulting is the maintenance of excellence.",
             challengeTitle: "Market Positioning",
             challengeText: [
                 "Solving for brand drift as companies scale.",
@@ -270,22 +209,41 @@ export const portfolioData = {
         },
         projects: [
             {
-                slug: "strategic-brand-audit",
-                title: "Strategic Audit",
-                subtitle: "Consulting Session",
-                challenge: "A legacy company losing its edge in a digital-first market.",
-                approach: "Audit of all visual touchpoints and redefined market positioning.",
+                slug: "strategic-clarity-adeyele",
+                title: "Adeyele Strategy",
+                subtitle: "Strategic Clarity Session",
+                client: "Adeyele",
+                challenge: "Adeyele came with a powerful intention to create safe spaces through faith-based storytelling. The vision was clear; the structure was not.",
+                approach: "Guided strategy sessions to clarify core messages, define audience emotional experiences, and align storytelling with contemporary relevance.",
+                scope: [
+                    "Strategic Brand Consultation",
+                    "Brand Architecture Development",
+                    "Content Ecosystem mapping",
+                    "Brand Identity Design",
+                    "Online Positioning Audit"
+                ],
+                sections: [
+                    {
+                        title: "Brand Architecture",
+                        subtitle: "Intentional Foundation.",
+                        content: "We built the structural foundation of her platform—defining audience segmentation, messaging hierarchy, and signature content themes. Her brand was no longer just inspirational; it was intentional.",
+                        images: ["https://res.cloudinary.com/dibwnfwk9/image/upload/v1761762436/pn3_xl53fb.png"]
+                    },
+                    {
+                        title: "Content Mapping",
+                        subtitle: "Clarity Without Burnout.",
+                        content: "Consistency requires a system. We developed a full content ecosystem to guide her publishing journey, ensuring episode-to-social repurposing was seamless and sustainable.",
+                        images: ["https://res.cloudinary.com/dibwnfwk9/image/upload/v1761762081/15_05_2022_22_04_16_y2olj3.jpg"]
+                    },
+                    {
+                        title: "Sustainable System",
+                        subtitle: "Repeatable. Scalable.",
+                        content: "We simplified her execution into three practical steps: Plan with Purpose, Produce with Structure, and Publish with Strategy. Simple, repeatable, and designed for long-term growth.",
+                        images: ["https://res.cloudinary.com/dibwnfwk9/image/upload/v1761739825/Bloom_Hair_Atelier_Brand_Manual_-_7_cwlaem.png"]
+                    }
+                ],
                 images: ["https://res.cloudinary.com/dibwnfwk9/image/upload/v1761762436/pn3_xl53fb.png", "https://res.cloudinary.com/dibwnfwk9/image/upload/v1761762081/15_05_2022_22_04_16_y2olj3.jpg"],
-                results: "Pivoted to a premium, service-oriented model."
-            },
-            {
-                slug: "brand-architecture-session",
-                title: "Architecture",
-                subtitle: "Scaling Strategy",
-                challenge: "Organizing a portfolio of sub-brands into a cohesive parent structure.",
-                approach: "Defining hierarchy and visual cross-pollination rules.",
-                images: ["https://res.cloudinary.com/dibwnfwk9/image/upload/v1761738825/A93DE538-27D3-42D8-BAB2-AE0C18FFB33C_L0_001-18_10_2024_15_46_58_zdzpdg.jpg", "https://res.cloudinary.com/dibwnfwk9/image/upload/v1761739825/Bloom_Hair_Atelier_Brand_Manual_-_7_cwlaem.png"],
-                results: "Unified global presence with clear sub-brand identities."
+                results: "Achieved consistent publishing, increased brand awareness, and a sustainable, repeatability content system."
             }
         ]
     }

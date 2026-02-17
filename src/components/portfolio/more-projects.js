@@ -45,7 +45,7 @@ export default function MoreProjects({ categorySlug, currentProjectSlug, project
                                     <span className="text-[10px] font-sans font-bold uppercase tracking-[0.2em] text-gray-500">
                                         {(project.categorySlug || categorySlug).replace('-', ' ')}
                                     </span>
-                                    <h3 className="text-xl font-sans text-gray-900 group-hover:text-pink-600 transition-colors leading-tight">
+                                    <h3 className="text-xl font-sans text-gray-900 transition-colors leading-tight">
                                         {project.title}
                                     </h3>
                                     <p className="text-gray-500 text-xs font-medium font-sans uppercase tracking-widest">{project.subtitle}</p>

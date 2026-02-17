@@ -7,140 +7,71 @@ import { ChevronDown } from "lucide-react"
 
 const contentServices = [
   {
-    title: "Content Strategy",
+    title: "Brand Strategy",
     image: "https://res.cloudinary.com/dibwnfwk9/image/upload/v1761742905/E98EC581-65FF-4B53-8CD1-1AE605E3EE3E_L0_001-16_05_2023_10_17_32_tq7eyg.jpg",
-    heading: "Brand Management Consulting",
-    description: "We develop strategies that align your content with your audience’s needs. Our goal is to keep your messaging authentic and engaging across all platforms.",
+    heading: "Bespoke Content System",
+    description: "Your digital engine. We align your narrative, visual continuity, and content flow into a scalable ecosystem that supports lead growth and long-term authority.",
     bullets: [
-      "Bespoke Content system ",
-      "Brand Identity Design & Alignment: Narrative Alignment / Visual Continuity ",
-      "Content Engine plug ins",
-      "Revenue growth ideation:  leads growth (bonus)",
-      "Graphic design curation",
-      "Content roadmapping"
+      "Brand Identity Design & Alignment",
+      "Content Engine Plug-ins",
+      "Revenue Growth Ideation: Leads Growth",
+      "Graphic Design Curation",
+      "Content Roadmapping & Narrative Alignment"
     ],
     faq: {
       question: "Who it’s best for ?",
-      answer: "Perfect for a establishment that needs strong brandings and needs someone to maintain their narrative across all media platform through consultations, blue print and content engine plug ins"
+      answer: "CEOs, Founders, and Public Figures building personal authority or scaling online visibility. Ideal for those posting without a system or struggling with narrative clarity."
     }
   },
   {
-    title: "Photography / Videography",
+    title: "Cinematography",
+    image: "https://res.cloudinary.com/dibwnfwk9/image/upload/v1761743114/1853EA70-8A63-4F52-9B66-6A68194DF2EB_L0_001-30_03_2023_22_09_47_yae3vc.jpg",
+    heading: "Productions",
+    description: "Event Recap, Shorts & High-Conversion Media. We capture authority and atmosphere without distraction. Precision visual engineering for executive presence.",
+    bullets: [
+      "Full Scope Event Coverage",
+      "Cinematic Short Films & Campaigns",
+      "Podcast & Talk Show Infrastructure",
+      "Walkthroughs & BTS Documentaries",
+      "Content Calendar Execution"
+    ],
+    faq: {
+      question: "Who it’s best for ?",
+      answer: "Event organisers, corporate brands, and thought leaders who need dynamic brand storytelling that transcends static imagery. High perception, high impact."
+    }
+  },
+  {
+    title: "Visual Assets",
     image: "https://res.cloudinary.com/dibwnfwk9/image/upload/v1761743016/FBB6EB18-4B0D-4F8D-BE36-1AD44A345840_L0_001-15_05_2023_20_56_03_zc6td2.jpg",
     heading: "Photography",
-    description: "We capture stunning visuals that convey your brand's message and engage your audience. Every image and frame is crafted to deliver clarity, depth, and style.",
+    description: "Elite visual assets curated for the premium market. Editorial precision for brands that need their visuals to match their premium pricing.",
     bullets: [
-      "Lifestyle ",
-      "Product photography: ugc content creation",
-      "Venue: Restaurants, Offices, interiors",
-      "Headshots & Portraits",
-      "Content creation"
+      "Executive & Lifestyle Portraits",
+      "Product focus & UGC Content creation",
+      "Venue: Restaurants, Offices, & Interiors",
+      "Website-ready campaign imagery",
+      "Graphic Curation for Social Feeds"
     ],
     faq: {
       question: "Who it’s best for ?",
-      answer: "text"
+      answer: "Luxury brands, product-based businesses, and hospitality experts. If your visuals don't match your high-level pricing, this is for you."
     }
   },
   {
-    title: "Content Shoots",
-    image: "https://res.cloudinary.com/dibwnfwk9/image/upload/v1761742924/22_07_2022_14_47_53_i3kevm.jpg",
-    heading: "Videography",
-    description: "We design and execute content shoots that capture your brand's essence. Each shot is styled to match your brand identity and message perfectly.",
+    title: "Digital Presence",
+    image: "https://res.cloudinary.com/dibwnfwk9/image/upload/v1761738825/A93DE538-27D3-42D8-BAB2-AE0C18FFB33C_L0_001-18_10_2024_15_46_58_zdzpdg.jpg",
+    heading: "Web & Digital Design",
+    description: "Your digital headquarters. We rebuild websites that don't convert or don't reflect your authority, establishing a high-performance user journey.",
     bullets: [
-      "Event Behind The Scenes: Vlogs, Walk throughs, Full event scope",
-      "Content Creation: Content calendar execution",
-
+      "Webfolios & Landing Pages",
+      "Brand Manual & Visual Systems",
+      "Newsletter Infrastructure",
+      "Logo Animation & Identity Design",
+      "Digital Credibility Audits"
     ],
     faq: {
       question: "Who it’s best for ?",
-      answer: "text"
-    }
-  },
-  {
-    title: "Content Strategy",
-    image: "https://res.cloudinary.com/dibwnfwk9/image/upload/v1761742905/E98EC581-65FF-4B53-8CD1-1AE605E3EE3E_L0_001-16_05_2023_10_17_32_tq7eyg.jpg",
-    heading: "Production",
-    description: "We develop strategies that align your content with your audience’s needs. Our goal is to keep your messaging authentic and engaging across all platforms.",
-    bullets: [
-      "Podcast ",
-      "Shortfilms: Brand Marketing, Content creation etc  ",
-      "Campaigns",
-      "Behind The Scenes",
-      "Talk Show",
-
-    ],
-    faq: {
-      question: "Who it’s best for ?",
-      answer: "Wardrobe styling, Makeup, Hair, Set Design The full works available - contact us "
-    }
-  },
-  {
-    title: "Photography / Videography",
-    image: "https://res.cloudinary.com/dibwnfwk9/image/upload/v1761743016/FBB6EB18-4B0D-4F8D-BE36-1AD44A345840_L0_001-15_05_2023_20_56_03_zc6td2.jpg",
-    heading: "Graphics Design",
-    description: "We capture stunning visuals that convey your brand's message and engage your audience. Every image and frame is crafted to deliver clarity, depth, and style.",
-    bullets: [
-      "Graphic Design: Youtube thumbnnails design, social media  ",
-      "Graphic Design: cover photos, bio design ",
-      "Logo animation",
-      "Brand Bible: Essentials",
-    ],
-    faq: {
-      question: "Who it’s best for ?",
-      answer: "text"
-    }
-  },
-  {
-    title: "Content Shoots",
-    image: "https://res.cloudinary.com/dibwnfwk9/image/upload/v1761742924/22_07_2022_14_47_53_i3kevm.jpg",
-    heading: "Web design",
-    description: "We design and execute content shoots that capture your brand's essence. Each shot is styled to match your brand identity and message perfectly.",
-    bullets: [
-      "Webfolios",
-      "Landing pages ",
-      'Newsletter management'
-
-    ],
-    faq: {
-      question: "Who it’s best for ?",
-      answer: "text"
-    }
-  },
-
-  {
-    title: "Content Shoots",
-    image: "https://res.cloudinary.com/dibwnfwk9/image/upload/v1761742924/22_07_2022_14_47_53_i3kevm.jpg",
-    heading: "Co-operate",
-    description: "We design and execute content shoots that capture your brand's essence. Each shot is styled to match your brand identity and message perfectly.",
-    bullets: [
-      "Social media feed design",
-      "Event coverage: Photo & Video ",
-      'Interviews',
-      'Headshots ',
-      'Campaign e.g holiday content: valentine’s, csr projects, infrastructure tours'
-
-    ],
-    faq: {
-      question: "Who it’s best for ?",
-      answer: "text"
-    }
-  },
-
-  {
-    title: "Content Shoots",
-    image: "https://res.cloudinary.com/dibwnfwk9/image/upload/v1761742924/22_07_2022_14_47_53_i3kevm.jpg",
-    heading: "Production Design",
-    description: "We design and execute content shoots that capture your brand's essence. Each shot is styled to match your brand identity and message perfectly.",
-    bullets: [
-      "3D rendering",
-      "Floor planning ",
-      'Moodboarding',
-      'Props catalog'
-
-    ],
-    faq: {
-      question: "Who it’s best for ?",
-      answer: "text"
+      answer: "Founders building credibility, creators monetising their audience, and corporate brands refreshing their digital home."
     }
   }
 ]

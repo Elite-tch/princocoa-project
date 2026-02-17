@@ -4,26 +4,17 @@ import ServicesTagline from "@/components/service/services-tagline";
 import ContentCreationSection from "@/components/service/brand-creation-section";
 import ServicesCenterHero from "@/components/service/center-hero";
 import ConsultingSection from "@/components/service/content-section";
-import BrandBlueprintSection from "@/components/service/brand-blueprint-section";
+import VisibilityIntensive from "@/components/service/visibility-intensive";
 import NewsletterSection from "@/components/about/newsletter-section";
-import ProcessSection from "@/components/service/process-section";
-import ServicesSection from "@/components/service/service";
+
 export default function ServicesPage() {
   return (
     <main className="min-h-screen ">
-      
       <ServicesHero />
-       <ServicesTagline /> 
-        <ConsultingSection />   
-       {/* <ContentCreationSection />
-        <ServicesSection/> 
-        <ServicesCenterHero />
-       
-        <BrandBlueprintSection />  
-       <ProcessSection/> */} 
-        <NewsletterSection />
-
-    
+      <ServicesTagline />
+      <ConsultingSection />
+      <VisibilityIntensive />
+      <NewsletterSection />
     </main>
   )
 }
