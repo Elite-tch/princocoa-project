@@ -27,7 +27,7 @@ export default function ProjectDetail({ project, categorySlug }) {
                             <div className="h-[1px] w-12 bg-gray-100" />
                         </div>
 
-                        <h1 className="text-2xl md:text-5xl font-bold uppercase leading-[0.9] tracking-tighter mb-4 text-[#0a0a0a]">
+                        <h1 className="text-2xl md:text-4xl font-bold uppercase leading-tight tracking-normal mb-4 text-[#0a0a0a]">
                             {project.title}
                         </h1>
                         {project.client && (
@@ -43,7 +43,7 @@ export default function ProjectDetail({ project, categorySlug }) {
                                     {project.challenge && (
                                         <div className="md:space-y-4 space-y-2">
                                             <h3 className="text-[10px] font-bold tracking-[0.5em] uppercase text-gray-500">The Challenge</h3>
-                                            <p className="text-md md:text-3xl text-[#0a0a0a] font-light leading-tight">
+                                            <p className="text-md md:text-2xl text-[#0a0a0a] leading-[1.5] tracking-tighter">
                                                 {project.challenge}
                                             </p>
                                         </div>
@@ -65,7 +65,7 @@ export default function ProjectDetail({ project, categorySlug }) {
                                                 {project.scope.map((item, idx) => (
                                                     <div key={idx} className="flex items-center gap-3">
                                                         <div className="w-1.5 h-1.5 bg-[#0a0a0a] rounded-full" />
-                                                        <span className="text-sm text-gray-700 font-medium">{item}</span>
+                                                        <span className="text-md md:text-xl text-gray-700 font-medium">{item}</span>
                                                     </div>
                                                 ))}
                                             </div>
@@ -112,14 +112,14 @@ export default function ProjectDetail({ project, categorySlug }) {
                                 <div className={`md:col-span-5 space-y-6 ${idx % 2 !== 0 ? "md:order-2" : ""}`}>
                                     <div className="space-y-2">
                                         <span className="text-[10px] font-bold tracking-[0.5em] uppercase text-gray-400 block">Chapter 0{idx + 1}</span>
-                                        <h2 className="text-3xl md:text-5xl font-bold uppercase tracking-tighter leading-none text-[#0a0a0a]">
+                                        <h2 className="text-2xl md:text-4xl font-bold uppercase tracking-normal leading-tight text-[#0a0a0a]">
                                             {section.title}
                                         </h2>
-                                        <p className="text-gray-500 font-serif lowercase italic text-xl">
+                                        <p className="text-gray-500 font-serif lowercase italic text-md md:text-lg">
                                             {section.subtitle}
                                         </p>
                                     </div>
-                                    <p className="text-lg text-gray-600 font-light leading-relaxed max-w-xl">
+                                    <p className="text-md md:text-xl text-gray-600 font-light leading-relaxed max-w-xl">
                                         {section.content}
                                     </p>
                                 </div>
